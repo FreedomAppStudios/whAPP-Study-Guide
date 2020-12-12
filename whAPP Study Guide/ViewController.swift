@@ -9,6 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lblLabel: UILabel!
+    @IBAction func btnStart(_ sender: Any) {
+        lblLabel.text = "hello world"
+        performSegue(withIdentifier: "performSegueToFrame2", sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
