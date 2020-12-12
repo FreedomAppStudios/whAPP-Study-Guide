@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,17 +14,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvj-Ig-adZ">
-                                <rect key="frame" x="101.5" y="129" width="211" height="66"/>
+                                <rect key="frame" x="82" y="129" width="211" height="66"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
                                 <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAi-NY-jN4">
-                                <rect key="frame" x="36.5" y="683" width="341" height="129"/>
+                                <rect key="frame" x="17" y="599" width="341" height="129"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="45"/>
                                 <color key="tintColor" red="0.0" green="0.14117647059999999" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Start" backgroundImage="buttonImage">
@@ -36,7 +36,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SAi-NY-jN4" secondAttribute="bottom" constant="50" id="2sR-Pk-Y3d"/>
                             <constraint firstItem="uvj-Ig-adZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MIc-NY-apR"/>
@@ -58,56 +58,56 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="J8K-25-EHg" customClass="SecondViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mBv-R6-Uiv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIl-ft-Jjg">
-                                <rect key="frame" x="98.5" y="99" width="217" height="59.5"/>
-                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="45"/>
-                                <color key="textColor" name="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pHA-bC-ctP">
-                                <rect key="frame" x="37" y="322" width="341" height="540"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pHA-bC-ctP">
+                                <rect key="frame" x="17" y="136" width="341.33333333333331" height="540"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IlT-Rw-Fbx">
-                                        <rect key="frame" x="0.0" y="0.0" width="341" height="129"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="341.33333333333331" height="129"/>
                                         <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
-                                        <state key="normal" title="Answer1" backgroundImage="buttonImage">
-                                            <color key="titleColor" name="otherColor"/>
+                                        <state key="normal" title="Category 1" backgroundImage="buttonImage">
+                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6y-pD-ykW">
-                                        <rect key="frame" x="0.0" y="137" width="341" height="129"/>
+                                        <rect key="frame" x="0.0" y="137" width="341.33333333333331" height="129"/>
                                         <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
-                                        <state key="normal" title="Answer2" backgroundImage="buttonImage">
-                                            <color key="titleColor" name="otherColor"/>
+                                        <state key="normal" title="Category 2" backgroundImage="buttonImage">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvH-97-Oe9">
-                                        <rect key="frame" x="0.0" y="274" width="341" height="129"/>
+                                        <rect key="frame" x="0.0" y="274" width="341.33333333333331" height="129"/>
                                         <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
-                                        <state key="normal" title="Answer3" backgroundImage="buttonImage">
-                                            <color key="titleColor" name="otherColor"/>
+                                        <state key="normal" title="Category 3" backgroundImage="buttonImage">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zU-eX-OPD">
-                                        <rect key="frame" x="0.0" y="411" width="341" height="129"/>
+                                        <rect key="frame" x="0.0" y="411" width="341.33333333333331" height="129"/>
                                         <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
-                                        <state key="normal" title="Answer4" backgroundImage="buttonImage">
-                                            <color key="titleColor" name="otherColor"/>
+                                        <state key="normal" title="Category 4" backgroundImage="buttonImage">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIl-ft-Jjg">
+                                <rect key="frame" x="106.33333333333333" y="59" width="162.66666666666669" height="59.333333333333343"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="45"/>
+                                <color key="textColor" name="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yP7-jw-b3V"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
-                            <constraint firstItem="pHA-bC-ctP" firstAttribute="bottom" secondItem="yP7-jw-b3V" secondAttribute="bottom" id="I9d-BV-JiW"/>
-                            <constraint firstItem="pHA-bC-ctP" firstAttribute="top" secondItem="eIl-ft-Jjg" secondAttribute="bottom" constant="163.5" id="Rha-Wl-Rp6"/>
-                            <constraint firstItem="eIl-ft-Jjg" firstAttribute="top" secondItem="yP7-jw-b3V" secondAttribute="top" constant="55" id="WnG-7r-l9e"/>
-                            <constraint firstItem="eIl-ft-Jjg" firstAttribute="centerX" secondItem="mBv-R6-Uiv" secondAttribute="centerX" id="fav-JH-SSA"/>
+                            <constraint firstItem="pHA-bC-ctP" firstAttribute="centerY" secondItem="mBv-R6-Uiv" secondAttribute="centerY" id="PjE-B2-NhY"/>
+                            <constraint firstItem="eIl-ft-Jjg" firstAttribute="top" secondItem="yP7-jw-b3V" secondAttribute="top" constant="15" id="dw5-uH-H9Y"/>
+                            <constraint firstItem="pHA-bC-ctP" firstAttribute="centerX" secondItem="mBv-R6-Uiv" secondAttribute="centerX" id="i4E-Sw-i8x"/>
+                            <constraint firstItem="eIl-ft-Jjg" firstAttribute="centerX" secondItem="mBv-R6-Uiv" secondAttribute="centerX" id="oTz-rq-dbj"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -117,7 +117,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="buttonImage" width="341" height="129"/>
+        <image name="buttonImage" width="341.33334350585938" height="129"/>
         <namedColor name="backgroundColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
