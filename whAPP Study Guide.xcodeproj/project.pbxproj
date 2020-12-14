@@ -16,6 +16,7 @@
 		017043C8258473E7005F4D42 /* whAPP_Study_GuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017043C7258473E7005F4D42 /* whAPP_Study_GuideTests.swift */; };
 		017043D3258473E7005F4D42 /* whAPP_Study_GuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017043D2258473E7005F4D42 /* whAPP_Study_GuideUITests.swift */; };
 		017043E72584874B005F4D42 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017043E62584874B005F4D42 /* SecondViewController.swift */; };
+		017043F225871C49005F4D42 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017043F125871C49005F4D42 /* QuizViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		017043D2258473E7005F4D42 /* whAPP_Study_GuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whAPP_Study_GuideUITests.swift; sourceTree = "<group>"; };
 		017043D4258473E7005F4D42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		017043E62584874B005F4D42 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		017043F125871C49005F4D42 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +105,9 @@
 			children = (
 				017043B0258473E1005F4D42 /* AppDelegate.swift */,
 				017043B2258473E1005F4D42 /* SceneDelegate.swift */,
-				017043B4258473E1005F4D42 /* ViewController.swift */,
-				017043B6258473E1005F4D42 /* Main.storyboard */,
-				017043E62584874B005F4D42 /* SecondViewController.swift */,
+				017043ED258718D7005F4D42 /* Models */,
+				017043EB2587189F005F4D42 /* Controllers */,
+				017043EC258718C1005F4D42 /* Views */,
 				017043B9258473E6005F4D42 /* Assets.xcassets */,
 				017043BB258473E6005F4D42 /* LaunchScreen.storyboard */,
 				017043BE258473E6005F4D42 /* Info.plist */,
@@ -129,6 +131,31 @@
 				017043D4258473E7005F4D42 /* Info.plist */,
 			);
 			path = "whAPP Study GuideUITests";
+			sourceTree = "<group>";
+		};
+		017043EB2587189F005F4D42 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				017043B4258473E1005F4D42 /* ViewController.swift */,
+				017043E62584874B005F4D42 /* SecondViewController.swift */,
+				017043F125871C49005F4D42 /* QuizViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		017043EC258718C1005F4D42 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				017043B6258473E1005F4D42 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		017043ED258718D7005F4D42 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				017043E72584874B005F4D42 /* SecondViewController.swift in Sources */,
+				017043F225871C49005F4D42 /* QuizViewController.swift in Sources */,
 				017043B5258473E1005F4D42 /* ViewController.swift in Sources */,
 				017043B1258473E1005F4D42 /* AppDelegate.swift in Sources */,
 				017043B3258473E1005F4D42 /* SceneDelegate.swift in Sources */,
