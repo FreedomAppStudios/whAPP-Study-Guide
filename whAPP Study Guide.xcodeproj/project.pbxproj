@@ -17,6 +17,7 @@
 		017043D3258473E7005F4D42 /* whAPP_Study_GuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017043D2258473E7005F4D42 /* whAPP_Study_GuideUITests.swift */; };
 		017043E72584874B005F4D42 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017043E62584874B005F4D42 /* SecondViewController.swift */; };
 		017043F225871C49005F4D42 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017043F125871C49005F4D42 /* QuizViewController.swift */; };
+		01BEC60325886C8300DA9622 /* QuestionRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BEC60225886C8300DA9622 /* QuestionRunner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		017043D4258473E7005F4D42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		017043E62584874B005F4D42 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		017043F125871C49005F4D42 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		01BEC60225886C8300DA9622 /* QuestionRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionRunner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 		017043ED258718D7005F4D42 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				01BEC60225886C8300DA9622 /* QuestionRunner.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				017043E72584874B005F4D42 /* SecondViewController.swift in Sources */,
 				017043F225871C49005F4D42 /* QuizViewController.swift in Sources */,
 				017043B5258473E1005F4D42 /* ViewController.swift in Sources */,
+				01BEC60325886C8300DA9622 /* QuestionRunner.swift in Sources */,
 				017043B1258473E1005F4D42 /* AppDelegate.swift in Sources */,
 				017043B3258473E1005F4D42 /* SceneDelegate.swift in Sources */,
 			);

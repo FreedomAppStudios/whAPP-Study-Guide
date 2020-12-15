@@ -8,6 +8,10 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    @IBOutlet weak var button1Info: UIButton!
+    @IBOutlet weak var button2Info: UIButton!
+    @IBOutlet weak var button3Info: UIButton!
+    @IBOutlet weak var button4Info: UIButton!
     var btnVal = 0
     @IBAction func button1(_ sender: Any) {
         btnVal = 1
@@ -28,7 +32,10 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         performSegue(withIdentifier: "performSegueToFrame3", sender: self)
         super.viewDidLoad()
-        
+        button1Info.layer.cornerRadius = 25
+        button2Info.layer.cornerRadius = 25
+        button3Info.layer.cornerRadius = 25
+        button4Info.layer.cornerRadius = 25
         // Do any additional setup after loading the view.
         
     }

@@ -17,37 +17,45 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var questionTTL: UILabel!
     //Button pressed
     @IBAction func answer1Pressed(_ sender: Any) {
-        questionTTL.text = "Question 1"
         checkRight1()
+        setButtons()
     }
     @IBAction func answer2Pressed(_ sender: Any) {
-        questionTTL.text = "Question 2"
+        checkRight2()
+        setButtons()
     }
     @IBAction func answer3Pressed(_ sender: Any) {
-        questionTTL.text = "Question 3"
+        checkRight3()
+        setButtons()
     }
     @IBAction func answer4Pressed(_ sender: Any) {
-        questionTTL.text = "Question 4"
+        checkRight4()
+        setButtons()
     }
-    
+    let seeker = questionDoer()
     var cato = "0"
     override func viewDidLoad() {
         super.viewDidLoad()
-        questionTTL.text = cato
+        //Set up
         btn1Info.layer.cornerRadius = 25
         btn2Info.layer.cornerRadius = 25
         btn3Info.layer.cornerRadius = 25
         btn4Info.layer.cornerRadius = 25
         btn1Info.backgroundColor = .blue
-        btn1Info.backgroundColor = .blue
-        btn1Info.backgroundColor = .blue
-        btn1Info.backgroundColor = .blue
+        btn2Info.backgroundColor = .blue
+        btn3Info.backgroundColor = .blue
+        btn4Info.backgroundColor = .blue
+        
+        //Setting button text
+        setButtons()
+        
+        
         
         
     }
     //btn1 revert
     func  checkRight1() {
-        btn1Info.backgroundColor = .green
+        btn1Info.backgroundColor = .red
         perform(#selector(self.correct1), with: nil, afterDelay: 2)
     }
     @objc func correct1() {
@@ -61,7 +69,7 @@ class QuizViewController: UIViewController {
     }
     //btn2 revert
     func  checkRight2() {
-        btn2Info.backgroundColor = .green
+        btn2Info.backgroundColor = .red
         perform(#selector(self.correct2), with: nil, afterDelay: 2)
     }
     @objc func correct2() {
@@ -75,7 +83,7 @@ class QuizViewController: UIViewController {
     }
     //btn3 revert
     func  checkRight3() {
-        btn3Info.backgroundColor = .green
+        btn3Info.backgroundColor = .red
         perform(#selector(self.correct3), with: nil, afterDelay: 2)
     }
     @objc func correct3() {
@@ -100,6 +108,20 @@ class QuizViewController: UIViewController {
             self.btn4Info.backgroundColor = color
             
         })
+    }
+    //sets button text
+    func setButtons() {
+        let random = Int.random(in: 0...2)
+        let secondsToDelay = 2.5
+        DispatchQueue.main.asyncAfter(deadline: .now() + secondsToDelay) {
+           print("This message is delayed")
+            self.btn1Info.setTitle(self.seeker.getWrong1(rando: random), for: UIControl.State.normal)
+            self.btn2Info.setTitle(self.seeker.getWrong2(rando: random), for: UIControl.State.normal)
+            self.btn3Info.setTitle(self.seeker.getWrong3(rando: random), for: UIControl.State.normal)
+            self.btn4Info.setTitle(self.seeker.rightAnswer(rando: random), for: UIControl.State.normal)
+            self.questionTTL.text = self.seeker.getQuestions(rando : random)
+        }
+        
     }
     
     
