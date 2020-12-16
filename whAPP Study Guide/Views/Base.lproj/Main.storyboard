@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="ipad10_5" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -13,17 +13,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvj-Ig-adZ">
-                                <rect key="frame" x="108.66666666666669" y="129" width="211" height="66"/>
+                                <rect key="frame" x="311.5" y="85" width="211" height="66"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
                                 <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAi-NY-jN4">
-                                <rect key="frame" x="43.666666666666657" y="713" width="341" height="129"/>
+                                <rect key="frame" x="246.5" y="933" width="341" height="129"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="45"/>
                                 <color key="tintColor" red="0.0" green="0.14117647059999999" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Start" backgroundImage="buttonImage">
@@ -57,11 +57,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="J8K-25-EHg" customClass="SecondViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mBv-R6-Uiv">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IlT-Rw-Fbx">
-                                <rect key="frame" x="20" y="343" width="388" height="78"/>
+                                <rect key="frame" x="20" y="299" width="794" height="78"/>
                                 <color key="backgroundColor" name="otherColor"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
                                 <state key="normal" title="Category 1">
@@ -72,7 +72,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvH-97-Oe9">
-                                <rect key="frame" x="20" y="555" width="388" height="78"/>
+                                <rect key="frame" x="20" y="511" width="794" height="78"/>
                                 <color key="backgroundColor" name="otherColor"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
                                 <state key="normal" title="Category 3">
@@ -83,7 +83,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zU-eX-OPD">
-                                <rect key="frame" x="20" y="659" width="388" height="78"/>
+                                <rect key="frame" x="20" y="615" width="794" height="78"/>
                                 <color key="backgroundColor" name="otherColor"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
                                 <state key="normal" title="Category 4">
@@ -94,13 +94,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIl-ft-Jjg">
-                                <rect key="frame" x="105.66666666666669" y="114" width="217" height="79"/>
+                                <rect key="frame" x="308.5" y="70" width="217" height="79"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="60"/>
                                 <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6y-pD-ykW">
-                                <rect key="frame" x="20" y="449" width="388" height="78"/>
+                                <rect key="frame" x="20" y="405" width="794" height="78"/>
                                 <color key="backgroundColor" name="otherColor"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
                                 <state key="normal" title="Category 2">
@@ -151,17 +151,17 @@
             <objects>
                 <viewController id="jFc-27-FTr" customClass="QuizViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wql-aV-jaU">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6H-NJ-OvT">
-                                <rect key="frame" x="92" y="114" width="244" height="72"/>
+                                <rect key="frame" x="295" y="70" width="244" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hWd-Fp-6Fy">
-                                <rect key="frame" x="20" y="336" width="388" height="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hWd-Fp-6Fy">
+                                <rect key="frame" x="20" y="292" width="794" height="48"/>
                                 <color key="backgroundColor" name="otherColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Loading...">
@@ -171,8 +171,8 @@
                                     <action selector="answer1Pressed:" destination="jFc-27-FTr" eventType="touchUpInside" id="KQp-9h-MMc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nSn-l9-ofl">
-                                <rect key="frame" x="20" y="444" width="388" height="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nSn-l9-ofl">
+                                <rect key="frame" x="20" y="400" width="794" height="48"/>
                                 <color key="backgroundColor" name="otherColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Loading...">
@@ -182,8 +182,8 @@
                                     <action selector="answer2Pressed:" destination="jFc-27-FTr" eventType="touchUpInside" id="cyx-Fd-WGC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5xv-hJ-MFi">
-                                <rect key="frame" x="20" y="552" width="388" height="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5xv-hJ-MFi">
+                                <rect key="frame" x="20" y="508" width="794" height="48"/>
                                 <color key="backgroundColor" name="otherColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Loading...">
@@ -193,8 +193,8 @@
                                     <action selector="answer3Pressed:" destination="jFc-27-FTr" eventType="touchUpInside" id="zDn-l8-hPi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="XoV-us-7qu">
-                                <rect key="frame" x="20" y="660" width="388" height="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="XoV-us-7qu">
+                                <rect key="frame" x="20" y="616" width="794" height="48"/>
                                 <color key="backgroundColor" name="otherColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Loading...">
@@ -219,13 +219,17 @@
                             <constraint firstItem="IIs-ad-HJ9" firstAttribute="trailing" secondItem="XoV-us-7qu" secondAttribute="trailing" constant="20" id="NQL-dp-RIx"/>
                             <constraint firstItem="hWd-Fp-6Fy" firstAttribute="leading" secondItem="IIs-ad-HJ9" secondAttribute="leading" constant="20" id="QiA-Eq-4cR"/>
                             <constraint firstItem="nSn-l9-ofl" firstAttribute="centerX" secondItem="wql-aV-jaU" secondAttribute="centerX" id="RDe-JS-DFp"/>
+                            <constraint firstItem="hWd-Fp-6Fy" firstAttribute="centerX" secondItem="wql-aV-jaU" secondAttribute="centerX" id="Rg6-DW-jP4"/>
                             <constraint firstItem="IIs-ad-HJ9" firstAttribute="trailing" secondItem="5xv-hJ-MFi" secondAttribute="trailing" constant="20" id="gYt-vA-0Ke"/>
                             <constraint firstItem="IIs-ad-HJ9" firstAttribute="trailing" secondItem="nSn-l9-ofl" secondAttribute="trailing" constant="20" id="h5K-HB-RIg"/>
+                            <constraint firstItem="5xv-hJ-MFi" firstAttribute="centerX" secondItem="wql-aV-jaU" secondAttribute="centerX" id="j8a-OK-hrS"/>
                             <constraint firstItem="5xv-hJ-MFi" firstAttribute="leading" secondItem="IIs-ad-HJ9" secondAttribute="leading" constant="20" id="lor-ec-MI6"/>
                             <constraint firstItem="XoV-us-7qu" firstAttribute="top" secondItem="5xv-hJ-MFi" secondAttribute="bottom" constant="60" id="ncI-9K-ATj"/>
                             <constraint firstItem="hWd-Fp-6Fy" firstAttribute="top" secondItem="e6H-NJ-OvT" secondAttribute="bottom" constant="150" id="rna-4e-Ppb"/>
                             <constraint firstItem="hWd-Fp-6Fy" firstAttribute="centerX" secondItem="wql-aV-jaU" secondAttribute="centerX" id="sO9-f7-clJ"/>
                             <constraint firstItem="nSn-l9-ofl" firstAttribute="leading" secondItem="IIs-ad-HJ9" secondAttribute="leading" constant="20" id="szr-la-nJp"/>
+                            <constraint firstItem="nSn-l9-ofl" firstAttribute="centerX" secondItem="wql-aV-jaU" secondAttribute="centerX" id="t2f-Qj-0cA"/>
+                            <constraint firstItem="XoV-us-7qu" firstAttribute="centerX" secondItem="wql-aV-jaU" secondAttribute="centerX" id="uqb-F4-cys"/>
                             <constraint firstItem="IIs-ad-HJ9" firstAttribute="trailing" secondItem="hWd-Fp-6Fy" secondAttribute="trailing" constant="20" id="wkN-7t-IXP"/>
                             <constraint firstItem="IIs-ad-HJ9" firstAttribute="trailing" secondItem="nSn-l9-ofl" secondAttribute="trailing" constant="20" id="xtH-Id-XkK"/>
                         </constraints>
@@ -244,7 +248,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="buttonImage" width="341.33334350585938" height="129"/>
+        <image name="buttonImage" width="341" height="129"/>
         <namedColor name="backgroundColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
