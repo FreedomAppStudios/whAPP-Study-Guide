@@ -8,6 +8,9 @@
 import UIKit
 
 class QuizViewController: UIViewController {
+    //Clock & Score set ups
+    @IBOutlet weak var countDownLBL: UILabel!
+    @IBOutlet weak var scoreCountLBL: UILabel!
     //Button set ups
     @IBOutlet weak var btn1Info: UIButton!
     @IBOutlet weak var btn2Info: UIButton!
@@ -19,21 +22,34 @@ class QuizViewController: UIViewController {
     @IBAction func answer1Pressed(_ sender: Any) {
         checkRight1()
         setButtons()
+        count = 60
+        timerRunner()
     }
     @IBAction func answer2Pressed(_ sender: Any) {
         checkRight2()
         setButtons()
+        count = 60
+        timerRunner()
     }
     @IBAction func answer3Pressed(_ sender: Any) {
         checkRight3()
         setButtons()
+        count = 60
+        timerRunner()
     }
     @IBAction func answer4Pressed(_ sender: Any) {
         checkRight4()
         setButtons()
+        count = 60
+        timerRunner()
     }
+    //Variables
+    var count = 60
+    var score = 0
     let seeker = questionDoer()
     var cato = "0"
+    
+    //view did load
     override func viewDidLoad() {
         super.viewDidLoad()
         //Set up
@@ -48,6 +64,9 @@ class QuizViewController: UIViewController {
         
         //Setting button text
         setButtons()
+        scoreCountLBL.text = "0"
+        timerRunner()
+        
         
         
         
@@ -123,7 +142,24 @@ class QuizViewController: UIViewController {
         }
         
     }
-    
+    @objc func updateTimer() {
+        if(count >= 0) {
+            countDownLBL.text = String(count)
+            count-=1
+            if count < 20{
+                countDownLBL.textColor = .red
+            }
+        }
+        if count == -1 {
+            checkRight4()
+            setButtons()
+            count = count - 1
+            countDownLBL.textColor = .black
+        }
+    }
+    func timerRunner() {
+        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+    }
     
     
     

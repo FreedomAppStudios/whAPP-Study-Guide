@@ -204,10 +204,23 @@
                                     <action selector="answer4Pressed:" destination="jFc-27-FTr" eventType="touchUpInside" id="teN-vw-SYg"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKg-5q-j3b">
+                                <rect key="frame" x="20" y="59" width="97" height="47"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGw-4Z-C3c">
+                                <rect key="frame" x="262" y="59" width="108" height="47"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IIs-ad-HJ9"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
+                            <constraint firstItem="IIs-ad-HJ9" firstAttribute="trailing" secondItem="lGw-4Z-C3c" secondAttribute="trailing" constant="20" id="0Wx-Fp-ost"/>
                             <constraint firstItem="e6H-NJ-OvT" firstAttribute="centerX" secondItem="wql-aV-jaU" secondAttribute="centerX" id="1TY-Id-d7Q"/>
                             <constraint firstItem="XoV-us-7qu" firstAttribute="centerX" secondItem="wql-aV-jaU" secondAttribute="centerX" id="2NP-KL-dI0"/>
                             <constraint firstItem="XoV-us-7qu" firstAttribute="leading" secondItem="IIs-ad-HJ9" secondAttribute="leading" constant="20" id="2ns-6g-sQR"/>
@@ -221,6 +234,9 @@
                             <constraint firstItem="hWd-Fp-6Fy" firstAttribute="leading" secondItem="IIs-ad-HJ9" secondAttribute="leading" constant="20" id="QiA-Eq-4cR"/>
                             <constraint firstItem="nSn-l9-ofl" firstAttribute="centerX" secondItem="wql-aV-jaU" secondAttribute="centerX" id="RDe-JS-DFp"/>
                             <constraint firstItem="hWd-Fp-6Fy" firstAttribute="centerX" secondItem="wql-aV-jaU" secondAttribute="centerX" id="Rg6-DW-jP4"/>
+                            <constraint firstItem="jKg-5q-j3b" firstAttribute="top" secondItem="IIs-ad-HJ9" secondAttribute="top" constant="15" id="SEY-ty-YsG"/>
+                            <constraint firstItem="jKg-5q-j3b" firstAttribute="leading" secondItem="IIs-ad-HJ9" secondAttribute="leading" constant="20" id="ck4-w2-M9g"/>
+                            <constraint firstItem="lGw-4Z-C3c" firstAttribute="top" secondItem="IIs-ad-HJ9" secondAttribute="top" constant="15" id="eSb-Nh-UsO"/>
                             <constraint firstItem="IIs-ad-HJ9" firstAttribute="trailing" secondItem="5xv-hJ-MFi" secondAttribute="trailing" constant="20" id="gYt-vA-0Ke"/>
                             <constraint firstItem="IIs-ad-HJ9" firstAttribute="trailing" secondItem="nSn-l9-ofl" secondAttribute="trailing" constant="20" id="h5K-HB-RIg"/>
                             <constraint firstItem="5xv-hJ-MFi" firstAttribute="centerX" secondItem="wql-aV-jaU" secondAttribute="centerX" id="j8a-OK-hrS"/>
@@ -241,7 +257,9 @@
                         <outlet property="btn2Info" destination="nSn-l9-ofl" id="mJ6-UG-r2f"/>
                         <outlet property="btn3Info" destination="5xv-hJ-MFi" id="uOR-nx-rr4"/>
                         <outlet property="btn4Info" destination="XoV-us-7qu" id="2Zs-xi-gQl"/>
+                        <outlet property="countDownLBL" destination="jKg-5q-j3b" id="Zyq-QL-ZZj"/>
                         <outlet property="questionTTL" destination="e6H-NJ-OvT" id="xxe-Io-u0O"/>
+                        <outlet property="scoreCountLBL" destination="lGw-4Z-C3c" id="YUu-WA-hqK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41q-IS-xY0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
