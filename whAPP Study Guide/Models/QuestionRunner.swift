@@ -8,13 +8,13 @@
 import Foundation
 struct questionDoer {
     //questions
-    let questions = ["question 1","question 2", "question 3"]
+    let questions = ["Who was the first US President?","When was America founded?", "Who is the coolest person ever?", "What state has the abbreviation 'TX'?"]
     //possible responses
-    let wrongAnswer1 = ["wrong answer1 1", "wrong answer1 2", "wrong answer1 3"]
-    let wrongAnswer2 = ["wrong answer2 1", "wrong answer2 2", "wrong answer2 3"]
-    let wrongAnswer3 = ["wrong answer3 1", "wrong answer3 2", "wrong answer3 3"]
+    let wrongAnswer1 = ["Lincoln", "1778", "Ryan V","Idaho"]
+    let wrongAnswer2 = ["Obama", "1601", "AJ A","Florida"]
+    let wrongAnswer3 = ["Trump", "2020", "Ryan B", "China"]
     //correct answer
-    let rightAnswer = ["right answer 1", "right answer 2", "right answer 3"]
+    let rightAnswer = ["Washington", "1776", "Nick M","Texas"]
     
     //Get's questions that correspond to random question number
     func getWrong1(rando : Int) -> String {
