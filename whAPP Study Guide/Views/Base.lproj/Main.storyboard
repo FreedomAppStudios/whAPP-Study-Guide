@@ -44,7 +44,7 @@
                                     <segue destination="jYL-dh-X0S" kind="presentation" id="UuX-VJ-aB1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Whapp App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EO-RO-OA4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Whapp App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EO-RO-OA4" customClass="CLTypingLabel" customModule="CLTypingLabel">
                                 <rect key="frame" x="38.666666666666657" y="395" width="312.66666666666674" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="textColor" name="textColor"/>
@@ -69,6 +69,7 @@
                     <connections>
                         <outlet property="loginButtonInfo" destination="SAi-NY-jN4" id="cJv-aq-Cws"/>
                         <outlet property="setupButtonInfo" destination="i7d-WF-kPp" id="b17-1m-4uQ"/>
+                        <outlet property="titleLabel" destination="3EO-RO-OA4" id="laH-Ii-x4j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -220,8 +221,8 @@
                                 <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QJ3-Nb-mLd">
-                                <rect key="frame" x="35" y="448" width="320" height="216"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QJ3-Nb-mLd">
+                                <rect key="frame" x="35" y="446.33333333333326" width="320" height="216"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgN-QC-fj0">
                                 <rect key="frame" x="58.666666666666657" y="692.33333333333337" width="273" height="67.666666666666629"/>
@@ -244,6 +245,7 @@
                             <constraint firstItem="eIl-ft-Jjg" firstAttribute="top" secondItem="yP7-jw-b3V" secondAttribute="top" constant="70" id="XzR-5c-0YL"/>
                             <constraint firstItem="eIl-ft-Jjg" firstAttribute="top" secondItem="yP7-jw-b3V" secondAttribute="top" constant="70" id="dw5-uH-H9Y"/>
                             <constraint firstItem="QJ3-Nb-mLd" firstAttribute="centerX" secondItem="mBv-R6-Uiv" secondAttribute="centerX" id="fOD-zI-Xja"/>
+                            <constraint firstItem="bgN-QC-fj0" firstAttribute="top" secondItem="QJ3-Nb-mLd" secondAttribute="bottom" constant="30" id="guk-Sf-kaT"/>
                             <constraint firstItem="bgN-QC-fj0" firstAttribute="centerX" secondItem="mBv-R6-Uiv" secondAttribute="centerX" id="hHk-IS-ckr"/>
                             <constraint firstItem="eIl-ft-Jjg" firstAttribute="centerX" secondItem="mBv-R6-Uiv" secondAttribute="centerX" id="oTz-rq-dbj"/>
                             <constraint firstItem="eIl-ft-Jjg" firstAttribute="centerX" secondItem="mBv-R6-Uiv" secondAttribute="centerX" id="ucE-vL-pPb"/>
@@ -383,6 +385,11 @@
             <point key="canvasLocation" x="1391" y="102"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="3EO-RO-OA4">
+            <size key="intrinsicContentSize" width="312.66666666666669" height="54"/>
+        </designable>
+    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="RTD-vE-gOg"/>
     </inferredMetricsTieBreakers>

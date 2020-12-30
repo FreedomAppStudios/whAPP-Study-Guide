@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import CLTypingLabel
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var titleLabel: CLTypingLabel!
     
     @IBOutlet weak var loginButtonInfo: UIButton!
     @IBOutlet weak var setupButtonInfo: UIButton!
@@ -21,6 +24,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         loginButtonInfo.layer.cornerRadius = 30
         setupButtonInfo.layer.cornerRadius = 30
+        titleLabel.text = "The Whapp App"
+        
     }
 
 
