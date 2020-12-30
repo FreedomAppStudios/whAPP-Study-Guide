@@ -8,6 +8,7 @@
 import UIKit
 
 class QuizViewController: UIViewController {
+    var timerTest : Timer?
     //Clock & Score set ups
     @IBOutlet weak var countDownLBL: UILabel!
     @IBOutlet weak var scoreCountLBL: UILabel!
@@ -20,24 +21,28 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var questionTTL: UILabel!
     //Button pressed
     @IBAction func answer1Pressed(_ sender: Any) {
+        stopTimer()
         checkRight1()
         setButtons()
         count = 60
         timerRunner()
     }
     @IBAction func answer2Pressed(_ sender: Any) {
+        stopTimer()
         checkRight2()
         setButtons()
         count = 60
         timerRunner()
     }
     @IBAction func answer3Pressed(_ sender: Any) {
+        stopTimer()
         checkRight3()
         setButtons()
         count = 60
         timerRunner()
     }
     @IBAction func answer4Pressed(_ sender: Any) {
+        stopTimer()
         checkRight4()
         setButtons()
         count = 60
@@ -130,7 +135,7 @@ class QuizViewController: UIViewController {
     }
     //sets button text
     func setButtons() {
-        let random = Int.random(in: 0...2)
+        let random = Int.random(in: 0...3)
         let secondsToDelay = 2.5
         DispatchQueue.main.asyncAfter(deadline: .now() + secondsToDelay) {
            print("This message is delayed")
@@ -158,7 +163,16 @@ class QuizViewController: UIViewController {
         }
     }
     func timerRunner() {
-        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+        guard timerTest == nil else { return }
+          timerTest = Timer.scheduledTimer(
+            timeInterval: 1.0,
+            target: self,
+            selector: #selector(updateTimer),
+            userInfo: nil, repeats: true)
+    }
+    func stopTimer() {
+        timerTest?.invalidate()
+          timerTest = nil
     }
     
     

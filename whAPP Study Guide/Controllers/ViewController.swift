@@ -8,14 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var lblLabel: UILabel!
-    @IBAction func btnStart(_ sender: Any) {
-        performSegue(withIdentifier: "performSegueToFrame2", sender: self)
+    
+    @IBOutlet weak var loginButtonInfo: UIButton!
+    @IBOutlet weak var setupButtonInfo: UIButton!
+    
+    @IBAction func loginButtonPressed(_ sender: Any) {
     }
+    @IBAction func setupButtonPressed(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        loginButtonInfo.layer.cornerRadius = 30
+        setupButtonInfo.layer.cornerRadius = 30
     }
 
 
