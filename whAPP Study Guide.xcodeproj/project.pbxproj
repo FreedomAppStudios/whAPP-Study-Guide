@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		017043F225871C49005F4D42 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017043F125871C49005F4D42 /* QuizViewController.swift */; };
 		01BEC60325886C8300DA9622 /* QuestionRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BEC60225886C8300DA9622 /* QuestionRunner.swift */; };
 		7991F5EAF9A58E47C2142B07 /* Pods_whAPP_Study_Guide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AC5ED7102F886A56D170CD /* Pods_whAPP_Study_Guide.framework */; };
+		BB22DE47259CE5CA009F8113 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB22DE46259CE5CA009F8113 /* GoogleService-Info.plist */; };
 		BBD2E568259C42D000B4D2BC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2E567259C42D000B4D2BC /* LoginViewController.swift */; };
 		BBD2E56D259C431500B4D2BC /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2E56C259C431500B4D2BC /* SignupViewController.swift */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		55AC5ED7102F886A56D170CD /* Pods_whAPP_Study_Guide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whAPP_Study_Guide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F7A4565BABDAFECA8675DB /* Pods-whAPP Study Guide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whAPP Study Guide.release.xcconfig"; path = "Target Support Files/Pods-whAPP Study Guide/Pods-whAPP Study Guide.release.xcconfig"; sourceTree = "<group>"; };
 		7D672764055E4E70A6F300AE /* Pods-whAPP Study Guide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whAPP Study Guide.debug.xcconfig"; path = "Target Support Files/Pods-whAPP Study Guide/Pods-whAPP Study Guide.debug.xcconfig"; sourceTree = "<group>"; };
+		BB22DE46259CE5CA009F8113 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BBD2E567259C42D000B4D2BC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BBD2E56C259C431500B4D2BC /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +126,7 @@
 				017043B9258473E6005F4D42 /* Assets.xcassets */,
 				017043BB258473E6005F4D42 /* LaunchScreen.storyboard */,
 				017043BE258473E6005F4D42 /* Info.plist */,
+				BB22DE46259CE5CA009F8113 /* GoogleService-Info.plist */,
 			);
 			path = "whAPP Study Guide";
 			sourceTree = "<group>";
@@ -188,7 +191,6 @@
 				7D672764055E4E70A6F300AE /* Pods-whAPP Study Guide.debug.xcconfig */,
 				58F7A4565BABDAFECA8675DB /* Pods-whAPP Study Guide.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -299,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				017043BD258473E6005F4D42 /* LaunchScreen.storyboard in Resources */,
+				BB22DE47259CE5CA009F8113 /* GoogleService-Info.plist in Resources */,
 				017043BA258473E6005F4D42 /* Assets.xcassets in Resources */,
 				017043B8258473E1005F4D42 /* Main.storyboard in Resources */,
 			);

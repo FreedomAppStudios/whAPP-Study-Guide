@@ -6,9 +6,29 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var errorLabel: UILabel!
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBAction func loginButtonPressed(_ sender: Any) {
+        if let email = emailTextField.text, let password = passwordTextField.text {
+            Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+                if let e = error {
+                    self!.errorLabel.isHidden = false
+                    self!.errorLabel.text = e.localizedDescription
+                } else {
+                    self!.performSegue(withIdentifier: "LoginToHome", sender: self)
+                }
+            }
+        }
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

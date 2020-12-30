@@ -6,12 +6,31 @@
 //
 
 import UIKit
+import Firebase
 
 class SignupViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var errorLabel: UILabel!
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     @IBOutlet weak var goButtonPressed: UIButton!
     @IBAction func goButtonAction(_ sender: Any) {
-        performSegue(withIdentifier: "RegisterToHome", sender: self)
+        if let email = emailTextField.text, let password = passwordTextField.text {
+            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                if let e = error {
+                    self.errorLabel.isHidden = false
+                    self.errorLabel.text = e.localizedDescription
+                }
+                else {
+                    self.performSegue(withIdentifier: "RegisterToHome", sender: self)
+                }
+            }
+        }
+        
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
