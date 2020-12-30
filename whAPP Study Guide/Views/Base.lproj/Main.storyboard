@@ -166,14 +166,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B9S-SV-LUs">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1@2.com" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B9S-SV-LUs">
                                 <rect key="frame" x="58.666666666666657" y="150" width="273" height="39.666666666666657"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <color key="textColor" name="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fpU-hf-hP2">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fpU-hf-hP2">
                                 <rect key="frame" x="58.666666666666657" y="249.66666666666666" width="273" height="39.333333333333343"/>
                                 <color key="textColor" name="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -252,7 +252,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QJ3-Nb-mLd">
-                                <rect key="frame" x="35" y="446.33333333333326" width="320" height="216"/>
+                                <rect key="frame" x="35" y="314" width="320" height="216"/>
                                 <color key="tintColor" name="backgroundColor"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgN-QC-fj0">
@@ -272,12 +272,12 @@
                         <constraints>
                             <constraint firstItem="yP7-jw-b3V" firstAttribute="bottom" secondItem="bgN-QC-fj0" secondAttribute="bottom" constant="50" id="3s4-6b-lpK"/>
                             <constraint firstItem="eIl-ft-Jjg" firstAttribute="top" secondItem="yP7-jw-b3V" secondAttribute="top" constant="70" id="5fA-UC-Snw"/>
+                            <constraint firstItem="QJ3-Nb-mLd" firstAttribute="centerX" secondItem="mBv-R6-Uiv" secondAttribute="centerX" id="67N-mG-KhP"/>
                             <constraint firstItem="bgN-QC-fj0" firstAttribute="height" secondItem="mBv-R6-Uiv" secondAttribute="height" multiplier="0.08" id="Tjm-NY-rsl"/>
                             <constraint firstItem="eIl-ft-Jjg" firstAttribute="top" secondItem="yP7-jw-b3V" secondAttribute="top" constant="70" id="XzR-5c-0YL"/>
                             <constraint firstItem="eIl-ft-Jjg" firstAttribute="top" secondItem="yP7-jw-b3V" secondAttribute="top" constant="70" id="dw5-uH-H9Y"/>
-                            <constraint firstItem="QJ3-Nb-mLd" firstAttribute="centerX" secondItem="mBv-R6-Uiv" secondAttribute="centerX" id="fOD-zI-Xja"/>
-                            <constraint firstItem="bgN-QC-fj0" firstAttribute="top" secondItem="QJ3-Nb-mLd" secondAttribute="bottom" constant="30" id="guk-Sf-kaT"/>
                             <constraint firstItem="bgN-QC-fj0" firstAttribute="centerX" secondItem="mBv-R6-Uiv" secondAttribute="centerX" id="hHk-IS-ckr"/>
+                            <constraint firstItem="QJ3-Nb-mLd" firstAttribute="centerY" secondItem="mBv-R6-Uiv" secondAttribute="centerY" id="jfZ-3X-HdO"/>
                             <constraint firstItem="eIl-ft-Jjg" firstAttribute="centerX" secondItem="mBv-R6-Uiv" secondAttribute="centerX" id="oTz-rq-dbj"/>
                             <constraint firstItem="eIl-ft-Jjg" firstAttribute="centerX" secondItem="mBv-R6-Uiv" secondAttribute="centerX" id="ucE-vL-pPb"/>
                             <constraint firstItem="eIl-ft-Jjg" firstAttribute="top" secondItem="yP7-jw-b3V" secondAttribute="top" constant="70" id="vx8-38-A44"/>
@@ -422,7 +422,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="RTD-vE-gOg"/>
+        <segue reference="QGb-PV-QT5"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="backgroundColor">

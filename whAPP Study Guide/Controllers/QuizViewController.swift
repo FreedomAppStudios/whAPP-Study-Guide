@@ -1,7 +1,5 @@
-//Ryan Was Here
 //  QuizViewController.swift
 //  whAPP Study Guide
-//test for real
 //  Created by Nicholas Morris on 12/13/20.
 //Nick is here
 
@@ -21,21 +19,18 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var questionTTL: UILabel!
     //Button pressed
     @IBAction func answer1Pressed(_ sender: Any) {
-        stopTimer()
         checkRight1()
         setButtons()
         count = 60
         timerRunner()
     }
     @IBAction func answer2Pressed(_ sender: Any) {
-        stopTimer()
         checkRight2()
         setButtons()
         count = 60
         timerRunner()
     }
     @IBAction func answer3Pressed(_ sender: Any) {
-        stopTimer()
         checkRight3()
         setButtons()
         count = 60
@@ -53,6 +48,8 @@ class QuizViewController: UIViewController {
     var score = 0
     let seeker = questionDoer()
     var cato = "0"
+    var quesNums = questionDoer().questions.count - 1
+    
     
     //view did load
     override func viewDidLoad() {
@@ -69,8 +66,7 @@ class QuizViewController: UIViewController {
         
         //Setting button text
         setButtons()
-        scoreCountLBL.text = "0"
-        timerRunner()
+        scoreCountLBL.text = cato
         
         
         
@@ -135,17 +131,50 @@ class QuizViewController: UIViewController {
     }
     //sets button text
     func setButtons() {
-        let random = Int.random(in: 0...3)
-        let secondsToDelay = 2.5
+        stopTimer()
+        let random = Int.random(in: 0...quesNums)
+        let secondsToDelay = 1.5
         DispatchQueue.main.asyncAfter(deadline: .now() + secondsToDelay) {
            print("This message is delayed")
-            self.btn1Info.setTitle(self.seeker.getWrong1(rando: random), for: UIControl.State.normal)
-            self.btn2Info.setTitle(self.seeker.getWrong2(rando: random), for: UIControl.State.normal)
-            self.btn3Info.setTitle(self.seeker.getWrong3(rando: random), for: UIControl.State.normal)
-            self.btn4Info.setTitle(self.seeker.rightAnswer(rando: random), for: UIControl.State.normal)
-            self.questionTTL.text = self.seeker.getQuestions(rando : random)
+            let order = Int.random(in: 0...3)
+            //order generator
+            
+            //1234
+            if order == 0 {
+                self.btn1Info.setTitle(self.seeker.getWrong1(rando: random), for: UIControl.State.normal)
+                self.btn2Info.setTitle(self.seeker.getWrong2(rando: random), for: UIControl.State.normal)
+                self.btn3Info.setTitle(self.seeker.getWrong3(rando: random), for: UIControl.State.normal)
+                self.btn4Info.setTitle(self.seeker.rightAnswer(rando: random), for: UIControl.State.normal)
+                self.questionTTL.text = self.seeker.getQuestions(rando : random)
+            }
+            //2341
+            if order == 1 {
+                self.btn2Info.setTitle(self.seeker.getWrong1(rando: random), for: UIControl.State.normal)
+                self.btn3Info.setTitle(self.seeker.getWrong2(rando: random), for: UIControl.State.normal)
+                self.btn4Info.setTitle(self.seeker.getWrong3(rando: random), for: UIControl.State.normal)
+                self.btn1Info.setTitle(self.seeker.rightAnswer(rando: random), for: UIControl.State.normal)
+                self.questionTTL.text = self.seeker.getQuestions(rando : random)
+            }
+            //3412
+            if order == 2 {
+                self.btn3Info.setTitle(self.seeker.getWrong1(rando: random), for: UIControl.State.normal)
+                self.btn4Info.setTitle(self.seeker.getWrong2(rando: random), for: UIControl.State.normal)
+                self.btn1Info.setTitle(self.seeker.getWrong3(rando: random), for: UIControl.State.normal)
+                self.btn2Info.setTitle(self.seeker.rightAnswer(rando: random), for: UIControl.State.normal)
+                self.questionTTL.text = self.seeker.getQuestions(rando : random)
+            }
+            //4123
+            if order == 3 {
+                self.btn4Info.setTitle(self.seeker.getWrong1(rando: random), for: UIControl.State.normal)
+                self.btn1Info.setTitle(self.seeker.getWrong2(rando: random), for: UIControl.State.normal)
+                self.btn2Info.setTitle(self.seeker.getWrong3(rando: random), for: UIControl.State.normal)
+                self.btn3Info.setTitle(self.seeker.rightAnswer(rando: random), for: UIControl.State.normal)
+                self.questionTTL.text = self.seeker.getQuestions(rando : random)
+            }
+            //self.timerRunner()
         }
-        
+        count = 60
+        timerRunner()
     }
     @objc func updateTimer() {
         if(count >= 0) {
