@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var loginButtonInfo: UIButton!
     @IBOutlet weak var setupButtonInfo: UIButton!
+    @IBOutlet weak var guestButtonInfo: UIButton!
     
     @IBAction func loginButtonPressed(_ sender: Any) {
     }
@@ -24,7 +25,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         loginButtonInfo.layer.cornerRadius = 30
         setupButtonInfo.layer.cornerRadius = 30
-        titleLabel.text = "The Whapp App"
+        guestButtonInfo.layer.cornerRadius = 30
+        titleLabel.text = "WHAP Study Guide"
         
     }
 

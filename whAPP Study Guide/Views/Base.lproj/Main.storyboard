@@ -18,9 +18,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7d-WF-kPp">
-                                <rect key="frame" x="58.666666666666657" y="742.33333333333337" width="273" height="67.666666666666629"/>
+                                <rect key="frame" x="19.666666666666657" y="644.66666666666663" width="351" height="67.666666666666629"/>
                                 <color key="backgroundColor" name="otherColor"/>
-                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="tintColor" red="0.0" green="0.14117647059999999" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="SIGN UP">
                                     <color key="titleColor" name="backgroundColor"/>
@@ -32,9 +32,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAi-NY-jN4">
-                                <rect key="frame" x="58.666666666666657" y="645" width="273" height="67.333333333333371"/>
+                                <rect key="frame" x="19.666666666666657" y="547.33333333333337" width="351" height="67.333333333333371"/>
                                 <color key="backgroundColor" name="otherColor"/>
-                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="tintColor" red="0.0" green="0.14117647059999999" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" name="backgroundColor"/>
@@ -51,6 +51,17 @@
                                 <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNa-O0-lrx">
+                                <rect key="frame" x="19.666666666666657" y="742.33333333333337" width="351" height="67.666666666666629"/>
+                                <color key="backgroundColor" name="otherColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <state key="normal" title="LOGIN AS GUEST">
+                                    <color key="titleColor" name="backgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="J8K-25-EHg" kind="presentation" id="VCK-aU-iZp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="backgroundColor"/>
@@ -61,13 +72,18 @@
                             <constraint firstItem="3EO-RO-OA4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BKz-la-jNt"/>
                             <constraint firstItem="3EO-RO-OA4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ByG-Hg-pbz"/>
                             <constraint firstItem="i7d-WF-kPp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H15-7d-wya"/>
-                            <constraint firstItem="i7d-WF-kPp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="Tt4-1c-gec"/>
+                            <constraint firstItem="rNa-O0-lrx" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="NTd-eo-eVT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rNa-O0-lrx" secondAttribute="bottom" id="OTi-0L-Jrd"/>
+                            <constraint firstItem="i7d-WF-kPp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="Tt4-1c-gec"/>
                             <constraint firstItem="SAi-NY-jN4" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.08" id="WCv-Ho-L6E"/>
-                            <constraint firstItem="i7d-WF-kPp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bgu-cH-3aa"/>
-                            <constraint firstItem="SAi-NY-jN4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="h5t-22-ftT"/>
+                            <constraint firstItem="i7d-WF-kPp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-97.670000000000002" id="bgu-cH-3aa"/>
+                            <constraint firstItem="SAi-NY-jN4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="h5t-22-ftT"/>
+                            <constraint firstItem="rNa-O0-lrx" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.08" id="jon-r4-zM1"/>
+                            <constraint firstItem="rNa-O0-lrx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ybI-iJ-LyA"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="guestButtonInfo" destination="rNa-O0-lrx" id="bmZ-Zl-d5R"/>
                         <outlet property="loginButtonInfo" destination="SAi-NY-jN4" id="cJv-aq-Cws"/>
                         <outlet property="setupButtonInfo" destination="i7d-WF-kPp" id="b17-1m-4uQ"/>
                         <outlet property="titleLabel" destination="3EO-RO-OA4" id="laH-Ii-x4j"/>
@@ -151,7 +167,7 @@
                         <outlet property="goButtonPressed" destination="fdo-kW-ktg" id="Zq3-5P-H6l"/>
                         <outlet property="passwordTextField" destination="rOT-fX-k0g" id="PZE-eC-eS7"/>
                         <outlet property="titleLabel" destination="1a9-Xv-SW5" id="d2c-Pq-tyS"/>
-                        <segue destination="J8K-25-EHg" kind="show" identifier="RegisterToHome" id="RTD-vE-gOg"/>
+                        <segue destination="IPu-M6-Io5" kind="presentation" identifier="RegisterToHome" id="oG3-Uq-eFy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aEl-GS-cVg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -230,12 +246,31 @@
                         <outlet property="errorLabel" destination="dE3-k4-fHs" id="xer-Tz-Jbb"/>
                         <outlet property="passwordTextField" destination="fpU-hf-hP2" id="wxJ-Pt-kPa"/>
                         <outlet property="titleLabel" destination="hBR-JD-CVy" id="xlb-lT-WrD"/>
-                        <segue destination="J8K-25-EHg" kind="show" identifier="LoginToHome" id="QGb-PV-QT5"/>
+                        <segue destination="IPu-M6-Io5" kind="presentation" identifier="LoginToHome" id="LaC-hz-1Z8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abY-uQ-yV6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-675" y="-185"/>
+        </scene>
+        <!--Hub View Controller-->
+        <scene sceneID="UPc-Ub-g4m">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="IPu-M6-Io5" customClass="HubViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AFY-aJ-lWX">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aAB-Q1-AQY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="testImage" destination="yIZ-CO-aXA" id="Ikr-3Z-fJ0"/>
+                        <segue destination="J8K-25-EHg" kind="presentation" id="XTm-RA-0gI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ct-iq-Ze6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="533.84615384615381" y="637.67772511848341"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="Eos-zv-UJg">
@@ -245,8 +280,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIl-ft-Jjg">
-                                <rect key="frame" x="76" y="114" width="238" height="71.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIl-ft-Jjg">
+                                <rect key="frame" x="96.333333333333329" y="114" width="197.66666666666669" height="71.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -257,18 +292,26 @@
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgN-QC-fj0">
                                 <rect key="frame" x="58.666666666666657" y="692.33333333333337" width="273" height="67.666666666666629"/>
-                                <color key="backgroundColor" name="textColor"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Start">
-                                    <color key="titleColor" name="backgroundColor"/>
+                                    <color key="titleColor" name="textColor"/>
                                 </state>
                                 <connections>
                                     <action selector="startButtonPressed:" destination="J8K-25-EHg" eventType="touchUpInside" id="KXd-nY-l4B"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="wheel" translatesAutoresizingMaskIntoConstraints="NO" id="yIZ-CO-aXA">
+                                <rect key="frame" x="28" y="255" width="334" height="334"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="arrowtriangle.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wHe-pK-cBp">
+                                <rect key="frame" x="117" y="599.33333333333337" width="156" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yP7-jw-b3V"/>
-                        <color key="backgroundColor" name="brandColorGray"/>
+                        <color key="backgroundColor" name="otherColor"/>
                         <constraints>
                             <constraint firstItem="yP7-jw-b3V" firstAttribute="bottom" secondItem="bgN-QC-fj0" secondAttribute="bottom" constant="50" id="3s4-6b-lpK"/>
                             <constraint firstItem="eIl-ft-Jjg" firstAttribute="top" secondItem="yP7-jw-b3V" secondAttribute="top" constant="70" id="5fA-UC-Snw"/>
@@ -288,12 +331,13 @@
                     <connections>
                         <outlet property="picker" destination="QJ3-Nb-mLd" id="yd1-7d-Hxe"/>
                         <outlet property="titleLabel" destination="eIl-ft-Jjg" id="O2t-pl-JpT"/>
+                        <outlet property="wheelImage" destination="yIZ-CO-aXA" id="c8b-xi-Pbd"/>
                         <segue destination="jFc-27-FTr" kind="presentation" identifier="performSegueToGame" modalPresentationStyle="fullScreen" id="6LL-XJ-8bu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mUQ-vx-gcZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="400" y="102"/>
+            <point key="canvasLocation" x="535" y="-186"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="LqD-Hl-b4U">
@@ -413,7 +457,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41q-IS-xY0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1391" y="102"/>
+            <point key="canvasLocation" x="1735" y="206"/>
         </scene>
     </scenes>
     <designables>
@@ -422,14 +466,14 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="QGb-PV-QT5"/>
+        <segue reference="XTm-RA-0gI"/>
+        <segue reference="LaC-hz-1Z8"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="arrowtriangle.up.fill" catalog="system" width="128" height="124"/>
+        <image name="wheel" width="332.66665649414062" height="332.33334350585938"/>
         <namedColor name="backgroundColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="brandColorGray">
-            <color red="0.044817420407850306" green="0.52166541607240169" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="otherColor">
             <color red="0.074509803921568626" green="0.12156862745098039" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -437,6 +481,9 @@
         <namedColor name="textColor">
             <color red="0.074509803921568626" green="0.12549019607843137" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -20,6 +20,7 @@
 		01BEC60325886C8300DA9622 /* QuestionRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BEC60225886C8300DA9622 /* QuestionRunner.swift */; };
 		7991F5EAF9A58E47C2142B07 /* Pods_whAPP_Study_Guide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AC5ED7102F886A56D170CD /* Pods_whAPP_Study_Guide.framework */; };
 		BB22DE47259CE5CA009F8113 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB22DE46259CE5CA009F8113 /* GoogleService-Info.plist */; };
+		BB4173D7259E80FB00951B38 /* HubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4173D6259E80FB00951B38 /* HubViewController.swift */; };
 		BBD2E568259C42D000B4D2BC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2E567259C42D000B4D2BC /* LoginViewController.swift */; };
 		BBD2E56D259C431500B4D2BC /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2E56C259C431500B4D2BC /* SignupViewController.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		58F7A4565BABDAFECA8675DB /* Pods-whAPP Study Guide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whAPP Study Guide.release.xcconfig"; path = "Target Support Files/Pods-whAPP Study Guide/Pods-whAPP Study Guide.release.xcconfig"; sourceTree = "<group>"; };
 		7D672764055E4E70A6F300AE /* Pods-whAPP Study Guide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whAPP Study Guide.debug.xcconfig"; path = "Target Support Files/Pods-whAPP Study Guide/Pods-whAPP Study Guide.debug.xcconfig"; sourceTree = "<group>"; };
 		BB22DE46259CE5CA009F8113 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BB4173D6259E80FB00951B38 /* HubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubViewController.swift; sourceTree = "<group>"; };
 		BBD2E567259C42D000B4D2BC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BBD2E56C259C431500B4D2BC /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,6 +159,7 @@
 				BBD2E56C259C431500B4D2BC /* SignupViewController.swift */,
 				017043E62584874B005F4D42 /* SecondViewController.swift */,
 				017043F125871C49005F4D42 /* QuizViewController.swift */,
+				BB4173D6259E80FB00951B38 /* HubViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				017043B5258473E1005F4D42 /* ViewController.swift in Sources */,
 				01BEC60325886C8300DA9622 /* QuestionRunner.swift in Sources */,
 				017043B1258473E1005F4D42 /* AppDelegate.swift in Sources */,
+				BB4173D7259E80FB00951B38 /* HubViewController.swift in Sources */,
 				017043B3258473E1005F4D42 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
