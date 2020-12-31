@@ -158,8 +158,8 @@
 				BBD2E567259C42D000B4D2BC /* LoginViewController.swift */,
 				BBD2E56C259C431500B4D2BC /* SignupViewController.swift */,
 				017043E62584874B005F4D42 /* SecondViewController.swift */,
-				017043F125871C49005F4D42 /* QuizViewController.swift */,
 				BB4173D6259E80FB00951B38 /* HubViewController.swift */,
+				017043F125871C49005F4D42 /* QuizViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

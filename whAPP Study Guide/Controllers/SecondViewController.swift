@@ -37,7 +37,7 @@ class SecondViewController: UIViewController {
         }
     }
     func runTimer() {
-        stop = Int.random(in: 90...250)
+        stop = Int.random(in: 50...250)
         print(stop)
         _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
     }
