@@ -30,7 +30,6 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var questionTTL: UILabel!
     //Button pressed
     @IBAction func answer1Pressed(_ sender: Any) {
-        if let refresh = cato as? cat1 {
             if catNum == 1 {
                 let btnText = btn1Info.titleLabel!.text
                 let new = cat1()
@@ -78,19 +77,11 @@ class QuizViewController: UIViewController {
                     checkWrong1()
                 }
             }
-            rightNum = setButtons(numOfQues: refresh.questions.count)
-            count = 60
-            timerRunner()
-        }
-        else {
-            checkRight1()
             rightNum = setButtons(numOfQues: quesCount)
             count = 60
             timerRunner()
-        }
     }
     @IBAction func answer2Pressed(_ sender: Any) {
-        if let refresh = cato as? cat2 {
             if catNum == 1 {
                 let btnText = btn2Info.titleLabel!.text
                 let new = cat1()
@@ -138,19 +129,11 @@ class QuizViewController: UIViewController {
                     checkWong2()
                 }
             }
-            rightNum = setButtons(numOfQues: refresh.questions.count)
-            count = 60
-            timerRunner()
-        }
-        else {
-            checkRight2()
             rightNum = setButtons(numOfQues: quesCount)
             count = 60
             timerRunner()
         }
-    }
     @IBAction func answer3Pressed(_ sender: Any) {
-        if let refresh = cato as? cat3 {
             if catNum == 1 {
                 let btnText = btn3Info.titleLabel!.text
                 let new = cat1()
@@ -198,19 +181,11 @@ class QuizViewController: UIViewController {
                     checkWrong3()
                 }
             }
-            rightNum = setButtons(numOfQues: refresh.questions.count)
-            count = 60
-            timerRunner()
-        }
-        else {
-            checkRight3()
             rightNum = setButtons(numOfQues: quesCount)
             count = 60
             timerRunner()
         }
-    }
     @IBAction func answer4Pressed(_ sender: Any) {
-        if let refresh = cato as? cat4 {
             if catNum == 1 {
                 let btnText = btn4Info.titleLabel!.text
                 let new = cat1()
@@ -258,16 +233,9 @@ class QuizViewController: UIViewController {
                     checkWrong4()
                 }
             }
-            rightNum = setButtons(numOfQues: refresh.questions.count)
-            count = 60
-            timerRunner()
-        }
-        else {
-            checkRight3()
             rightNum = setButtons(numOfQues: quesCount)
             count = 60
             timerRunner()
-        }
     }
     
     
@@ -393,7 +361,7 @@ class QuizViewController: UIViewController {
             
         })
     }
-
+    
     //btn4 right
     func  checkRight4() {
         btn4Info.backgroundColor = .green
