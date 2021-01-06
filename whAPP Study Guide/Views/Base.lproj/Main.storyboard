@@ -397,14 +397,14 @@
                                     <action selector="answer4Pressed:" destination="jFc-27-FTr" eventType="touchUpInside" id="teN-vw-SYg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKg-5q-j3b">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKg-5q-j3b">
                                 <rect key="frame" x="20" y="59" width="97" height="47"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGw-4Z-C3c">
-                                <rect key="frame" x="262" y="59" width="108" height="47"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGw-4Z-C3c">
+                                <rect key="frame" x="215.66666666666663" y="59" width="154.33333333333337" height="47"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -430,7 +430,6 @@
                             <constraint firstItem="5xv-hJ-MFi" firstAttribute="centerX" secondItem="wql-aV-jaU" secondAttribute="centerX" id="YTk-lS-lIo"/>
                             <constraint firstItem="jKg-5q-j3b" firstAttribute="leading" secondItem="IIs-ad-HJ9" secondAttribute="leading" constant="20" id="bXE-tY-dvZ"/>
                             <constraint firstItem="IIs-ad-HJ9" firstAttribute="trailing" secondItem="e6H-NJ-OvT" secondAttribute="trailing" id="k6l-cH-Nuf"/>
-                            <constraint firstItem="lGw-4Z-C3c" firstAttribute="leading" secondItem="jKg-5q-j3b" secondAttribute="trailing" constant="145" id="ljd-db-kD1"/>
                             <constraint firstItem="XoV-us-7qu" firstAttribute="centerX" secondItem="wql-aV-jaU" secondAttribute="centerX" id="oIo-CV-Xpy"/>
                             <constraint firstItem="XoV-us-7qu" firstAttribute="top" secondItem="5xv-hJ-MFi" secondAttribute="bottom" constant="50" id="ogg-9I-qwz"/>
                             <constraint firstItem="nSn-l9-ofl" firstAttribute="height" secondItem="wql-aV-jaU" secondAttribute="height" multiplier="0.07" id="rLU-28-efe"/>

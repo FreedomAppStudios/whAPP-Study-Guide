@@ -272,6 +272,7 @@ class QuizViewController: UIViewController {
     //btn1 correct
     func  checkRight1() {
         btn1Info.backgroundColor = .green
+        updateScore()
         perform(#selector(self.correct1), with: nil, afterDelay: 2)
     }
     @objc func correct1() {
@@ -305,6 +306,7 @@ class QuizViewController: UIViewController {
     //btn2 right
     func  checkRight2() {
         btn2Info.backgroundColor = .green
+        updateScore()
         perform(#selector(self.correct2), with: nil, afterDelay: 2)
     }
     @objc func correct2() {
@@ -334,7 +336,8 @@ class QuizViewController: UIViewController {
     
     //btn3 right
     func  checkRight3() {
-        btn3Info.backgroundColor = .red
+        btn3Info.backgroundColor = .green
+        updateScore()
         perform(#selector(self.correct3), with: nil, afterDelay: 2)
     }
     @objc func correct3() {
@@ -350,7 +353,7 @@ class QuizViewController: UIViewController {
     //btn3 wrong
     func  checkWrong3() {
         btn3Info.backgroundColor = .red
-        perform(#selector(self.correct3), with: nil, afterDelay: 2)
+        perform(#selector(self.wrong3), with: nil, afterDelay: 2)
     }
     @objc func wrong3() {
         animateBackgroundColor3Wrong(to: .blue)
@@ -365,6 +368,7 @@ class QuizViewController: UIViewController {
     //btn4 right
     func  checkRight4() {
         btn4Info.backgroundColor = .green
+        updateScore()
         perform(#selector(self.correct4), with: nil, afterDelay: 2)
     }
     @objc func correct4() {
@@ -378,10 +382,10 @@ class QuizViewController: UIViewController {
     }
     //btn4 wrong
     func  checkWrong4() {
-        btn4Info.backgroundColor = .green
-        perform(#selector(self.correct4), with: nil, afterDelay: 2)
+        btn4Info.backgroundColor = .red
+        perform(#selector(self.wrong4), with: nil, afterDelay: 2)
     }
-    @objc func wrongt4() {
+    @objc func wrong4() {
         animateBackgroundColor4wrong(to: .blue)
     }
     fileprivate func animateBackgroundColor4wrong(to color: UIColor) {
@@ -582,7 +586,11 @@ class QuizViewController: UIViewController {
         timerTest?.invalidate()
         timerTest = nil
     }
-    
+    func updateScore() {
+        score = score + 1
+        let strScore = String(score)
+        scoreCountLBL.text = "Score: " + strScore
+    }
     
 }
 
