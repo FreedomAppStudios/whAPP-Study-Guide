@@ -10,42 +10,66 @@ import UIKit
 class SecondViewController: UIViewController {
     
     let catos = ["Option 1", "Option 2","Option 3", "Option 4"]
-    var chosen = "NA"
-    var stop = 0
-    @IBOutlet weak var wheelImage: UIImageView!
+    var chosen = 0
     var count = 0.0
+    var stop = 0
+    let wheels = [104,30,50,40]
+    var holder = 0
+    var classy : Any = cat1()
+    @IBOutlet weak var wheelImage: UIImageView!
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet var picker: UIPickerView!
     @IBAction func startButtonPressed(_ sender: Any) {
-        titleLabel.text = catos[picker.selectedRow(inComponent: 0)]
-        chosen = titleLabel.text!
         performSegue(withIdentifier: "performSegueToGame", sender: self)
+        //performSegue(withIdentifier: "performSegueToGame", sender: self)
     }
     override func viewDidLoad() {
         //picker.dataSource = self
         //picker.delegate = self
         //picker.setValue(UIColor.white, forKey: "textColor")
-        runTimer()
+        let intCat = runTimer()
+        chosen = intCat + 1
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "performSegueToGame" {
+            if chosen == 1 {
+            classy = cat1()
+            }
+            else if chosen == 2 {
+            classy = cat2()
+            }
+            else if chosen == 3 {
+            classy = cat3()
+            }
+            else {
+            classy = cat4()
+            }
             let destinationVC = segue.destination as! QuizViewController
-            let stringVers = chosen
-            destinationVC.cato = stringVers
+            destinationVC.cato = classy
+            destinationVC.catNum = chosen
             //}
             
         }
     }
-    func runTimer() {
-        stop = Int.random(in: 50...250)
-        print(stop)
+    func runTimer() -> Int {
+        count = 0.0
+        stop = Int.random(in: 0...3)
+        holder = wheels[stop]
+        print(stop + 1)
+        print(holder)
+        print("Run!!!")
         _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
+        return stop
     }
     @objc func fireTimer() {
-        if stop > 0{
+        //var holder = wheels[stop]
+        //var holder = 25
+        if holder > 0{
+            print(holder)
             wheelImage.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi / count))
             count = count + 0.01
-            stop-=1
+            holder-=1
         }
     }
 }
