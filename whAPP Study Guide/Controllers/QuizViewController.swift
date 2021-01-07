@@ -6,8 +6,6 @@
 import UIKit
 
 
-
-
 class QuizViewController: UIViewController {
     
     var cato : Any? = nil
@@ -397,6 +395,7 @@ class QuizViewController: UIViewController {
     //sets button text
     func setButtons(numOfQues : Int) -> Int {
         stopTimer()
+        countDownLBL.textColor = .black
         let random = Int.random(in: 0...quesCount)
         let secondsToDelay = 1.5
         DispatchQueue.main.asyncAfter(deadline: .now() + secondsToDelay) {
@@ -566,11 +565,10 @@ class QuizViewController: UIViewController {
             }
         }
         if count == -1 {
-            checkRight4()
+            findRight()
             if let refresh = cato as? cat1 {
                 rightNum = setButtons(numOfQues: refresh.questions.count)
             }
-            count = count - 1
             countDownLBL.textColor = .black
         }
     }
@@ -585,12 +583,128 @@ class QuizViewController: UIViewController {
     func stopTimer() {
         timerTest?.invalidate()
         timerTest = nil
+        findRight()
     }
     func updateScore() {
         score = score + 1
         let strScore = String(score)
         scoreCountLBL.text = "Score: " + strScore
     }
-    
+    func findRight() {
+        if catNum == 1 {
+            //Button 1
+            let btnText = btn1Info.titleLabel!.text
+            let new = cat1()
+            let right = new.rightAnswer(rando : rightNum)
+            let isEqual = (right == btnText)
+            if isEqual == true {
+                checkRight1()
+            }
+            //Button 2
+            let btnText2 = btn2Info.titleLabel!.text
+            let isEqual2 = (right == btnText2)
+            if isEqual2 == true {
+                checkRight2()
+            }
+            //Button 3
+            let btnText3 = btn3Info.titleLabel!.text
+            let isEqual3 = (right == btnText3)
+            if isEqual3 == true {
+                checkRight3()
+            }
+            //Button 4
+            let btnText4 = btn4Info.titleLabel!.text
+            let isEqual4 = (right == btnText4)
+            if isEqual4 == true {
+                checkRight4()
+            }
+        }
+        if catNum == 2 {
+            //Button 1
+            let btnText = btn1Info.titleLabel!.text
+            let new = cat2()
+            let right = new.rightAnswer(rando : rightNum)
+            let isEqual = (right == btnText)
+            if isEqual == true {
+                checkRight1()
+            }
+            //Button 2
+            let btnText2 = btn2Info.titleLabel!.text
+            let isEqual2 = (right == btnText2)
+            if isEqual2 == true {
+                checkRight2()
+            }
+            //Button 3
+            let btnText3 = btn3Info.titleLabel!.text
+            let isEqual3 = (right == btnText3)
+            if isEqual3 == true {
+                checkRight3()
+            }
+            //Button 4
+            let btnText4 = btn4Info.titleLabel!.text
+            let isEqual4 = (right == btnText4)
+            if isEqual4 == true {
+                checkRight4()
+            }
+        }
+        if catNum == 3 {
+            //Button 1
+            let btnText = btn1Info.titleLabel!.text
+            let new = cat3()
+            let right = new.rightAnswer(rando : rightNum)
+            let isEqual = (right == btnText)
+            if isEqual == true {
+                checkRight1()
+            }
+            //Button 2
+            let btnText2 = btn2Info.titleLabel!.text
+            let isEqual2 = (right == btnText2)
+            if isEqual2 == true {
+                checkRight2()
+            }
+            //Button 3
+            let btnText3 = btn3Info.titleLabel!.text
+            let isEqual3 = (right == btnText3)
+            if isEqual3 == true {
+                checkRight3()
+            }
+            //Button 4
+            let btnText4 = btn4Info.titleLabel!.text
+            let isEqual4 = (right == btnText4)
+            if isEqual4 == true {
+                checkRight4()
+            }
+        }
+        if catNum == 4 {
+            //Button 1
+            let btnText = btn1Info.titleLabel!.text
+            let new = cat4()
+            let right = new.rightAnswer(rando : rightNum)
+            let isEqual = (right == btnText)
+            if isEqual == true {
+                checkRight1()
+            }
+            //Button 2
+            let btnText2 = btn2Info.titleLabel!.text
+            let isEqual2 = (right == btnText2)
+            if isEqual2 == true {
+                checkRight2()
+            }
+            //Button 3
+            let btnText3 = btn3Info.titleLabel!.text
+            let isEqual3 = (right == btnText3)
+            if isEqual3 == true {
+                checkRight3()
+            }
+            //Button 4
+            let btnText4 = btn4Info.titleLabel!.text
+            let isEqual4 = (right == btnText4)
+            if isEqual4 == true {
+                checkRight4()
+            }
+        }
+        count = 60
+        score = score - 1
+    }
 }
 
