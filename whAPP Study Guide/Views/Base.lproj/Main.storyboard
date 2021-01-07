@@ -354,7 +354,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hWd-Fp-6Fy">
-                                <rect key="frame" x="19.666666666666657" y="381" width="351" height="59"/>
+                                <rect key="frame" x="19.666666666666657" y="383.66666666666669" width="351" height="59"/>
                                 <color key="backgroundColor" name="otherColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Loading...">
@@ -365,7 +365,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nSn-l9-ofl">
-                                <rect key="frame" x="19.666666666666657" y="490" width="351" height="59"/>
+                                <rect key="frame" x="19.666666666666657" y="492.66666666666669" width="351" height="59.333333333333314"/>
                                 <color key="backgroundColor" name="otherColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Loading...">
@@ -376,7 +376,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5xv-hJ-MFi">
-                                <rect key="frame" x="19.666666666666657" y="599" width="351" height="59.333333333333371"/>
+                                <rect key="frame" x="19.666666666666657" y="602" width="351" height="59"/>
                                 <color key="backgroundColor" name="otherColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Loading...">
@@ -387,7 +387,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="XoV-us-7qu">
-                                <rect key="frame" x="19.666666666666657" y="708.33333333333337" width="351" height="59"/>
+                                <rect key="frame" x="19.666666666666657" y="711" width="351" height="59"/>
                                 <color key="backgroundColor" name="otherColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Loading...">
@@ -413,7 +413,6 @@
                         <viewLayoutGuide key="safeArea" id="IIs-ad-HJ9"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hWd-Fp-6Fy" firstAttribute="top" secondItem="e6H-NJ-OvT" secondAttribute="bottom" constant="210" id="7L8-3a-lsV"/>
                             <constraint firstItem="XoV-us-7qu" firstAttribute="width" secondItem="wql-aV-jaU" secondAttribute="width" multiplier="0.9" id="BgG-dd-jMd"/>
                             <constraint firstItem="XoV-us-7qu" firstAttribute="height" secondItem="wql-aV-jaU" secondAttribute="height" multiplier="0.07" id="DRV-IV-CjF"/>
                             <constraint firstItem="nSn-l9-ofl" firstAttribute="centerX" secondItem="wql-aV-jaU" secondAttribute="centerX" id="HDg-22-VWT"/>
@@ -423,6 +422,7 @@
                             <constraint firstItem="hWd-Fp-6Fy" firstAttribute="height" secondItem="wql-aV-jaU" secondAttribute="height" multiplier="0.07" id="OVY-sn-fsm"/>
                             <constraint firstItem="hWd-Fp-6Fy" firstAttribute="centerX" secondItem="wql-aV-jaU" secondAttribute="centerX" id="QWR-PP-KPx"/>
                             <constraint firstItem="5xv-hJ-MFi" firstAttribute="top" secondItem="nSn-l9-ofl" secondAttribute="bottom" constant="50" id="RwI-rK-Wsk"/>
+                            <constraint firstItem="IIs-ad-HJ9" firstAttribute="bottom" secondItem="XoV-us-7qu" secondAttribute="bottom" constant="40" id="SND-k9-eCY"/>
                             <constraint firstItem="nSn-l9-ofl" firstAttribute="width" secondItem="wql-aV-jaU" secondAttribute="width" multiplier="0.9" id="T9A-gb-sgd"/>
                             <constraint firstItem="IIs-ad-HJ9" firstAttribute="trailing" secondItem="lGw-4Z-C3c" secondAttribute="trailing" constant="20" id="Twj-MI-6dG"/>
                             <constraint firstItem="lGw-4Z-C3c" firstAttribute="top" secondItem="IIs-ad-HJ9" secondAttribute="top" constant="15" id="Vc4-ef-8WI"/>
