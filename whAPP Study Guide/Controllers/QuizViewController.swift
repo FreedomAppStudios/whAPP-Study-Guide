@@ -4,8 +4,7 @@
 
 import UIKit
 
-
-class QuizViewController: UIViewController {
+class QuizViewController :UIViewController {
     
     var cato : Any? = nil
     var catNum = 0
@@ -285,7 +284,7 @@ class QuizViewController: UIViewController {
         btn4Info.backgroundColor = .white
         
         //Setting button text
-            _ = setButtons(numOfQues: quesCount)
+            rightNum = setButtons(numOfQues: quesCount)
         
         
         
