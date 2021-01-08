@@ -37,6 +37,7 @@ class QuizViewController: UIViewController {
                 }
                 else {
                     checkWrong1()
+                    findRight()
                 }
             }
             else if catNum == 2 {
@@ -49,6 +50,7 @@ class QuizViewController: UIViewController {
                 }
                 else {
                     checkWrong1()
+                    findRight()
                 }
             }
             else if catNum == 3 {
@@ -61,6 +63,7 @@ class QuizViewController: UIViewController {
                 }
                 else {
                     checkWrong1()
+                    findRight()
                 }
             } else {
                 let btnText = btn1Info.titleLabel!.text
@@ -72,6 +75,7 @@ class QuizViewController: UIViewController {
                 }
                 else {
                     checkWrong1()
+                    findRight()
                 }
             }
             rightNum = setButtons(numOfQues: quesCount)
@@ -89,6 +93,7 @@ class QuizViewController: UIViewController {
                 }
                 else {
                     checkWong2()
+                    findRight()
                 }
             }
             else if catNum == 2 {
@@ -101,6 +106,7 @@ class QuizViewController: UIViewController {
                 }
                 else {
                     checkWong2()
+                    findRight()
                 }
             }
             else if catNum == 3 {
@@ -113,6 +119,7 @@ class QuizViewController: UIViewController {
                 }
                 else {
                     checkWong2()
+                    findRight()
                 }
             } else {
                 let btnText = btn2Info.titleLabel!.text
@@ -124,6 +131,7 @@ class QuizViewController: UIViewController {
                 }
                 else {
                     checkWong2()
+                    findRight()
                 }
             }
             rightNum = setButtons(numOfQues: quesCount)
@@ -141,6 +149,7 @@ class QuizViewController: UIViewController {
                 }
                 else {
                     checkWrong3()
+                    findRight()
                 }
             }
             else if catNum == 2 {
@@ -153,6 +162,7 @@ class QuizViewController: UIViewController {
                 }
                 else {
                     checkWrong3()
+                    findRight()
                 }
             }
             else if catNum == 3 {
@@ -165,6 +175,7 @@ class QuizViewController: UIViewController {
                 }
                 else {
                     checkWrong3()
+                    findRight()
                 }
             } else {
                 let btnText = btn3Info.titleLabel!.text
@@ -176,6 +187,7 @@ class QuizViewController: UIViewController {
                 }
                 else {
                     checkWrong3()
+                    findRight()
                 }
             }
             rightNum = setButtons(numOfQues: quesCount)
@@ -193,6 +205,7 @@ class QuizViewController: UIViewController {
                 }
                 else {
                     checkWrong4()
+                    findRight()
                 }
             }
             else if catNum == 2 {
@@ -205,6 +218,7 @@ class QuizViewController: UIViewController {
                 }
                 else {
                     checkWrong4()
+                    findRight()
                 }
             }
             else if catNum == 3 {
@@ -217,6 +231,7 @@ class QuizViewController: UIViewController {
                 }
                 else {
                     checkWrong4()
+                    findRight()
                 }
             } else {
                 let btnText = btn4Info.titleLabel!.text
@@ -228,6 +243,7 @@ class QuizViewController: UIViewController {
                 }
                 else {
                     checkWrong4()
+                    findRight()
                 }
             }
             rightNum = setButtons(numOfQues: quesCount)
@@ -247,18 +263,13 @@ class QuizViewController: UIViewController {
         btn2Info.layer.cornerRadius = 25
         btn3Info.layer.cornerRadius = 25
         btn4Info.layer.cornerRadius = 25
-        btn1Info.backgroundColor = .blue
-        btn2Info.backgroundColor = .blue
-        btn3Info.backgroundColor = .blue
-        btn4Info.backgroundColor = .blue
+        btn1Info.backgroundColor = .white
+        btn2Info.backgroundColor = .white
+        btn3Info.backgroundColor = .white
+        btn4Info.backgroundColor = .white
         
         //Setting button text
-        if let refresh = cato as? cat1 {
-            _ = setButtons(numOfQues: refresh.questions.count)
-        }
-        else {
-            _ = setButtons(numOfQues: 4)
-        }
+            _ = setButtons(numOfQues: quesCount)
         
         
         
@@ -273,7 +284,7 @@ class QuizViewController: UIViewController {
         perform(#selector(self.correct1), with: nil, afterDelay: 2)
     }
     @objc func correct1() {
-        animateBackgroundColorRight(to: .blue)
+        animateBackgroundColorRight(to: .white)
     }
     fileprivate func animateBackgroundColorRight(to color: UIColor) {
         UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
@@ -287,7 +298,7 @@ class QuizViewController: UIViewController {
         perform(#selector(self.correct1), with: nil, afterDelay: 2)
     }
     @objc func wrong1() {
-        animateBackgroundColorWrong(to: .blue)
+        animateBackgroundColorWrong(to: .white)
     }
     
     fileprivate func animateBackgroundColorWrong(to color: UIColor) {
@@ -307,7 +318,7 @@ class QuizViewController: UIViewController {
         perform(#selector(self.correct2), with: nil, afterDelay: 2)
     }
     @objc func correct2() {
-        animateBackgroundColor2Right(to: .blue)
+        animateBackgroundColor2Right(to: .white)
     }
     fileprivate func animateBackgroundColor2Right(to color: UIColor) {
         UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
@@ -321,7 +332,7 @@ class QuizViewController: UIViewController {
         perform(#selector(self.correct2), with: nil, afterDelay: 2)
     }
     @objc func wrong2() {
-        animateBackgroundColor2Wrong(to: .blue)
+        animateBackgroundColor2Wrong(to: .white)
     }
     fileprivate func animateBackgroundColor2Wrong(to color: UIColor) {
         UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
@@ -338,7 +349,7 @@ class QuizViewController: UIViewController {
         perform(#selector(self.correct3), with: nil, afterDelay: 2)
     }
     @objc func correct3() {
-        animateBackgroundColor3(to: .blue)
+        animateBackgroundColor3(to: .white)
     }
     fileprivate func animateBackgroundColor3(to color: UIColor) {
         UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
@@ -353,7 +364,7 @@ class QuizViewController: UIViewController {
         perform(#selector(self.wrong3), with: nil, afterDelay: 2)
     }
     @objc func wrong3() {
-        animateBackgroundColor3Wrong(to: .blue)
+        animateBackgroundColor3Wrong(to: .white)
     }
     fileprivate func animateBackgroundColor3Wrong(to color: UIColor) {
         UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
@@ -369,7 +380,7 @@ class QuizViewController: UIViewController {
         perform(#selector(self.correct4), with: nil, afterDelay: 2)
     }
     @objc func correct4() {
-        animateBackgroundColor4(to: .blue)
+        animateBackgroundColor4(to: .white)
     }
     fileprivate func animateBackgroundColor4(to color: UIColor) {
         UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
@@ -383,7 +394,7 @@ class QuizViewController: UIViewController {
         perform(#selector(self.wrong4), with: nil, afterDelay: 2)
     }
     @objc func wrong4() {
-        animateBackgroundColor4wrong(to: .blue)
+        animateBackgroundColor4wrong(to: .white)
     }
     fileprivate func animateBackgroundColor4wrong(to color: UIColor) {
         UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
@@ -394,7 +405,7 @@ class QuizViewController: UIViewController {
     //sets button text
     func setButtons(numOfQues : Int) -> Int {
         stopTimer()
-        countDownLBL.textColor = .black
+        countDownLBL.textColor = .white
         let random = Int.random(in: 0...quesCount)
         let secondsToDelay = 1.5
         DispatchQueue.main.asyncAfter(deadline: .now() + secondsToDelay) {
@@ -568,7 +579,7 @@ class QuizViewController: UIViewController {
             if let refresh = cato as? cat1 {
                 rightNum = setButtons(numOfQues: refresh.questions.count)
             }
-            countDownLBL.textColor = .black
+            countDownLBL.textColor = .white
         }
     }
     func timerRunner() {
@@ -703,7 +714,6 @@ class QuizViewController: UIViewController {
             }
         }
         count = 60
-        score = score - 1
     }
 }
 
