@@ -34,6 +34,7 @@ class QuizViewController: UIViewController {
                 let isEqual = (right == btnText)
                 if isEqual == true {
                     checkRight1()
+                    updateScore()
                 }
                 else {
                     checkWrong1()
@@ -47,6 +48,7 @@ class QuizViewController: UIViewController {
                 let isEqual = (right == btnText)
                 if isEqual == true {
                     checkRight1()
+                    updateScore()
                 }
                 else {
                     checkWrong1()
@@ -60,6 +62,7 @@ class QuizViewController: UIViewController {
                 let isEqual = (right == btnText)
                 if isEqual == true {
                     checkRight1()
+                    updateScore()
                 }
                 else {
                     checkWrong1()
@@ -72,6 +75,7 @@ class QuizViewController: UIViewController {
                 let isEqual = (right == btnText)
                 if isEqual == true {
                     checkRight1()
+                    updateScore()
                 }
                 else {
                     checkWrong1()
@@ -90,6 +94,7 @@ class QuizViewController: UIViewController {
                 let isEqual = (right == btnText)
                 if isEqual == true {
                     checkRight2()
+                    updateScore()
                 }
                 else {
                     checkWong2()
@@ -103,6 +108,7 @@ class QuizViewController: UIViewController {
                 let isEqual = (right == btnText)
                 if isEqual == true {
                     checkRight2()
+                    updateScore()
                 }
                 else {
                     checkWong2()
@@ -116,6 +122,7 @@ class QuizViewController: UIViewController {
                 let isEqual = (right == btnText)
                 if isEqual == true {
                     checkRight2()
+                    updateScore()
                 }
                 else {
                     checkWong2()
@@ -128,6 +135,7 @@ class QuizViewController: UIViewController {
                 let isEqual = (right == btnText)
                 if isEqual == true {
                     checkRight2()
+                    updateScore()
                 }
                 else {
                     checkWong2()
@@ -146,6 +154,7 @@ class QuizViewController: UIViewController {
                 let isEqual = (right == btnText)
                 if isEqual == true {
                     checkRight3()
+                    updateScore()
                 }
                 else {
                     checkWrong3()
@@ -159,6 +168,7 @@ class QuizViewController: UIViewController {
                 let isEqual = (right == btnText)
                 if isEqual == true {
                     checkRight3()
+                    updateScore()
                 }
                 else {
                     checkWrong3()
@@ -172,6 +182,7 @@ class QuizViewController: UIViewController {
                 let isEqual = (right == btnText)
                 if isEqual == true {
                     checkRight3()
+                    updateScore()
                 }
                 else {
                     checkWrong3()
@@ -184,6 +195,7 @@ class QuizViewController: UIViewController {
                 let isEqual = (right == btnText)
                 if isEqual == true {
                     checkRight3()
+                    updateScore()
                 }
                 else {
                     checkWrong3()
@@ -202,6 +214,7 @@ class QuizViewController: UIViewController {
                 let isEqual = (right == btnText)
                 if isEqual == true {
                     checkRight4()
+                    updateScore()
                 }
                 else {
                     checkWrong4()
@@ -215,6 +228,7 @@ class QuizViewController: UIViewController {
                 let isEqual = (right == btnText)
                 if isEqual == true {
                     checkRight4()
+                    updateScore()
                 }
                 else {
                     checkWrong4()
@@ -228,6 +242,7 @@ class QuizViewController: UIViewController {
                 let isEqual = (right == btnText)
                 if isEqual == true {
                     checkRight4()
+                    updateScore()
                 }
                 else {
                     checkWrong4()
@@ -240,6 +255,7 @@ class QuizViewController: UIViewController {
                 let isEqual = (right == btnText)
                 if isEqual == true {
                     checkRight4()
+                    updateScore()
                 }
                 else {
                     checkWrong4()
@@ -280,7 +296,6 @@ class QuizViewController: UIViewController {
     //btn1 correct
     func  checkRight1() {
         btn1Info.backgroundColor = .green
-        updateScore()
         perform(#selector(self.correct1), with: nil, afterDelay: 2)
     }
     @objc func correct1() {
@@ -314,7 +329,6 @@ class QuizViewController: UIViewController {
     //btn2 right
     func  checkRight2() {
         btn2Info.backgroundColor = .green
-        updateScore()
         perform(#selector(self.correct2), with: nil, afterDelay: 2)
     }
     @objc func correct2() {
@@ -345,7 +359,6 @@ class QuizViewController: UIViewController {
     //btn3 right
     func  checkRight3() {
         btn3Info.backgroundColor = .green
-        updateScore()
         perform(#selector(self.correct3), with: nil, afterDelay: 2)
     }
     @objc func correct3() {
@@ -376,7 +389,6 @@ class QuizViewController: UIViewController {
     //btn4 right
     func  checkRight4() {
         btn4Info.backgroundColor = .green
-        updateScore()
         perform(#selector(self.correct4), with: nil, afterDelay: 2)
     }
     @objc func correct4() {
