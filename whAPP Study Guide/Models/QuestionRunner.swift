@@ -36,7 +36,7 @@ import Foundation
 struct cat2 {
     let questions = ["When did man land on the moon?","Who was the first man to land on the moon?", "How far away is the moon?", "What was the first country in space?"]
     //possible responses
-    let wrongAnswer1 = ["1965", "Fred Haise", "432,732","United States"]
+    let wrongAnswer1 = ["1965", "Fred Haise", "432,732 mi","United States"]
     let wrongAnswer2 = ["1988", "Buzz Aldrin", "7000 ft","Cuba"]
     let wrongAnswer3 = ["1971", "Eugene Cernan", "1,531,752 mi", "China"]
     //correct answer
