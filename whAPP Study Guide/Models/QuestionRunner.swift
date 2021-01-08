@@ -3,7 +3,7 @@
 //  whAPP Study Guide
 //
 //  Created by Nicholas Morris on 12/14/20.
-//
+// Ryan Virkar
 
 import Foundation
  struct cat1 {
