@@ -17,8 +17,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var guestButtonInfo: UIButton!
     
     @IBAction func loginButtonPressed(_ sender: Any) {
+        navigationController!.isNavigationBarHidden = false
     }
     @IBAction func setupButtonPressed(_ sender: Any) {
+        navigationController!.isNavigationBarHidden = false
+    }
+    @IBAction func guestButtonPressed(_ sender: Any) {
+        navigationController!.isNavigationBarHidden = false
     }
     
     override func viewDidLoad() {
@@ -27,6 +32,7 @@ class ViewController: UIViewController {
         setupButtonInfo.layer.cornerRadius = 30
         guestButtonInfo.layer.cornerRadius = 30
         titleLabel.text = "WHAP Study Guide"
+        navigationController!.isNavigationBarHidden = true
         
     }
 
