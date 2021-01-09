@@ -56,7 +56,7 @@
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="LOGIN AS GUEST">
-                                    <color key="titleColor" name="textColor"/>
+                                    <color key="titleColor" name="backgroundColor1"/>
                                 </state>
                                 <connections>
                                     <action selector="guestButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tHP-WS-5h5"/>
@@ -277,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ct-iq-Ze6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1463.0769230769231" y="637.67772511848341"/>
+            <point key="canvasLocation" x="1463" y="638"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="Eos-zv-UJg">
@@ -299,14 +299,14 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="wheel" translatesAutoresizingMaskIntoConstraints="NO" id="yIZ-CO-aXA">
-                                <rect key="frame" x="28.666666666666657" y="211.99999999999997" width="332.66666666666674" height="332.33333333333326"/>
+                                <rect key="frame" x="28.666666666666657" y="211.66666666666669" width="333" height="333.00000000000006"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="arrowtriangle.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wHe-pK-cBp">
-                                <rect key="frame" x="58.666666666666657" y="554.66666666666674" width="273" height="51.666666666666629"/>
+                                <rect key="frame" x="58.666666666666657" y="555" width="273" height="51.333333333333371"/>
                                 <color key="tintColor" name="backgroundColor"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJv-3B-h1H">
-                                <rect key="frame" x="78" y="68" width="234" height="84"/>
+                                <rect key="frame" x="78" y="67.666666666666657" width="234" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <state key="normal" title="Spin!">
                                     <color key="titleColor" name="backgroundColor"/>
@@ -459,7 +459,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41q-IS-xY0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2663.0769230769229" y="205.45023696682463"/>
+            <point key="canvasLocation" x="2671" y="102"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ge1-3E-Cct">
@@ -495,7 +495,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowtriangle.up.fill" catalog="system" width="128" height="124"/>
-        <image name="wheel" width="332.66665649414062" height="332.33334350585938"/>
+        <image name="wheel" width="333" height="333"/>
         <namedColor name="backgroundColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
