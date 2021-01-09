@@ -15,20 +15,22 @@ class SecondViewController: UIViewController {
     var stop = 0
     let wheels = [104,30,50,40]
     var holder = 0
+    var intCat = 0
     var classy : Any = cat1()
     @IBOutlet weak var wheelImage: UIImageView!
     
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet var picker: UIPickerView!
+    @IBAction func spinButtonPressed(_ sender: Any) {
+        intCat = runTimer()
+        chosen = intCat + 1
+    }
     @IBAction func startButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "performSegueToGame", sender: self)
-        //performSegue(withIdentifier: "performSegueToGame", sender: self)
     }
     override func viewDidLoad() {
         //picker.dataSource = self
         //picker.delegate = self
         //picker.setValue(UIColor.white, forKey: "textColor")
-        let intCat = runTimer()
+        intCat = runTimer()
         chosen = intCat + 1
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
