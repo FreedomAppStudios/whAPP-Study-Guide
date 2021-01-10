@@ -65,7 +65,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" name="backgroundColor1"/>
+                        <color key="backgroundColor" red="0.054901960780000002" green="0.28627450980000002" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="i7d-WF-kPp" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.08" id="2Bq-b7-XKO"/>
                             <constraint firstItem="i7d-WF-kPp" firstAttribute="top" secondItem="SAi-NY-jN4" secondAttribute="bottom" constant="30" id="6N1-aL-JfK"/>
@@ -188,20 +188,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B9S-SV-LUs">
-                                <rect key="frame" x="58.666666666666657" y="150" width="273" height="37.666666666666657"/>
+                                <rect key="frame" x="58.666666666666657" y="150" width="273" height="34"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <color key="textColor" name="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fpU-hf-hP2">
-                                <rect key="frame" x="58.666666666666657" y="247.66666666666669" width="273" height="38"/>
+                                <rect key="frame" x="58.666666666666657" y="244" width="273" height="34"/>
                                 <color key="textColor" name="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFO-r0-tqM">
-                                <rect key="frame" x="58.666666666666657" y="330.66666666666669" width="273" height="60.333333333333314"/>
+                                <rect key="frame" x="58.666666666666657" y="323" width="273" height="54.333333333333314"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Go">
@@ -225,7 +225,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P1f-Ph-oP5"/>
-                        <color key="backgroundColor" name="otherColor"/>
+                        <color key="backgroundColor" red="0.16078431369999999" green="0.36470588240000001" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="dE3-k4-fHs" firstAttribute="centerX" secondItem="65F-hu-X29" secondAttribute="centerX" id="8dG-l7-iNv"/>
                             <constraint firstItem="cFO-r0-tqM" firstAttribute="top" secondItem="fpU-hf-hP2" secondAttribute="bottom" constant="45" id="Bct-FJ-Rj9"/>
@@ -268,7 +268,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="756"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="aAB-Q1-AQY"/>
-                        <color key="backgroundColor" name="backgroundColor1"/>
+                        <color key="backgroundColor" red="0.032496066050000001" green="0.34411351210000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="2L1-bC-OkP"/>
                     <connections>
@@ -317,7 +317,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yP7-jw-b3V"/>
-                        <color key="backgroundColor" name="otherColor"/>
+                        <color key="backgroundColor" red="0.043137254899999998" green="0.70980392160000005" blue="1" alpha="0.89000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="wHe-pK-cBp" firstAttribute="top" secondItem="yIZ-CO-aXA" secondAttribute="bottom" constant="8" id="0hh-Wt-Roh"/>
                             <constraint firstItem="wHe-pK-cBp" firstAttribute="width" secondItem="mBv-R6-Uiv" secondAttribute="width" multiplier="0.7" id="1YS-GT-o0i"/>
@@ -490,12 +490,12 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="XTm-RA-0gI"/>
+        <segue reference="VCK-aU-iZp"/>
         <segue reference="LaC-hz-1Z8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowtriangle.up.fill" catalog="system" width="128" height="124"/>
-        <image name="wheel" width="333" height="333"/>
+        <image name="wheel" width="333.33334350585938" height="333"/>
         <namedColor name="backgroundColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
