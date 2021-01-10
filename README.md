@@ -2,7 +2,7 @@
 Created by:
   Nick Morris
   Ryan Virkar
-  Ryan Beaudoi
+  Ryan Beaudoin
 
 
 *Note to developers:
