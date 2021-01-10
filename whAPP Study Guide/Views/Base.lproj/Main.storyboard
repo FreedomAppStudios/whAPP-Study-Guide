@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--WHAPP-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
@@ -85,7 +85,7 @@
                             <constraint firstItem="rNa-O0-lrx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ybI-iJ-LyA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="WHAPP" id="Dkx-FY-I8j">
+                    <navigationItem key="navigationItem" id="Dkx-FY-I8j">
                         <barButtonItem key="backBarButtonItem" title="Back" id="okd-3L-4Fz"/>
                     </navigationItem>
                     <connections>
@@ -99,7 +99,7 @@
             </objects>
             <point key="canvasLocation" x="-916.92307692307691" y="101.65876777251184"/>
         </scene>
-        <!--Signup View Controller-->
+        <!--WHAPP APP-->
         <scene sceneID="jse-pR-PWn">
             <objects>
                 <viewController id="O0H-mS-Xe1" customClass="SignupViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
@@ -165,7 +165,7 @@
                             <constraint firstItem="RrK-c2-Ik1" firstAttribute="top" secondItem="fdo-kW-ktg" secondAttribute="bottom" constant="45" id="obu-0K-k49"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="DNK-r9-GKR"/>
+                    <navigationItem key="navigationItem" title="WHAPP APP" id="DNK-r9-GKR"/>
                     <connections>
                         <outlet property="emailTextField" destination="5O6-aw-okz" id="eeV-Sv-nvg"/>
                         <outlet property="errorLabel" destination="RrK-c2-Ik1" id="j2K-2j-DRg"/>
@@ -179,7 +179,7 @@
             </objects>
             <point key="canvasLocation" x="253.84615384615384" y="637.67772511848341"/>
         </scene>
-        <!--Login View Controller-->
+        <!--WHAP APP-->
         <scene sceneID="Zju-3m-Gf0">
             <objects>
                 <viewController id="jYL-dh-X0S" customClass="LoginViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
@@ -245,7 +245,7 @@
                             <constraint firstItem="hBR-JD-CVy" firstAttribute="top" secondItem="P1f-Ph-oP5" secondAttribute="top" constant="60" id="w6E-lW-IU1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="CQh-Bg-a3o">
+                    <navigationItem key="navigationItem" title="WHAP APP" id="CQh-Bg-a3o">
                         <barButtonItem key="backBarButtonItem" title="Back" id="cVM-NQ-I4q"/>
                     </navigationItem>
                     <connections>
@@ -260,7 +260,7 @@
             </objects>
             <point key="canvasLocation" x="253.84615384615384" y="-185.54502369668245"/>
         </scene>
-        <!--Hub View Controller-->
+        <!--WHAPP APP-->
         <scene sceneID="UPc-Ub-g4m">
             <objects>
                 <viewController id="IPu-M6-Io5" customClass="HubViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
@@ -270,7 +270,7 @@
                         <viewLayoutGuide key="safeArea" id="aAB-Q1-AQY"/>
                         <color key="backgroundColor" red="0.032496066050000001" green="0.34411351210000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2L1-bC-OkP"/>
+                    <navigationItem key="navigationItem" title="WHAPP APP" id="2L1-bC-OkP"/>
                     <connections>
                         <segue destination="J8K-25-EHg" kind="show" identifier="homeToWheel" id="XTm-RA-0gI"/>
                     </connections>
@@ -279,7 +279,7 @@
             </objects>
             <point key="canvasLocation" x="1463" y="638"/>
         </scene>
-        <!--Second View Controller-->
+        <!--WHAPP APP-->
         <scene sceneID="Eos-zv-UJg">
             <objects>
                 <viewController id="J8K-25-EHg" customClass="SecondViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
@@ -335,7 +335,7 @@
                             <constraint firstItem="bgN-QC-fj0" firstAttribute="width" secondItem="mBv-R6-Uiv" secondAttribute="width" multiplier="0.7" id="zdA-bn-oF9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="bsr-8E-1qm">
+                    <navigationItem key="navigationItem" title="WHAPP APP" id="bsr-8E-1qm">
                         <barButtonItem key="backBarButtonItem" title="Back" id="JhW-Dw-Ubk"/>
                     </navigationItem>
                     <connections>
@@ -347,7 +347,7 @@
             </objects>
             <point key="canvasLocation" x="1463.0769230769231" y="-186.25592417061611"/>
         </scene>
-        <!--Quiz View Controller-->
+        <!--WHAPP APP-->
         <scene sceneID="LqD-Hl-b4U">
             <objects>
                 <viewController id="jFc-27-FTr" customClass="QuizViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
@@ -446,7 +446,7 @@
                             <constraint firstItem="e6H-NJ-OvT" firstAttribute="leading" secondItem="IIs-ad-HJ9" secondAttribute="leading" id="ya9-OT-4Hz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="JmU-EB-1mR"/>
+                    <navigationItem key="navigationItem" title="WHAPP APP" id="JmU-EB-1mR"/>
                     <connections>
                         <outlet property="btn1Info" destination="hWd-Fp-6Fy" id="wEA-DS-nhX"/>
                         <outlet property="btn2Info" destination="nSn-l9-ofl" id="mJ6-UG-r2f"/>
@@ -471,7 +471,8 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" name="backgroundColor"/>
+                            <color key="textColor" name="backgroundColor1"/>
+                            <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -493,6 +494,7 @@
         <segue reference="VCK-aU-iZp"/>
         <segue reference="LaC-hz-1Z8"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="arrowtriangle.up.fill" catalog="system" width="128" height="124"/>
         <image name="wheel" width="333.33334350585938" height="333"/>
