@@ -2,12 +2,7 @@
 Created by:
   Nick Morris
   Ryan Virkar
-  Ryan Beaudoin
-
-This app was created for varius reasons:
-  1. Increase developers' skillset
-  2. Become valuable study to for AP World History Students
-  3. Revenue stream for the developers
+  Ryan Beaudoi
 
 
 *Note to developers:
