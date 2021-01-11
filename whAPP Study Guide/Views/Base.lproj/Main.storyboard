@@ -479,9 +479,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Kvc-e6-Het">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="brandColorGray"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" name="backgroundColor1"/>
+                            <color key="textColor" name="textColor"/>
                             <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
@@ -502,9 +502,9 @@
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="XTm-RA-0gI"/>
-        <segue reference="oG3-Uq-eFy"/>
+        <segue reference="LaC-hz-1Z8"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="EarthDemo" width="640" height="360"/>
         <image name="arrowtriangle.up.fill" catalog="system" width="128" height="124"/>
