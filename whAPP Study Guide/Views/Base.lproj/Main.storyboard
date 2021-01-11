@@ -148,7 +148,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eV5-g3-WJh"/>
-                        <color key="backgroundColor" name="backgroundColor1"/>
+                        <color key="backgroundColor" name="brandColorGray"/>
                         <constraints>
                             <constraint firstItem="5O6-aw-okz" firstAttribute="top" secondItem="eV5-g3-WJh" secondAttribute="top" constant="150" id="0dF-c6-gob"/>
                             <constraint firstItem="5O6-aw-okz" firstAttribute="width" secondItem="aom-VD-ol7" secondAttribute="width" multiplier="0.7" id="1oF-SY-ICU"/>
@@ -192,20 +192,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B9S-SV-LUs">
-                                <rect key="frame" x="58.666666666666657" y="150" width="273" height="37.666666666666657"/>
+                                <rect key="frame" x="58.666666666666657" y="150" width="273" height="34"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <color key="textColor" name="brandColorGray"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fpU-hf-hP2">
-                                <rect key="frame" x="58.666666666666657" y="247.66666666666669" width="273" height="38"/>
+                                <rect key="frame" x="58.666666666666657" y="244" width="273" height="34"/>
                                 <color key="textColor" name="brandColorGray"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFO-r0-tqM">
-                                <rect key="frame" x="58.666666666666657" y="330.66666666666669" width="273" height="60.333333333333314"/>
+                                <rect key="frame" x="58.666666666666657" y="323" width="273" height="54.333333333333314"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Go">
@@ -229,7 +229,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P1f-Ph-oP5"/>
-                        <color key="backgroundColor" red="0.16078431369999999" green="0.36470588240000001" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="brandColorGray"/>
                         <constraints>
                             <constraint firstItem="dE3-k4-fHs" firstAttribute="centerX" secondItem="65F-hu-X29" secondAttribute="centerX" id="8dG-l7-iNv"/>
                             <constraint firstItem="cFO-r0-tqM" firstAttribute="top" secondItem="fpU-hf-hP2" secondAttribute="bottom" constant="45" id="Bct-FJ-Rj9"/>
@@ -327,7 +327,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yP7-jw-b3V"/>
-                        <color key="backgroundColor" red="0.043137254899999998" green="0.70980392160000005" blue="1" alpha="0.89000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="brandColorGray"/>
                         <constraints>
                             <constraint firstItem="wHe-pK-cBp" firstAttribute="top" secondItem="yIZ-CO-aXA" secondAttribute="bottom" constant="8" id="0hh-Wt-Roh"/>
                             <constraint firstItem="wHe-pK-cBp" firstAttribute="width" secondItem="mBv-R6-Uiv" secondAttribute="width" multiplier="0.7" id="1YS-GT-o0i"/>
@@ -429,7 +429,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IIs-ad-HJ9"/>
-                        <color key="backgroundColor" name="otherColor"/>
+                        <color key="backgroundColor" name="brandColorGray"/>
                         <constraints>
                             <constraint firstItem="XoV-us-7qu" firstAttribute="width" secondItem="wql-aV-jaU" secondAttribute="width" multiplier="0.9" id="BgG-dd-jMd"/>
                             <constraint firstItem="XoV-us-7qu" firstAttribute="height" secondItem="wql-aV-jaU" secondAttribute="height" multiplier="0.07" id="DRV-IV-CjF"/>
@@ -516,7 +516,7 @@
             <color red="0.074509803921568626" green="0.12156862745098039" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="brandColorGray">
-            <color red="0.045000001788139343" green="0.5220000147819519" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.1686274707" green="0.39215683940000001" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="otherColor">
             <color red="0.074509803921568626" green="0.12156862745098039" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
