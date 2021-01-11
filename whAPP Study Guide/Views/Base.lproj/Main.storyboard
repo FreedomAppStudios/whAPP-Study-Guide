@@ -119,13 +119,13 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5O6-aw-okz">
                                 <rect key="frame" x="58.666666666666657" y="150" width="273" height="37.666666666666657"/>
-                                <color key="textColor" name="textColor"/>
+                                <color key="textColor" name="brandColorGray"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rOT-fX-k0g">
                                 <rect key="frame" x="58.666666666666657" y="247.66666666666669" width="273" height="38"/>
-                                <color key="textColor" name="textColor"/>
+                                <color key="textColor" name="brandColorGray"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
@@ -194,13 +194,13 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B9S-SV-LUs">
                                 <rect key="frame" x="58.666666666666657" y="150" width="273" height="37.666666666666657"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
-                                <color key="textColor" name="textColor"/>
+                                <color key="textColor" name="brandColorGray"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fpU-hf-hP2">
                                 <rect key="frame" x="58.666666666666657" y="247.66666666666669" width="273" height="38"/>
-                                <color key="textColor" name="textColor"/>
+                                <color key="textColor" name="brandColorGray"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
@@ -274,7 +274,13 @@
                         <viewLayoutGuide key="safeArea" id="aAB-Q1-AQY"/>
                         <color key="backgroundColor" red="0.032496066050000001" green="0.34411351210000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <navigationItem key="navigationItem" title="WHAPP APP" id="2L1-bC-OkP"/>
+                    <navigationItem key="navigationItem" title="WHAPP APP" id="2L1-bC-OkP">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="dfK-Oa-VUu">
+                            <connections>
+                                <action selector="logOutPressed:" destination="IPu-M6-Io5" id="JUP-sK-SyF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="J8K-25-EHg" kind="show" identifier="homeToWheel" id="XTm-RA-0gI"/>
                     </connections>
@@ -495,8 +501,8 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="VCK-aU-iZp"/>
-        <segue reference="LaC-hz-1Z8"/>
+        <segue reference="XTm-RA-0gI"/>
+        <segue reference="oG3-Uq-eFy"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
@@ -508,6 +514,9 @@
         </namedColor>
         <namedColor name="backgroundColor1">
             <color red="0.074509803921568626" green="0.12156862745098039" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="brandColorGray">
+            <color red="0.045000001788139343" green="0.5220000147819519" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="otherColor">
             <color red="0.074509803921568626" green="0.12156862745098039" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
