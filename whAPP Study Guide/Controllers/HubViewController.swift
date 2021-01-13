@@ -32,6 +32,8 @@ class HubViewController: UIViewController {
         navigationItem.hidesBackButton = true
         //load total score
         loadGlobalQuestionCount()
+        //load name
+        loadName()
     }
         /*    // MARK: - Navigation
      
@@ -64,6 +66,31 @@ class HubViewController: UIViewController {
                         
                     }
                     self.totalScoreLabel.text = String(max)
+                }
+            }
+        }
+    }
+    func loadName(){
+        var displayName = ""
+        db.collection("nameForUser").addSnapshotListener { (querySnapshot, error) in
+            if let e = error {
+                print("there was an issue retrieving data from Firestore \(e)")
+            } else {
+                if let snapshotDocuments = querySnapshot?.documents {
+                    for doc in snapshotDocuments {
+                        let data = doc.data()
+                        if let myName = data["name"] as? String, let userID = data["sender"] as? String {
+                            //print(chef)
+                            //print(userEmail)
+                            let currentID = Auth.auth().currentUser?.email
+                            let isEqual = (userID == currentID)
+                            if isEqual == true {
+                                displayName = myName
+                            }
+                        }
+                        
+                    }
+                    self.welcomeLabel.text = "Hello \(displayName)"
                 }
             }
         }

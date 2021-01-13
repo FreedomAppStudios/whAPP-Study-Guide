@@ -9,10 +9,13 @@ import UIKit
 import Firebase
 
 class SignupViewController: UIViewController {
-
+    
+    let db = Firestore.firestore()
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var errorLabel: UILabel!
     
+    @IBOutlet weak var nametextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -25,6 +28,7 @@ class SignupViewController: UIViewController {
                     self.errorLabel.text = e.localizedDescription
                 }
                 else {
+                    self.saveName()
                     self.performSegue(withIdentifier: "RegisterToHome", sender: self)
                 }
             }
@@ -37,7 +41,23 @@ class SignupViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+    func saveName() {
+        if let user = Auth.auth().currentUser?.email, let nameID = nametextField.text {
+            print(user)
+            db.collection("nameForUser").addDocument(data: [
+                "sender" : user,
+                "name" : nameID
+            ]) { (error) in
+                if let e = error {
+                    print("there was an issue saving to FireStore + \(e)")
+                }
+                else {
+                    print("succesfully saved data")
+                }
+                
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation
