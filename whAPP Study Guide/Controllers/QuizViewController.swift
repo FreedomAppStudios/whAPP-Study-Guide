@@ -3,6 +3,7 @@
 //  Created by Nicholas Morris on 12/13/20.
 
 import UIKit
+import Firebase
 
 class QuizViewController :UIViewController {
     
@@ -14,6 +15,7 @@ class QuizViewController :UIViewController {
     var quesCount = 3
     var rightNum = 0
     var timerTest : Timer?
+    var globalCount = 0
     //Clock & Score set ups
     @IBOutlet weak var countDownLBL: UILabel!
     @IBOutlet weak var scoreCountLBL: UILabel!
@@ -24,246 +26,250 @@ class QuizViewController :UIViewController {
     @IBOutlet weak var btn4Info: UIButton!
     //Title / Question
     @IBOutlet weak var questionTTL: UILabel!
+    
+    //Data Base
+    let db = Firestore.firestore()
+    
     //Button pressed
     @IBAction func answer1Pressed(_ sender: Any) {
-            if catNum == 1 {
-                let btnText = btn1Info.titleLabel!.text
-                let new = cat1()
-                let right = new.rightAnswer(rando : rightNum)
-                let isEqual = (right == btnText)
-                if isEqual == true {
-                    checkRight1()
-                    updateScore()
-                }
-                else {
-                    checkWrong1()
-                    findRight()
-                }
+        if catNum == 1 {
+            let btnText = btn1Info.titleLabel!.text
+            let new = cat1()
+            let right = new.rightAnswer(rando : rightNum)
+            let isEqual = (right == btnText)
+            if isEqual == true {
+                checkRight1()
+                updateScore()
             }
-            else if catNum == 2 {
-                let btnText = btn1Info.titleLabel!.text
-                let new = cat2()
-                let right = new.rightAnswer(rando : rightNum)
-                let isEqual = (right == btnText)
-                if isEqual == true {
-                    checkRight1()
-                    updateScore()
-                }
-                else {
-                    checkWrong1()
-                    findRight()
-                }
+            else {
+                checkWrong1()
+                findRight()
             }
-            else if catNum == 3 {
-                let btnText = btn1Info.titleLabel!.text
-                let new = cat3()
-                let right = new.rightAnswer(rando : rightNum)
-                let isEqual = (right == btnText)
-                if isEqual == true {
-                    checkRight1()
-                    updateScore()
-                }
-                else {
-                    checkWrong1()
-                    findRight()
-                }
-            } else {
-                let btnText = btn1Info.titleLabel!.text
-                let new = cat4()
-                let right = new.rightAnswer(rando : rightNum)
-                let isEqual = (right == btnText)
-                if isEqual == true {
-                    checkRight1()
-                    updateScore()
-                }
-                else {
-                    checkWrong1()
-                    findRight()
-                }
+        }
+        else if catNum == 2 {
+            let btnText = btn1Info.titleLabel!.text
+            let new = cat2()
+            let right = new.rightAnswer(rando : rightNum)
+            let isEqual = (right == btnText)
+            if isEqual == true {
+                checkRight1()
+                updateScore()
             }
-            rightNum = setButtons(numOfQues: quesCount)
-            count = 60
-            timerRunner()
+            else {
+                checkWrong1()
+                findRight()
+            }
+        }
+        else if catNum == 3 {
+            let btnText = btn1Info.titleLabel!.text
+            let new = cat3()
+            let right = new.rightAnswer(rando : rightNum)
+            let isEqual = (right == btnText)
+            if isEqual == true {
+                checkRight1()
+                updateScore()
+            }
+            else {
+                checkWrong1()
+                findRight()
+            }
+        } else {
+            let btnText = btn1Info.titleLabel!.text
+            let new = cat4()
+            let right = new.rightAnswer(rando : rightNum)
+            let isEqual = (right == btnText)
+            if isEqual == true {
+                checkRight1()
+                updateScore()
+            }
+            else {
+                checkWrong1()
+                findRight()
+            }
+        }
+        rightNum = setButtons(numOfQues: quesCount)
+        count = 60
+        timerRunner()
     }
     @IBAction func answer2Pressed(_ sender: Any) {
-            if catNum == 1 {
-                let btnText = btn2Info.titleLabel!.text
-                let new = cat1()
-                let right = new.rightAnswer(rando : rightNum)
-                let isEqual = (right == btnText)
-                if isEqual == true {
-                    checkRight2()
-                    updateScore()
-                }
-                else {
-                    checkWong2()
-                    findRight()
-                }
+        if catNum == 1 {
+            let btnText = btn2Info.titleLabel!.text
+            let new = cat1()
+            let right = new.rightAnswer(rando : rightNum)
+            let isEqual = (right == btnText)
+            if isEqual == true {
+                checkRight2()
+                updateScore()
             }
-            else if catNum == 2 {
-                let btnText = btn2Info.titleLabel!.text
-                let new = cat2()
-                let right = new.rightAnswer(rando : rightNum)
-                let isEqual = (right == btnText)
-                if isEqual == true {
-                    checkRight2()
-                    updateScore()
-                }
-                else {
-                    checkWong2()
-                    findRight()
-                }
+            else {
+                checkWong2()
+                findRight()
             }
-            else if catNum == 3 {
-                let btnText = btn2Info.titleLabel!.text
-                let new = cat3()
-                let right = new.rightAnswer(rando : rightNum)
-                let isEqual = (right == btnText)
-                if isEqual == true {
-                    checkRight2()
-                    updateScore()
-                }
-                else {
-                    checkWong2()
-                    findRight()
-                }
-            } else {
-                let btnText = btn2Info.titleLabel!.text
-                let new = cat4()
-                let right = new.rightAnswer(rando : rightNum)
-                let isEqual = (right == btnText)
-                if isEqual == true {
-                    checkRight2()
-                    updateScore()
-                }
-                else {
-                    checkWong2()
-                    findRight()
-                }
-            }
-            rightNum = setButtons(numOfQues: quesCount)
-            count = 60
-            timerRunner()
         }
+        else if catNum == 2 {
+            let btnText = btn2Info.titleLabel!.text
+            let new = cat2()
+            let right = new.rightAnswer(rando : rightNum)
+            let isEqual = (right == btnText)
+            if isEqual == true {
+                checkRight2()
+                updateScore()
+            }
+            else {
+                checkWong2()
+                findRight()
+            }
+        }
+        else if catNum == 3 {
+            let btnText = btn2Info.titleLabel!.text
+            let new = cat3()
+            let right = new.rightAnswer(rando : rightNum)
+            let isEqual = (right == btnText)
+            if isEqual == true {
+                checkRight2()
+                updateScore()
+            }
+            else {
+                checkWong2()
+                findRight()
+            }
+        } else {
+            let btnText = btn2Info.titleLabel!.text
+            let new = cat4()
+            let right = new.rightAnswer(rando : rightNum)
+            let isEqual = (right == btnText)
+            if isEqual == true {
+                checkRight2()
+                updateScore()
+            }
+            else {
+                checkWong2()
+                findRight()
+            }
+        }
+        rightNum = setButtons(numOfQues: quesCount)
+        count = 60
+        timerRunner()
+    }
     @IBAction func answer3Pressed(_ sender: Any) {
-            if catNum == 1 {
-                let btnText = btn3Info.titleLabel!.text
-                let new = cat1()
-                let right = new.rightAnswer(rando : rightNum)
-                let isEqual = (right == btnText)
-                if isEqual == true {
-                    checkRight3()
-                    updateScore()
-                }
-                else {
-                    checkWrong3()
-                    findRight()
-                }
+        if catNum == 1 {
+            let btnText = btn3Info.titleLabel!.text
+            let new = cat1()
+            let right = new.rightAnswer(rando : rightNum)
+            let isEqual = (right == btnText)
+            if isEqual == true {
+                checkRight3()
+                updateScore()
             }
-            else if catNum == 2 {
-                let btnText = btn3Info.titleLabel!.text
-                let new = cat2()
-                let right = new.rightAnswer(rando : rightNum)
-                let isEqual = (right == btnText)
-                if isEqual == true {
-                    checkRight3()
-                    updateScore()
-                }
-                else {
-                    checkWrong3()
-                    findRight()
-                }
+            else {
+                checkWrong3()
+                findRight()
             }
-            else if catNum == 3 {
-                let btnText = btn3Info.titleLabel!.text
-                let new = cat3()
-                let right = new.rightAnswer(rando : rightNum)
-                let isEqual = (right == btnText)
-                if isEqual == true {
-                    checkRight3()
-                    updateScore()
-                }
-                else {
-                    checkWrong3()
-                    findRight()
-                }
-            } else {
-                let btnText = btn3Info.titleLabel!.text
-                let new = cat4()
-                let right = new.rightAnswer(rando : rightNum)
-                let isEqual = (right == btnText)
-                if isEqual == true {
-                    checkRight3()
-                    updateScore()
-                }
-                else {
-                    checkWrong3()
-                    findRight()
-                }
-            }
-            rightNum = setButtons(numOfQues: quesCount)
-            count = 60
-            timerRunner()
         }
+        else if catNum == 2 {
+            let btnText = btn3Info.titleLabel!.text
+            let new = cat2()
+            let right = new.rightAnswer(rando : rightNum)
+            let isEqual = (right == btnText)
+            if isEqual == true {
+                checkRight3()
+                updateScore()
+            }
+            else {
+                checkWrong3()
+                findRight()
+            }
+        }
+        else if catNum == 3 {
+            let btnText = btn3Info.titleLabel!.text
+            let new = cat3()
+            let right = new.rightAnswer(rando : rightNum)
+            let isEqual = (right == btnText)
+            if isEqual == true {
+                checkRight3()
+                updateScore()
+            }
+            else {
+                checkWrong3()
+                findRight()
+            }
+        } else {
+            let btnText = btn3Info.titleLabel!.text
+            let new = cat4()
+            let right = new.rightAnswer(rando : rightNum)
+            let isEqual = (right == btnText)
+            if isEqual == true {
+                checkRight3()
+                updateScore()
+            }
+            else {
+                checkWrong3()
+                findRight()
+            }
+        }
+        rightNum = setButtons(numOfQues: quesCount)
+        count = 60
+        timerRunner()
+    }
     @IBAction func answer4Pressed(_ sender: Any) {
-            if catNum == 1 {
-                let btnText = btn4Info.titleLabel!.text
-                let new = cat1()
-                let right = new.rightAnswer(rando : rightNum)
-                let isEqual = (right == btnText)
-                if isEqual == true {
-                    checkRight4()
-                    updateScore()
-                }
-                else {
-                    checkWrong4()
-                    findRight()
-                }
+        if catNum == 1 {
+            let btnText = btn4Info.titleLabel!.text
+            let new = cat1()
+            let right = new.rightAnswer(rando : rightNum)
+            let isEqual = (right == btnText)
+            if isEqual == true {
+                checkRight4()
+                updateScore()
             }
-            else if catNum == 2 {
-                let btnText = btn4Info.titleLabel!.text
-                let new = cat2()
-                let right = new.rightAnswer(rando : rightNum)
-                let isEqual = (right == btnText)
-                if isEqual == true {
-                    checkRight4()
-                    updateScore()
-                }
-                else {
-                    checkWrong4()
-                    findRight()
-                }
+            else {
+                checkWrong4()
+                findRight()
             }
-            else if catNum == 3 {
-                let btnText = btn4Info.titleLabel!.text
-                let new = cat3()
-                let right = new.rightAnswer(rando : rightNum)
-                let isEqual = (right == btnText)
-                if isEqual == true {
-                    checkRight4()
-                    updateScore()
-                }
-                else {
-                    checkWrong4()
-                    findRight()
-                }
-            } else {
-                let btnText = btn4Info.titleLabel!.text
-                let new = cat4()
-                let right = new.rightAnswer(rando : rightNum)
-                let isEqual = (right == btnText)
-                if isEqual == true {
-                    checkRight4()
-                    updateScore()
-                }
-                else {
-                    checkWrong4()
-                    findRight()
-                }
+        }
+        else if catNum == 2 {
+            let btnText = btn4Info.titleLabel!.text
+            let new = cat2()
+            let right = new.rightAnswer(rando : rightNum)
+            let isEqual = (right == btnText)
+            if isEqual == true {
+                checkRight4()
+                updateScore()
             }
-            rightNum = setButtons(numOfQues: quesCount)
-            count = 60
-            timerRunner()
+            else {
+                checkWrong4()
+                findRight()
+            }
+        }
+        else if catNum == 3 {
+            let btnText = btn4Info.titleLabel!.text
+            let new = cat3()
+            let right = new.rightAnswer(rando : rightNum)
+            let isEqual = (right == btnText)
+            if isEqual == true {
+                checkRight4()
+                updateScore()
+            }
+            else {
+                checkWrong4()
+                findRight()
+            }
+        } else {
+            let btnText = btn4Info.titleLabel!.text
+            let new = cat4()
+            let right = new.rightAnswer(rando : rightNum)
+            let isEqual = (right == btnText)
+            if isEqual == true {
+                checkRight4()
+                updateScore()
+            }
+            else {
+                checkWrong4()
+                findRight()
+            }
+        }
+        rightNum = setButtons(numOfQues: quesCount)
+        count = 60
+        timerRunner()
     }
     
     
@@ -284,8 +290,8 @@ class QuizViewController :UIViewController {
         btn4Info.backgroundColor = .white
         
         //Setting button text
-            rightNum = setButtons(numOfQues: quesCount)
-        
+        rightNum = setButtons(numOfQues: quesCount)
+        loadGlobalQuestionCount()
         
         
         
@@ -415,12 +421,14 @@ class QuizViewController :UIViewController {
     }
     //sets button text
     func setButtons(numOfQues : Int) -> Int {
+        globalCount+=1
+        updateGlobalQuestionCount()
+        loadGlobalQuestionCount()
         stopTimer()
         countDownLBL.textColor = .white
         let random = Int.random(in: 0...quesCount)
         let secondsToDelay = 1.5
         DispatchQueue.main.asyncAfter(deadline: .now() + secondsToDelay) {
-            print("This message is delayed")
             let order = Int.random(in: 0...3)
             //order generator
             
@@ -725,6 +733,52 @@ class QuizViewController :UIViewController {
             }
         }
         count = 60
+    }
+    func loadGlobalQuestionCount(){
+        var max = 0
+        db.collection("scoreForDataBase").getDocuments { (querySnapshot, error) in
+            if let e = error {
+                print("there was an issue retrieving data from Firestore \(e)")
+            } else {
+                if let snapshotDocuments = querySnapshot?.documents {
+                    for doc in snapshotDocuments {
+                        let data = doc.data()
+                        if let chef = data["body"] as? Int, let userID = data["sender"] as? String {
+                            //print(chef)
+                            //print(userEmail)
+                            let currentID = Auth.auth().currentUser?.email
+                            let isEqual = (userID == currentID)
+                            if isEqual == true {
+                                if chef > max {
+                                    max = chef
+                                }
+                            }
+                        }
+                        
+                    }
+                    print(max)
+                    self.globalCount = max
+                }
+            }
+        }
+    }
+    func updateGlobalQuestionCount() {
+        let globalQuestionsDB = globalCount
+        if let user = Auth.auth().currentUser?.email {
+            print(user)
+            db.collection("scoreForDataBase").addDocument(data: [
+                "sender" : user,
+                "body" : globalQuestionsDB
+            ]) { (error) in
+                if let e = error {
+                    print("there was an issue saving to FireStore + \(e)")
+                }
+                else {
+                    print("succesfully saved data")
+                }
+                
+            }
+        }
     }
 }
 
