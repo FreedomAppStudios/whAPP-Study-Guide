@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 
-class SignupViewController: UIViewController {
+class SignupViewController: UIViewController, UITextFieldDelegate {
     
     let db = Firestore.firestore()
     
@@ -20,6 +20,7 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBOutlet weak var goButtonPressed: UIButton!
+    
     @IBAction func goButtonAction(_ sender: Any) {
         if let email = emailTextField.text, let password = passwordTextField.text {
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
@@ -38,8 +39,14 @@ class SignupViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        passwordTextField.delegate = self
         // Do any additional setup after loading the view.
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return passwordTextField.resignFirstResponder()
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     func saveName() {
         if let user = Auth.auth().currentUser?.email, let nameID = nametextField.text {
