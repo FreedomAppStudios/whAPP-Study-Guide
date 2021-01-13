@@ -12,6 +12,7 @@ class QuizViewController :UIViewController {
     //Variables
     var count = 60
     var score = 0
+    var totalAnswered = 0
     var quesCount = 3
     var rightNum = 0
     var timerTest : Timer?
@@ -30,6 +31,9 @@ class QuizViewController :UIViewController {
     //Data Base
     let db = Firestore.firestore()
     
+    @IBAction func donePressed(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "finishedQuiz", sender: self)
+    }
     //Button pressed
     @IBAction func answer1Pressed(_ sender: Any) {
         if catNum == 1 {
@@ -291,7 +295,9 @@ class QuizViewController :UIViewController {
         
         //Setting button text
         rightNum = setButtons(numOfQues: quesCount)
-        loadGlobalQuestionCount()
+        if Auth.auth().currentUser?.email != nil {
+            loadGlobalQuestionCount()
+        }
         
         
         
@@ -421,9 +427,12 @@ class QuizViewController :UIViewController {
     }
     //sets button text
     func setButtons(numOfQues : Int) -> Int {
-        globalCount+=1
-        updateGlobalQuestionCount()
-        loadGlobalQuestionCount()
+        totalAnswered = totalAnswered + 1
+        if Auth.auth().currentUser?.email != nil {
+            globalCount+=1
+            updateGlobalQuestionCount()
+            loadGlobalQuestionCount()
+        }
         stopTimer()
         countDownLBL.textColor = .white
         let random = Int.random(in: 0...quesCount)
@@ -778,6 +787,18 @@ class QuizViewController :UIViewController {
                 }
                 
             }
+        }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "finishedQuiz" {
+            let nextVC = BreakdownViewController()
+            nextVC.scoreToday = score
+            print(score)
+            nextVC.questionsAnswered = totalAnswered
+            print(totalAnswered)
+            print("prep complete")
+            
+            
         }
     }
 }

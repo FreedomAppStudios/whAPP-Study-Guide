@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7d-WF-kPp">
@@ -108,7 +108,7 @@
             <objects>
                 <viewController id="O0H-mS-Xe1" customClass="SignupViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aom-VD-ol7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1a9-Xv-SW5">
@@ -179,7 +179,9 @@
                             <constraint firstItem="RrK-c2-Ik1" firstAttribute="top" secondItem="fdo-kW-ktg" secondAttribute="bottom" constant="45" id="obu-0K-k49"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="WHAPP APP" id="DNK-r9-GKR"/>
+                    <navigationItem key="navigationItem" title="WHAPP APP" id="DNK-r9-GKR">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="mxw-hJ-HAS"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailTextField" destination="5O6-aw-okz" id="eeV-Sv-nvg"/>
                         <outlet property="errorLabel" destination="RrK-c2-Ik1" id="j2K-2j-DRg"/>
@@ -199,24 +201,24 @@
             <objects>
                 <viewController id="jYL-dh-X0S" customClass="LoginViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="65F-hu-X29">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B9S-SV-LUs">
-                                <rect key="frame" x="62" y="150" width="290" height="40.5"/>
+                                <rect key="frame" x="62" y="150" width="290" height="34"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <color key="textColor" name="brandColorGray"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fpU-hf-hP2">
-                                <rect key="frame" x="62" y="250.5" width="290" height="40.5"/>
+                                <rect key="frame" x="62" y="244" width="290" height="34"/>
                                 <color key="textColor" name="brandColorGray"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFO-r0-tqM">
-                                <rect key="frame" x="62" y="336" width="290" height="64.5"/>
+                                <rect key="frame" x="62" y="323" width="290" height="54.5"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Go">
@@ -280,7 +282,7 @@
             <objects>
                 <viewController id="IPu-M6-Io5" customClass="HubViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AFY-aJ-lWX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ku-ag-gUq">
@@ -362,6 +364,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="WHAPP APP" id="2L1-bC-OkP">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="7ui-QS-gtI"/>
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="dfK-Oa-VUu">
                             <connections>
                                 <action selector="logOutPressed:" destination="IPu-M6-Io5" id="JUP-sK-SyF"/>
@@ -383,7 +386,7 @@
             <objects>
                 <viewController id="J8K-25-EHg" customClass="SecondViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mBv-R6-Uiv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgN-QC-fj0">
@@ -451,7 +454,7 @@
             <objects>
                 <viewController id="jFc-27-FTr" customClass="QuizViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wql-aV-jaU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6H-NJ-OvT">
@@ -545,7 +548,14 @@
                             <constraint firstItem="e6H-NJ-OvT" firstAttribute="leading" secondItem="IIs-ad-HJ9" secondAttribute="leading" id="ya9-OT-4Hz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="WHAPP APP" id="JmU-EB-1mR"/>
+                    <navigationItem key="navigationItem" title="WHAPP APP" id="JmU-EB-1mR">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="qGg-iT-oOa"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="VFg-zW-eIJ">
+                            <connections>
+                                <action selector="donePressed:" destination="jFc-27-FTr" id="iVH-bl-RUb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="btn1Info" destination="hWd-Fp-6Fy" id="wEA-DS-nhX"/>
                         <outlet property="btn2Info" destination="nSn-l9-ofl" id="mJ6-UG-r2f"/>
@@ -554,11 +564,40 @@
                         <outlet property="countDownLBL" destination="jKg-5q-j3b" id="Zyq-QL-ZZj"/>
                         <outlet property="questionTTL" destination="e6H-NJ-OvT" id="xxe-Io-u0O"/>
                         <outlet property="scoreCountLBL" destination="lGw-4Z-C3c" id="YUu-WA-hqK"/>
+                        <segue destination="dRF-e2-yNc" kind="show" identifier="finishedQuiz" id="Myk-lf-wjY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41q-IS-xY0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2671" y="102"/>
+        </scene>
+        <!--Score Break Down-->
+        <scene sceneID="TbE-Ur-nrk">
+            <objects>
+                <viewController id="dRF-e2-yNc" customClass="BreakdownViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gs1-sa-bbI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdK-qj-Eta">
+                                <rect key="frame" x="192" y="305" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="test"/>
+                                <connections>
+                                    <action selector="test:" destination="dRF-e2-yNc" eventType="touchUpInside" id="gpn-GI-jLL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fce-Lc-kcc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Score Break Down" id="UEw-zG-vKf">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="wcK-Ah-BJl"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m4Z-lP-nRp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3852" y="102"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ge1-3E-Cct">
@@ -594,7 +633,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="Rhd-JT-97O"/>
+        <segue reference="VCK-aU-iZp"/>
         <segue reference="oG3-Uq-eFy"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="brandColorGray"/>
@@ -622,6 +661,9 @@
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
