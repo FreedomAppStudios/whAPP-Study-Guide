@@ -12,9 +12,11 @@ class BreakdownViewController: UIViewController {
     var scoreToday = 0
     var questionsAnswered = 0
     
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        titleLabel.text = "Questions right: \(scoreToday)"
         print("Questions right: \(scoreToday)")
         print("Total questions: \(questionsAnswered)")
     }
