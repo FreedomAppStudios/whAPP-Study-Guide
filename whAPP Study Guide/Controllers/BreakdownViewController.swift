@@ -11,19 +11,22 @@ class BreakdownViewController: UIViewController {
 
     var scoreToday = 0
     var questionsAnswered = 0
-    
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var correctLabel: UILabel!
+    @IBOutlet weak var totalLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleLabel.text = "Questions right: \(scoreToday)"
-        print("Questions right: \(scoreToday)")
-        print("Total questions: \(questionsAnswered)")
+        correctLabel.text = String(scoreToday)
+        totalLabel.text = String(questionsAnswered-1)
+        let right = Double(scoreToday)
+        let tot = Double(questionsAnswered-1)
+        let av : Double = (right/tot) * 100
+        print(av)
+        scoreLabel.text = String(av) + "%"
     }
-    @IBAction func test(_ sender: Any) {
-        print("Questions right: \(scoreToday)")
-        print("Total questions: \(questionsAnswered)")
-    }
+    
     
 
     /*

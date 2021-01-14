@@ -791,7 +791,7 @@ class QuizViewController :UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "finishedQuiz" {
-            let nextVC = BreakdownViewController()
+            let nextVC = segue.destination as! BreakdownViewController
             nextVC.scoreToday = score
             print(score)
             nextVC.questionsAnswered = totalAnswered
