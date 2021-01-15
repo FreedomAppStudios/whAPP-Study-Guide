@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Firebase
 class BreakdownViewController: UIViewController {
 
     var scoreToday = 0
@@ -15,6 +15,14 @@ class BreakdownViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var correctLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
+    @IBAction func finishedButtonPressed(_ sender: UIBarButtonItem) {
+        if Auth.auth().currentUser?.email != nil {
+            performSegue(withIdentifier: "doneToHome", sender: self)
+        } else {
+            navigationController?.popToRootViewController(animated: true)
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

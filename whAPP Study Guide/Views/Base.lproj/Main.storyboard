@@ -282,11 +282,11 @@
             <objects>
                 <viewController id="IPu-M6-Io5" customClass="HubViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AFY-aJ-lWX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ku-ag-gUq">
-                                <rect key="frame" x="83" y="715.5" width="248" height="48.5"/>
+                                <rect key="frame" x="83" y="747.5" width="248" height="50.5"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
                                 <state key="normal" title="Continue">
@@ -297,35 +297,35 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back &lt;name&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiI-C1-K9N">
-                                <rect key="frame" x="0.0" y="-1" width="414" height="137"/>
+                                <rect key="frame" x="0.0" y="-1" width="414" height="143"/>
                                 <color key="backgroundColor" name="brandColorGray"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="69" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oaw-D4-nU1">
-                                <rect key="frame" x="30" y="196" width="165.5" height="121"/>
+                                <rect key="frame" x="30" y="202" width="165.5" height="126"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="69"/>
                                 <color key="textColor" name="brandColorGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Questions Answered" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2KB-Ij-ENj">
-                                <rect key="frame" x="30" y="332" width="165.5" height="24.5"/>
+                                <rect key="frame" x="30" y="343" width="165.5" height="25.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" name="brandColorGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="69%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Qa-Jq-42c">
-                                <rect key="frame" x="218.5" y="196" width="165.5" height="121"/>
+                                <rect key="frame" x="218.5" y="202" width="165.5" height="126"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="69"/>
                                 <color key="textColor" name="brandColorGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTa-AX-KZ9">
-                                <rect key="frame" x="218.5" y="332" width="165.5" height="24"/>
+                                <rect key="frame" x="218.5" y="343" width="165.5" height="25"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" name="brandColorGray"/>
@@ -386,11 +386,11 @@
             <objects>
                 <viewController id="J8K-25-EHg" customClass="SecondViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mBv-R6-Uiv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgN-QC-fj0">
-                                <rect key="frame" x="62" y="659.5" width="290" height="64.5"/>
+                                <rect key="frame" x="62" y="690.5" width="290" height="67.5"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="PLAY">
@@ -401,14 +401,14 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="wheel" translatesAutoresizingMaskIntoConstraints="NO" id="yIZ-CO-aXA">
-                                <rect key="frame" x="40.5" y="237.5" width="333" height="333"/>
+                                <rect key="frame" x="40.5" y="254.5" width="333" height="333"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="arrowtriangle.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wHe-pK-cBp">
-                                <rect key="frame" x="62" y="580.5" width="290" height="74"/>
+                                <rect key="frame" x="62" y="597.5" width="290" height="88"/>
                                 <color key="tintColor" name="backgroundColor"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJv-3B-h1H">
-                                <rect key="frame" x="83" y="93.5" width="248" height="84"/>
+                                <rect key="frame" x="83" y="110.5" width="248" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <state key="normal" title="Spin!">
                                     <color key="titleColor" name="backgroundColor"/>
@@ -454,7 +454,7 @@
             <objects>
                 <viewController id="jFc-27-FTr" customClass="QuizViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wql-aV-jaU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6H-NJ-OvT">
@@ -464,7 +464,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hWd-Fp-6Fy">
-                                <rect key="frame" x="20.5" y="358" width="373" height="56.5"/>
+                                <rect key="frame" x="20.5" y="382" width="373" height="59"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Loading...">
@@ -475,7 +475,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nSn-l9-ofl">
-                                <rect key="frame" x="20.5" y="464.5" width="373" height="56.5"/>
+                                <rect key="frame" x="20.5" y="491" width="373" height="59"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Loading...">
@@ -486,7 +486,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5xv-hJ-MFi">
-                                <rect key="frame" x="20.5" y="571" width="373" height="56.5"/>
+                                <rect key="frame" x="20.5" y="600" width="373" height="59"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Loading...">
@@ -497,7 +497,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="XoV-us-7qu">
-                                <rect key="frame" x="20.5" y="677.5" width="373" height="56.5"/>
+                                <rect key="frame" x="20.5" y="709" width="373" height="59"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Loading...">
@@ -585,28 +585,28 @@
                                 <state key="normal" title="test"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60.8%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzN-gJ-pO4">
-                                <rect key="frame" x="93.5" y="138" width="227" height="159"/>
+                                <rect key="frame" x="93.5" y="138" width="227" height="165.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="65"/>
                                 <color key="textColor" name="brandColorGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWl-dg-Atd">
-                                <rect key="frame" x="93.5" y="307" width="227" height="21"/>
+                                <rect key="frame" x="93.5" y="313.5" width="227" height="22"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" name="brandColorGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="42" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WME-gN-eHe">
-                                <rect key="frame" x="93.5" y="343" width="227" height="159"/>
+                                <rect key="frame" x="93.5" y="350.5" width="227" height="166"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <color key="textColor" name="brandColorGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Questions Right" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gts-BM-nxs">
-                                <rect key="frame" x="93.5" y="512" width="227" height="21"/>
+                                <rect key="frame" x="93.5" y="526.5" width="227" height="21.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" name="brandColorGray"/>
@@ -619,14 +619,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="69" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acp-Y3-RUc">
-                                <rect key="frame" x="93.5" y="548" width="227" height="159"/>
+                                <rect key="frame" x="93.5" y="563" width="227" height="166"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <color key="textColor" name="brandColorGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Questions Answered" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoU-tH-ukB">
-                                <rect key="frame" x="93.5" y="717" width="227" height="21"/>
+                                <rect key="frame" x="93.5" y="739" width="227" height="21.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" name="brandColorGray"/>
@@ -666,12 +666,18 @@
                     </view>
                     <navigationItem key="navigationItem" title="Score Break Down" id="UEw-zG-vKf">
                         <barButtonItem key="backBarButtonItem" title="Back" id="wcK-Ah-BJl"/>
+                        <barButtonItem key="rightBarButtonItem" title="Finish" id="rmI-rC-dFj">
+                            <connections>
+                                <action selector="finishedButtonPressed:" destination="dRF-e2-yNc" id="HTv-lO-ssr"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="correctLabel" destination="WME-gN-eHe" id="WVS-Uo-aTh"/>
                         <outlet property="scoreLabel" destination="tzN-gJ-pO4" id="0iz-Lj-yuF"/>
                         <outlet property="titleLabel" destination="7hN-CC-GoB" id="3cy-xB-Zz9"/>
                         <outlet property="totalLabel" destination="acp-Y3-RUc" id="cFg-3a-5Dh"/>
+                        <segue destination="IPu-M6-Io5" kind="show" identifier="doneToHome" id="rBM-o8-3w8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m4Z-lP-nRp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -713,7 +719,7 @@
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="Rhd-JT-97O"/>
-        <segue reference="oG3-Uq-eFy"/>
+        <segue reference="rBM-o8-3w8"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="brandColorGray"/>
     <resources>
