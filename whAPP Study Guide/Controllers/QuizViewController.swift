@@ -744,48 +744,53 @@ class QuizViewController :UIViewController {
         count = 60
     }
     func loadGlobalQuestionCount(){
-        var max = 0
-        db.collection("scoreForDataBase").getDocuments { (querySnapshot, error) in
-            if let e = error {
-                print("there was an issue retrieving data from Firestore \(e)")
-            } else {
-                if let snapshotDocuments = querySnapshot?.documents {
-                    for doc in snapshotDocuments {
-                        let data = doc.data()
-                        if let chef = data["body"] as? Int, let userID = data["sender"] as? String {
-                            //print(chef)
-                            //print(userEmail)
-                            let currentID = Auth.auth().currentUser?.email
-                            let isEqual = (userID == currentID)
-                            if isEqual == true {
-                                if chef > max {
-                                    max = chef
+        if isLoggedin == true {
+            var max = 0
+            db.collection("scoreForDataBase").getDocuments { (querySnapshot, error) in
+                if let e = error {
+                    print("there was an issue retrieving data from Firestore \(e)")
+                } else {
+                    if let snapshotDocuments = querySnapshot?.documents {
+                        for doc in snapshotDocuments {
+                            let data = doc.data()
+                            if let chef = data["body"] as? Int, let userID = data["sender"] as? String {
+                                //print(chef)
+                                //print(userEmail)
+                                let currentID = Auth.auth().currentUser?.email
+                                let isEqual = (userID == currentID)
+                                if isEqual == true {
+                                    if chef > max {
+                                        max = chef
+                                    }
                                 }
                             }
+                            
                         }
-                        
+                        print(max)
+                        self.globalCount = max
                     }
-                    print(max)
-                    self.globalCount = max
                 }
             }
         }
+        
     }
     func updateGlobalQuestionCount() {
-        let globalQuestionsDB = globalCount
-        if let user = Auth.auth().currentUser?.email {
-            print(user)
-            db.collection("scoreForDataBase").addDocument(data: [
-                "sender" : user,
-                "body" : globalQuestionsDB
-            ]) { (error) in
-                if let e = error {
-                    print("there was an issue saving to FireStore + \(e)")
+        if isLoggedin == true {
+            let globalQuestionsDB = globalCount
+            if let user = Auth.auth().currentUser?.email {
+                print(user)
+                db.collection("scoreForDataBase").addDocument(data: [
+                    "sender" : user,
+                    "body" : globalQuestionsDB
+                ]) { (error) in
+                    if let e = error {
+                        print("there was an issue saving to FireStore + \(e)")
+                    }
+                    else {
+                        print("succesfully saved data")
+                    }
+                    
                 }
-                else {
-                    print("succesfully saved data")
-                }
-                
             }
         }
     }

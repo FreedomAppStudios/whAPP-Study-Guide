@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     }
     @IBAction func guestButtonPressed(_ sender: Any) {
         navigationController!.isNavigationBarHidden = false
+        isLoggedin = false
+        print(isLoggedin)
     }
     
     override func viewDidLoad() {

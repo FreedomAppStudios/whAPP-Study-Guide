@@ -6,6 +6,7 @@
 // Ryan Virkar
 
 import Foundation
+var isLoggedin = true
  struct cat1 {
     let questions = ["Who was the first US President?","When was America founded?", "What was the first colony?", "What state has the abbreviation 'TX'?"]
     //possible responses
