@@ -27,6 +27,8 @@ class HubViewController: UIViewController {
     var count = 0.0
     var stop = 0
     let db = Firestore.firestore()
+    var totRight = 0
+    var globalCount = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
@@ -34,6 +36,7 @@ class HubViewController: UIViewController {
         loadGlobalQuestionCount()
         //load name
         loadName()
+        loadRight()
     }
         /*    // MARK: - Navigation
      
@@ -95,4 +98,41 @@ class HubViewController: UIViewController {
             }
         }
     }
+    func loadRight(){
+        if isLoggedin == true {
+            var max = 0
+            
+            db.collection("questionsRightGlobal").addSnapshotListener { (querySnapshot, error) in
+                if let e = error {
+                    print("there was an issue retrieving data from Firestore \(e)")
+                } else {
+                    if let snapshotDocuments = querySnapshot?.documents {
+                        for doc in snapshotDocuments {
+                            let data = doc.data()
+                            if let lastUpdate = data["version"] as? Int,
+                               let userID = data["sender"] as? String,
+                               let rightA = data["totalRight"] as? Int{
+                                //print(chef)
+                                //print(userEmail)
+                                let currentID = Auth.auth().currentUser?.email
+                                let isEqual = (userID == currentID)
+                                if isEqual == true {
+                                    if lastUpdate > max {
+                                        max = lastUpdate
+                                        self.totRight = rightA
+                                        self.averageScoreLabel.text = String(self.totRight)
+                                    }
+                                }
+                            }
+                            
+                        }
+                        print(max)
+                        self.globalCount = max
+                    }
+                }
+            }
+        }
+        
+    }
+
 }
