@@ -36,7 +36,7 @@ class HubViewController: UIViewController {
         loadGlobalQuestionCount()
         //load name
         loadName()
-        loadRight()
+
     }
         /*    // MARK: - Navigation
      
@@ -55,7 +55,9 @@ class HubViewController: UIViewController {
                 if let snapshotDocuments = querySnapshot?.documents {
                     for doc in snapshotDocuments {
                         let data = doc.data()
-                        if let chef = data["body"] as? Int, let userID = data["sender"] as? String {
+                        if let chef = data["body"] as? Int,
+                           let userID = data["sender"] as? String,
+                           let rightA = data["totalRight"] as? Int{
                             //print(chef)
                             //print(userEmail)
                             let currentID = Auth.auth().currentUser?.email
@@ -63,12 +65,14 @@ class HubViewController: UIViewController {
                             if isEqual == true {
                                 if chef > max {
                                     max = chef
+                                    self.totRight = rightA
                                 }
                             }
                         }
                         
                     }
                     self.totalScoreLabel.text = String(max)
+                    self.averageScoreLabel.text = String(self.totRight)
                 }
             }
         }

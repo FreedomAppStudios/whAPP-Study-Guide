@@ -626,6 +626,7 @@ class QuizViewController :UIViewController {
     }
     func updateScore() {
         score = score + 1
+        totRight = totRight + 1
         let strScore = String(score)
         scoreCountLBL.text = "Score: " + strScore
     }
