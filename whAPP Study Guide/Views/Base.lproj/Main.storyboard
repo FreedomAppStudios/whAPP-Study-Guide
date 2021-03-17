@@ -285,20 +285,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="butIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ilJ-JG-pY4">
+                                <rect key="frame" x="-131" y="621" width="683" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="butIcon" translatesAutoresizingMaskIntoConstraints="NO" id="xqc-ZB-c6W">
                                 <rect key="frame" x="-138" y="392" width="690" height="396"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="butIcon" translatesAutoresizingMaskIntoConstraints="NO" id="zfS-Qh-epH">
-                                <rect key="frame" x="-138" y="150" width="690" height="396"/>
+                                <rect key="frame" x="-138" y="143" width="690" height="396"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ku-ag-gUq">
-                                <rect key="frame" x="83" y="747.5" width="248" height="50.5"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ku-ag-gUq">
+                                <rect key="frame" x="83" y="717" width="248" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                 <state key="normal" title="Continue">
-                                    <color key="titleColor" name="brandColorGray"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="J8K-25-EHg" kind="show" id="Rhd-JT-97O"/>
@@ -313,23 +316,20 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="69" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oaw-D4-nU1">
                                 <rect key="frame" x="125" y="278" width="165.5" height="126"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="89"/>
-                                <color key="textColor" name="brandColorGray"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="89"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="69%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Qa-Jq-42c">
                                 <rect key="frame" x="98" y="526" width="259" height="128"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="89"/>
-                                <color key="textColor" name="brandColorGray"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="89"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="acText" translatesAutoresizingMaskIntoConstraints="NO" id="EWq-hX-whd">
-                                <rect key="frame" x="-83" y="334" width="581" height="291"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="qaText" translatesAutoresizingMaskIntoConstraints="NO" id="kzE-Rk-7Oy">
-                                <rect key="frame" x="-75" y="80" width="563" height="270"/>
+                                <rect key="frame" x="-119" y="36" width="658" height="348"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="acText" translatesAutoresizingMaskIntoConstraints="NO" id="EWq-hX-whd">
+                                <rect key="frame" x="-108" y="328" width="636" height="326"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aAB-Q1-AQY"/>
@@ -337,6 +337,8 @@
                         <constraints>
                             <constraint firstItem="3Qa-Jq-42c" firstAttribute="width" secondItem="AFY-aJ-lWX" secondAttribute="width" multiplier="0.399758" id="2lb-3D-vd7"/>
                             <constraint firstItem="Oaw-D4-nU1" firstAttribute="height" secondItem="AFY-aJ-lWX" secondAttribute="height" multiplier="0.15" id="58D-RV-dO6"/>
+                            <constraint firstAttribute="trailing" secondItem="EWq-hX-whd" secondAttribute="trailing" constant="-111" id="5UE-Ps-3jy"/>
+                            <constraint firstItem="0Ku-ag-gUq" firstAttribute="top" secondItem="EWq-hX-whd" secondAttribute="bottom" constant="63" id="5zh-wE-WJO"/>
                             <constraint firstItem="0Ku-ag-gUq" firstAttribute="height" secondItem="AFY-aJ-lWX" secondAttribute="height" multiplier="0.06" id="62A-cW-NO2"/>
                             <constraint firstItem="aAB-Q1-AQY" firstAttribute="bottom" secondItem="0Ku-ag-gUq" secondAttribute="bottom" constant="10" id="9Vh-QK-f76"/>
                             <constraint firstItem="Oaw-D4-nU1" firstAttribute="width" secondItem="AFY-aJ-lWX" secondAttribute="width" multiplier="0.4" id="CLt-1a-QUQ"/>
@@ -346,8 +348,10 @@
                             <constraint firstItem="3Qa-Jq-42c" firstAttribute="height" secondItem="AFY-aJ-lWX" secondAttribute="height" multiplier="0.149752" id="LBK-JB-8So"/>
                             <constraint firstItem="FiI-C1-K9N" firstAttribute="top" secondItem="aAB-Q1-AQY" secondAttribute="top" id="N98-hR-8mx"/>
                             <constraint firstItem="Oaw-D4-nU1" firstAttribute="leading" secondItem="aAB-Q1-AQY" secondAttribute="leading" constant="30" id="Rg6-eF-GhR"/>
+                            <constraint firstItem="EWq-hX-whd" firstAttribute="leading" secondItem="AFY-aJ-lWX" secondAttribute="leading" constant="-111" id="SPA-86-hjv"/>
                             <constraint firstItem="FiI-C1-K9N" firstAttribute="centerX" secondItem="AFY-aJ-lWX" secondAttribute="centerX" id="VDl-RA-WvY"/>
                             <constraint firstItem="FiI-C1-K9N" firstAttribute="width" secondItem="AFY-aJ-lWX" secondAttribute="width" id="Woz-wz-r9v"/>
+                            <constraint firstItem="EWq-hX-whd" firstAttribute="top" secondItem="FiI-C1-K9N" secondAttribute="bottom" constant="186" id="Y0Z-sp-muv"/>
                             <constraint firstItem="FiI-C1-K9N" firstAttribute="height" secondItem="AFY-aJ-lWX" secondAttribute="height" multiplier="0.169554" id="aEC-GD-5ya"/>
                             <constraint firstItem="0Ku-ag-gUq" firstAttribute="width" secondItem="AFY-aJ-lWX" secondAttribute="width" multiplier="0.6" id="mXf-kS-NaH"/>
                             <constraint firstItem="FiI-C1-K9N" firstAttribute="top" secondItem="aAB-Q1-AQY" secondAttribute="top" constant="-1" id="o3f-Zv-ZDU"/>
@@ -685,9 +689,6 @@
         <image name="qaText" width="250" height="250"/>
         <image name="qrText" width="250" height="250"/>
         <image name="wheel" width="333" height="333"/>
-        <namedColor name="AccentColor">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="backgroundColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
