@@ -32,7 +32,11 @@ class BreakdownViewController: UIViewController {
         let tot = Double(questionsAnswered-1)
         let av : Double = (right/tot) * 100
         print(av)
-        scoreLabel.text = String(av) + "%"
+        var cut = String(av)
+        while cut.count > 4 {
+            cut.removeLast()
+        }
+        scoreLabel.text = cut + "%"
     }
     
     
