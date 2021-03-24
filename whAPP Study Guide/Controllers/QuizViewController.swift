@@ -766,7 +766,7 @@ class QuizViewController :UIViewController {
             var max = 0
             db.collection("scoreForDataBase").getDocuments { (querySnapshot, error) in
                 if let e = error {
-                    print("there was an issue retrieving data from Firestore \(e)")
+                    let _ = e
                 } else {
                     if let snapshotDocuments = querySnapshot?.documents {
                         for doc in snapshotDocuments {
@@ -774,8 +774,6 @@ class QuizViewController :UIViewController {
                             if let chef = data["body"] as? Int,
                                let userID = data["sender"] as? String,
                                let totalNumRight = data["totalRight"] as? Int{
-                                //print(chef)
-                                //print(userEmail)
                                 let currentID = Auth.auth().currentUser?.email
                                 let isEqual = (userID == currentID)
                                 if isEqual == true {
@@ -787,7 +785,6 @@ class QuizViewController :UIViewController {
                             }
                             
                         }
-                        print(max)
                         self.globalCount = max
                     }
                 }
@@ -799,87 +796,27 @@ class QuizViewController :UIViewController {
         if isLoggedin == true {
             let globalQuestionsDB = globalCount
             if let user = Auth.auth().currentUser?.email {
-                print(user)
                 db.collection("scoreForDataBase").addDocument(data: [
                     "sender" : user,
                     "body" : globalQuestionsDB,
                     "totalRight" : totRight
                 ]) { (error) in
                     if let e = error {
-                        print("there was an issue saving to FireStore + \(e)")
+                        let _ = e
                     }
                     else {
-                        print("succesfully saved data")
+                        //
                     }
                     
                 }
             }
         }
     }
-//    func loadRight(){
-//        if isLoggedin == true {
-//            var max = 0
-//
-//            db.collection("questionsRightGlobal").getDocuments { (querySnapshot, error) in
-//                if let e = error {
-//                    print("there was an issue retrieving data from Firestore \(e)")
-//                } else {
-//                    if let snapshotDocuments = querySnapshot?.documents {
-//                        for doc in snapshotDocuments {
-//                            let data = doc.data()
-//                            if let lastUpdate = data["version"] as? Int,
-//                               let userID = data["sender"] as? String,
-//                               let rightA = data["totalRight"] as? Int{
-//                                //print(chef)
-//                                //print(userEmail)
-//                                let currentID = Auth.auth().currentUser?.email
-//                                let isEqual = (userID == currentID)
-//                                if isEqual == true {
-//                                    if lastUpdate > max {
-//                                        max = lastUpdate
-//                                        self.totRight = rightA
-//                                    }
-//                                }
-//                            }
-//
-//                        }
-//                        print(max)
-//                        self.globalCount = max
-//                    }
-//                }
-//            }
-//        }
-//
-//    }
-//    func updateTotalScore() {
-//        if isLoggedin == true {
-//            let globalQuestionsDB = globalCount
-//            if let user = Auth.auth().currentUser?.email {
-//                print(user)
-//                db.collection("questionsRightGlobal").addDocument(data: [
-//                    "sender" : user,
-//                    "version" : globalQuestionsDB,
-//                    "totalRight" : totRight
-//                ]) { (error) in
-//                    if let e = error {
-//                        print("there was an issue saving to FireStore + \(e)")
-//                    }
-//                    else {
-//                        print("succesfully saved data")
-//                    }
-//
-//                }
-//            }
-//        }
-//    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "finishedQuiz" {
             let nextVC = segue.destination as! BreakdownViewController
             nextVC.scoreToday = score
-            print(score)
             nextVC.questionsAnswered = totalAnswered
-            print(totalAnswered)
-            print("prep complete")
             
             
         }

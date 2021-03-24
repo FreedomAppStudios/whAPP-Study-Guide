@@ -31,7 +31,6 @@ class BreakdownViewController: UIViewController {
         let right = Double(scoreToday)
         let tot = Double(questionsAnswered-1)
         let av : Double = (right/tot) * 100
-        print(av)
         var cut = String(av)
         while cut.count > 4 {
             cut.removeLast()
