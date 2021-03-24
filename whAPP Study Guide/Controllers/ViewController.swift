@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         loginButtonInfo.layer.cornerRadius = 30
         setupButtonInfo.layer.cornerRadius = 30
         guestButtonInfo.layer.cornerRadius = 30
-        titleLabel.text = "AP ACE"
+        titleLabel.text = "ACE AP: World History"
         navigationController!.isNavigationBarHidden = true
         
     }
