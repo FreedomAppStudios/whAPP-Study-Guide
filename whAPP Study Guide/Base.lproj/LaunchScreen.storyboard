@@ -3,8 +3,8 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loadImage" translatesAutoresizingMaskIntoConstraints="NO" id="WkV-On-7yL">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="freedomImage" translatesAutoresizingMaskIntoConstraints="NO" id="KXo-dT-nK2">
-                                <rect key="frame" x="40.5" y="281.5" width="333" height="333"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="WHAPP" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PF-u3-nJd">
                                 <rect key="frame" x="104" y="107" width="207" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
@@ -37,23 +31,12 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="backgroundColor1"/>
+                        <color key="tintColor" name="backgroundColor1"/>
                         <constraints>
                             <constraint firstItem="5PF-u3-nJd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="2CI-li-Coy"/>
-                            <constraint firstAttribute="bottom" secondItem="WkV-On-7yL" secondAttribute="bottom" id="Bkm-L2-ScW"/>
-                            <constraint firstItem="WkV-On-7yL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ChL-Mj-IBW"/>
-                            <constraint firstItem="WkV-On-7yL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="EXA-ik-O79"/>
-                            <constraint firstItem="KXo-dT-nK2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="IqZ-FC-N2a"/>
-                            <constraint firstItem="WkV-On-7yL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Tr9-4K-rxh"/>
                             <constraint firstItem="5PF-u3-nJd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="XPr-r9-O5d"/>
                             <constraint firstItem="5PF-u3-nJd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="a4a-Jg-zyj"/>
-                            <constraint firstItem="WkV-On-7yL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="eRp-a6-WiS"/>
-                            <constraint firstItem="KXo-dT-nK2" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="gcF-5z-WHs"/>
-                            <constraint firstItem="WkV-On-7yL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="iTd-EW-yAx"/>
-                            <constraint firstAttribute="trailing" secondItem="WkV-On-7yL" secondAttribute="trailing" id="mot-uT-aQW"/>
-                            <constraint firstItem="WkV-On-7yL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qSk-WK-IGF"/>
-                            <constraint firstItem="WkV-On-7yL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="qqr-vB-Myq"/>
-                            <constraint firstItem="WkV-On-7yL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xRz-BD-UCw"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -63,10 +46,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="freedomImage" width="333" height="333"/>
-        <image name="loadImage" width="1280" height="720"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="backgroundColor1">
+            <color red="0.32156862745098042" green="0.70980392156862748" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
     </resources>
 </document>

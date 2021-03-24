@@ -3,8 +3,8 @@
 //  whAPP Study Guide
 //
 //  Created by Nicholas Morris on 12/11/20.
-//
-
+//  Perfected by Nick Morris on Ryan Virkar on 3/23/2021
+//  Finished by Nick Morris, Ryan Virkar, and Ryan Beaudoin on 
 import UIKit
 import Firebase
 @main
