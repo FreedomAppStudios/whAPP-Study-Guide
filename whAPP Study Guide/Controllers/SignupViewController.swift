@@ -44,16 +44,14 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     }
     func saveName() {
         if let user = Auth.auth().currentUser?.email, let nameID = nametextField.text {
-            print(user)
             db.collection("nameForUser").addDocument(data: [
                 "sender" : user,
                 "name" : nameID
             ]) { (error) in
                 if let e = error {
-                    print("there was an issue saving to FireStore + \(e)")
+                    let _ = e
                 }
                 else {
-                    print("succesfully saved data")
                 }
                 
             }

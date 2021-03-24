@@ -20,7 +20,7 @@ class HubViewController: UIViewController {
       try firebaseAuth.signOut()
         navigationController?.popToRootViewController(animated: true)
     } catch let signOutError as NSError {
-      print ("Error signing out: %@", signOutError)
+      let _ = signOutError
     }
     
     }
@@ -50,7 +50,7 @@ class HubViewController: UIViewController {
         var max = 0
         db.collection("scoreForDataBase").addSnapshotListener { (querySnapshot, error) in
             if let e = error {
-                print("there was an issue retrieving data from Firestore \(e)")
+                let _ = e
             } else {
                 if let snapshotDocuments = querySnapshot?.documents {
                     for doc in snapshotDocuments {
@@ -58,8 +58,6 @@ class HubViewController: UIViewController {
                         if let chef = data["body"] as? Int,
                            let userID = data["sender"] as? String,
                            let rightA = data["totalRight"] as? Int{
-                            //print(chef)
-                            //print(userEmail)
                             let currentID = Auth.auth().currentUser?.email
                             let isEqual = (userID == currentID)
                             if isEqual == true {
@@ -81,14 +79,12 @@ class HubViewController: UIViewController {
         var displayName = ""
         db.collection("nameForUser").addSnapshotListener { (querySnapshot, error) in
             if let e = error {
-                print("there was an issue retrieving data from Firestore \(e)")
+                let _ = e
             } else {
                 if let snapshotDocuments = querySnapshot?.documents {
                     for doc in snapshotDocuments {
                         let data = doc.data()
                         if let myName = data["name"] as? String, let userID = data["sender"] as? String {
-                            //print(chef)
-                            //print(userEmail)
                             let currentID = Auth.auth().currentUser?.email
                             let isEqual = (userID == currentID)
                             if isEqual == true {
@@ -107,7 +103,7 @@ class HubViewController: UIViewController {
             
             db.collection("questionsRightGlobal").addSnapshotListener { (querySnapshot, error) in
                 if let e = error {
-                    print("there was an issue retrieving data from Firestore \(e)")
+                    let _ = e
                 } else {
                     if let snapshotDocuments = querySnapshot?.documents {
                         for doc in snapshotDocuments {
@@ -115,8 +111,6 @@ class HubViewController: UIViewController {
                             if let lastUpdate = data["version"] as? Int,
                                let userID = data["sender"] as? String,
                                let rightA = data["totalRight"] as? Int{
-                                //print(chef)
-                                //print(userEmail)
                                 let currentID = Auth.auth().currentUser?.email
                                 let isEqual = (userID == currentID)
                                 if isEqual == true {
@@ -129,7 +123,6 @@ class HubViewController: UIViewController {
                             }
                             
                         }
-                        print(max)
                         self.globalCount = max
                     }
                 }

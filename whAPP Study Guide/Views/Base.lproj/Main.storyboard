@@ -139,24 +139,25 @@
                                     <action selector="goButtonAction:" destination="O0H-mS-Xe1" eventType="touchUpInside" id="RZO-8r-3yB"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Problems Yet" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RrK-c2-Ik1">
-                                <rect key="frame" x="25" y="535" width="325" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemRedColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gUg-fe-LGy">
                                 <rect key="frame" x="56.5" y="159" width="262.5" height="31"/>
                                 <color key="textColor" name="brandColorGray"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="continue" textContentType="name"/>
                             </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Problems Yet" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RrK-c2-Ik1">
+                                <rect key="frame" x="25" y="116" width="325" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eV5-g3-WJh"/>
                         <color key="backgroundColor" red="0.24313725489999999" green="0.70980392160000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="5O6-aw-okz" firstAttribute="top" secondItem="eV5-g3-WJh" secondAttribute="top" constant="250" id="0dF-c6-gob"/>
                             <constraint firstItem="5O6-aw-okz" firstAttribute="width" secondItem="aom-VD-ol7" secondAttribute="width" multiplier="0.7" id="1oF-SY-ICU"/>
+                            <constraint firstItem="gUg-fe-LGy" firstAttribute="top" secondItem="RrK-c2-Ik1" secondAttribute="bottom" constant="22.5" id="5Kc-pZ-wbL"/>
                             <constraint firstItem="5O6-aw-okz" firstAttribute="height" secondItem="aom-VD-ol7" secondAttribute="height" multiplier="0.05" id="5Sd-PK-Oeh"/>
                             <constraint firstItem="fdo-kW-ktg" firstAttribute="width" secondItem="aom-VD-ol7" secondAttribute="width" multiplier="0.7" id="6KT-f4-0pW"/>
                             <constraint firstItem="RrK-c2-Ik1" firstAttribute="leading" secondItem="eV5-g3-WJh" secondAttribute="leading" constant="25" id="7Ag-83-CVa"/>
@@ -175,7 +176,6 @@
                             <constraint firstItem="rOT-fX-k0g" firstAttribute="height" secondItem="aom-VD-ol7" secondAttribute="height" multiplier="0.05" id="hiV-d0-Cxm"/>
                             <constraint firstItem="5O6-aw-okz" firstAttribute="centerX" secondItem="aom-VD-ol7" secondAttribute="centerX" id="iib-td-yIS"/>
                             <constraint firstItem="fdo-kW-ktg" firstAttribute="top" secondItem="gUg-fe-LGy" secondAttribute="bottom" constant="250" id="m0n-sa-lFb"/>
-                            <constraint firstItem="RrK-c2-Ik1" firstAttribute="top" secondItem="fdo-kW-ktg" secondAttribute="bottom" constant="45" id="obu-0K-k49"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ACE AP: World History" id="DNK-r9-GKR">
@@ -401,14 +401,14 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="wheel" translatesAutoresizingMaskIntoConstraints="NO" id="yIZ-CO-aXA">
-                                <rect key="frame" x="21" y="145" width="333" height="333"/>
+                                <rect key="frame" x="63" y="186.5" width="249.5" height="250"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="arrowtriangle.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wHe-pK-cBp">
-                                <rect key="frame" x="56.5" y="488" width="262.5" height="30"/>
+                                <rect key="frame" x="56.5" y="446.5" width="262.5" height="71.5"/>
                                 <color key="tintColor" name="backgroundColor"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJv-3B-h1H">
-                                <rect key="frame" x="75" y="1" width="225" height="84"/>
+                                <rect key="frame" x="75" y="42.5" width="225" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <state key="normal" title="Spin!">
                                     <color key="titleColor" name="backgroundColor"/>
@@ -457,11 +457,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6H-NJ-OvT">
-                                <rect key="frame" x="0.0" y="67" width="375" height="152.5"/>
-                                <string key="text">Soldiers brought disease with them when fighting in wars. Athens faced a plague that came as a result of the Peloponnesian War the Roman Empire experienced a population decline as a result of disease that came from trade.
-
-These occurrences explain...</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6H-NJ-OvT">
+                                <rect key="frame" x="0.0" y="67" width="375" height="20.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <color key="textColor" name="backgroundColor"/>
                                 <nil key="highlightedColor"/>
@@ -470,7 +467,7 @@ These occurrences explain...</string>
                                 <rect key="frame" x="19" y="258.5" width="337.5" height="43.5"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <state key="normal" title="How war and trade facilitated the spread of disease">
+                                <state key="normal" title="Loading...">
                                     <color key="titleColor" name="otherColor"/>
                                 </state>
                                 <connections>
@@ -481,7 +478,7 @@ These occurrences explain...</string>
                                 <rect key="frame" x="19" y="352" width="337.5" height="44"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <state key="normal" title="How the Roman Empire fell">
+                                <state key="normal" title="Loading...">
                                     <color key="titleColor" name="otherColor"/>
                                 </state>
                                 <connections>
@@ -492,7 +489,7 @@ These occurrences explain...</string>
                                 <rect key="frame" x="19" y="446" width="337.5" height="43.5"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <state key="normal" title="Why war and not trade facilitates the spread of disease">
+                                <state key="normal" title="Loading...">
                                     <color key="titleColor" name="otherColor"/>
                                 </state>
                                 <connections>
@@ -503,7 +500,7 @@ These occurrences explain...</string>
                                 <rect key="frame" x="19" y="539.5" width="337.5" height="43.5"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <state key="normal" title="How the Mongols used a disease to conquer their opponents">
+                                <state key="normal" title="Loading...">
                                     <color key="titleColor" name="otherColor"/>
                                 </state>
                                 <connections>
@@ -706,7 +703,7 @@ These occurrences explain...</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="VCK-aU-iZp"/>
-        <segue reference="LaC-hz-1Z8"/>
+        <segue reference="oG3-Uq-eFy"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="brandColorGray"/>
     <resources>
@@ -715,7 +712,7 @@ These occurrences explain...</string>
         <image name="butIcon" width="193.5" height="73.5"/>
         <image name="qaText" width="212.5" height="89.5"/>
         <image name="qrText" width="212.5" height="81"/>
-        <image name="wheel" width="333" height="333"/>
+        <image name="wheel" width="249.5" height="250"/>
         <namedColor name="backgroundColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
