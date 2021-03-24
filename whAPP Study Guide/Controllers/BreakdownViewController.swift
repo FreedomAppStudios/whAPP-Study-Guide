@@ -39,14 +39,5 @@ class BreakdownViewController: UIViewController {
         scoreLabel.text = cut + "%"
     }
     
-    
-
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "doneToHome" {
-            let destinationVC = segue.destination as! ViewController
-            destinationVC.navigationController!.isNavigationBarHidden = true
-        }
-    }
 
 }

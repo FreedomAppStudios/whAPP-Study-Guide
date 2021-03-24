@@ -58,9 +58,6 @@ class SecondViewController: UIViewController {
         count = 0.0
         stop = Int.random(in: 0...3)
         holder = wheels[stop]
-        print(stop + 1)
-        print(holder)
-        print("Run!!!")
         _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
         return stop
     }
@@ -68,7 +65,6 @@ class SecondViewController: UIViewController {
         //var holder = wheels[stop]
         //var holder = 25
         if holder > 0{
-            print(holder)
             wheelImage.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi / count))
             count = count + 0.01
             holder-=1

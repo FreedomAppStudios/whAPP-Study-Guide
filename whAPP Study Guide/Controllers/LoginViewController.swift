@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var errorLabel: UILabel!
@@ -31,10 +31,41 @@ class LoginViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.passwordTextField.delegate = self
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+
+       //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+       //tap.cancelsTouchesInView = false
+
+       view.addGestureRecognizer(tap)
 
         // Do any additional setup after loading the view.
     }
-    
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+
+        //textField code
+
+        passwordTextField.resignFirstResponder()  //if desired
+        performAction()
+        return true
+    }
+
+    func performAction() {
+        if let email = emailTextField.text, let password = passwordTextField.text {
+            Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+                if let e = error {
+                    self!.errorLabel.isHidden = false
+                    self!.errorLabel.text = e.localizedDescription
+                } else {
+                    self!.performSegue(withIdentifier: "LoginToHome", sender: self)
+                }
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation

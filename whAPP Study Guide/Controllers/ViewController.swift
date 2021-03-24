@@ -33,7 +33,19 @@ class ViewController: UIViewController {
         loginButtonInfo.layer.cornerRadius = 30
         setupButtonInfo.layer.cornerRadius = 30
         guestButtonInfo.layer.cornerRadius = 30
-        titleLabel.text = "ACE AP: World History"
+        
+        //titleLabel.text = "ACE AP: World History"
+        
+        titleLabel.text = ""
+        var charIndex = 0.0
+        let titleText = "ACE AP: World History"
+        for letter in titleText {
+            Timer.scheduledTimer(withTimeInterval:  0.1 * charIndex, repeats: false) {
+                (timer) in self.titleLabel.text?.append(letter)
+            }
+            charIndex += 1
+        }
+        
         navigationController!.isNavigationBarHidden = true
         
     }

@@ -13,7 +13,7 @@ class QuizViewController :UIViewController {
     var count = 60
     var score = 0
     var totalAnswered = 0
-    var quesCount = 3
+    var quesCount = 7
     var rightNum = 0
     var timerTest : Timer?
     var globalCount = 0
@@ -293,6 +293,22 @@ class QuizViewController :UIViewController {
         btn2Info.backgroundColor = .white
         btn3Info.backgroundColor = .white
         btn4Info.backgroundColor = .white
+        
+        btn1Info.titleLabel?.minimumScaleFactor = 0.5
+        btn1Info.titleLabel?.numberOfLines = 0   //<-- Or to desired number of lines
+        btn1Info.titleLabel?.adjustsFontSizeToFitWidth = true
+        
+        btn2Info.titleLabel?.minimumScaleFactor = 0.5
+        btn2Info.titleLabel?.numberOfLines = 0   //<-- Or to desired number of lines
+        btn2Info.titleLabel?.adjustsFontSizeToFitWidth = true
+        
+        btn3Info.titleLabel?.minimumScaleFactor = 0.5
+        btn3Info.titleLabel?.numberOfLines = 0   //<-- Or to desired number of lines
+        btn3Info.titleLabel?.adjustsFontSizeToFitWidth = true
+        
+        btn4Info.titleLabel?.minimumScaleFactor = 0.5
+        btn4Info.titleLabel?.numberOfLines = 0   //<-- Or to desired number of lines
+        btn4Info.titleLabel?.adjustsFontSizeToFitWidth = true
         
         //Setting button text
         rightNum = setButtons(numOfQues: quesCount)
