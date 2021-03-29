@@ -466,7 +466,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hWd-Fp-6Fy">
-                                <rect key="frame" x="19" y="258.5" width="337.5" height="43.5"/>
+                                <rect key="frame" x="19" y="134" width="337.5" height="74.5"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="Loading...">
@@ -477,7 +477,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nSn-l9-ofl">
-                                <rect key="frame" x="19" y="352" width="337.5" height="44"/>
+                                <rect key="frame" x="19" y="258.5" width="337.5" height="75"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="Loading...">
@@ -488,7 +488,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5xv-hJ-MFi">
-                                <rect key="frame" x="19" y="446" width="337.5" height="43.5"/>
+                                <rect key="frame" x="19" y="383.5" width="337.5" height="74.5"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="Loading...">
@@ -499,7 +499,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="XoV-us-7qu">
-                                <rect key="frame" x="19" y="539.5" width="337.5" height="43.5"/>
+                                <rect key="frame" x="19" y="508" width="337.5" height="75"/>
                                 <color key="backgroundColor" name="backgroundColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="Loading...">
@@ -527,11 +527,11 @@
                         <constraints>
                             <constraint firstItem="jKg-5q-j3b" firstAttribute="leading" secondItem="IIs-ad-HJ9" secondAttribute="leading" constant="20" id="6O9-Os-aN4"/>
                             <constraint firstItem="XoV-us-7qu" firstAttribute="width" secondItem="wql-aV-jaU" secondAttribute="width" multiplier="0.9" id="BgG-dd-jMd"/>
-                            <constraint firstItem="XoV-us-7qu" firstAttribute="height" secondItem="wql-aV-jaU" secondAttribute="height" multiplier="0.07" id="DRV-IV-CjF"/>
+                            <constraint firstItem="XoV-us-7qu" firstAttribute="height" secondItem="wql-aV-jaU" secondAttribute="height" multiplier="0.12" id="DRV-IV-CjF"/>
                             <constraint firstItem="nSn-l9-ofl" firstAttribute="centerX" secondItem="wql-aV-jaU" secondAttribute="centerX" id="HDg-22-VWT"/>
                             <constraint firstItem="hWd-Fp-6Fy" firstAttribute="width" secondItem="wql-aV-jaU" secondAttribute="width" multiplier="0.9" id="KNk-7M-zsK"/>
                             <constraint firstItem="5xv-hJ-MFi" firstAttribute="width" secondItem="wql-aV-jaU" secondAttribute="width" multiplier="0.9" id="ORA-rJ-QYS"/>
-                            <constraint firstItem="hWd-Fp-6Fy" firstAttribute="height" secondItem="wql-aV-jaU" secondAttribute="height" multiplier="0.07" id="OVY-sn-fsm"/>
+                            <constraint firstItem="hWd-Fp-6Fy" firstAttribute="height" secondItem="wql-aV-jaU" secondAttribute="height" multiplier="0.12" id="OVY-sn-fsm"/>
                             <constraint firstItem="hWd-Fp-6Fy" firstAttribute="centerX" secondItem="wql-aV-jaU" secondAttribute="centerX" id="QWR-PP-KPx"/>
                             <constraint firstItem="5xv-hJ-MFi" firstAttribute="top" secondItem="nSn-l9-ofl" secondAttribute="bottom" constant="50" id="RwI-rK-Wsk"/>
                             <constraint firstItem="IIs-ad-HJ9" firstAttribute="bottom" secondItem="XoV-us-7qu" secondAttribute="bottom" constant="40" id="SND-k9-eCY"/>
@@ -546,9 +546,9 @@
                             <constraint firstItem="lGw-4Z-C3c" firstAttribute="leading" secondItem="IIs-ad-HJ9" secondAttribute="leading" constant="200.5" id="mA0-9b-8S8"/>
                             <constraint firstItem="XoV-us-7qu" firstAttribute="centerX" secondItem="wql-aV-jaU" secondAttribute="centerX" id="oIo-CV-Xpy"/>
                             <constraint firstItem="XoV-us-7qu" firstAttribute="top" secondItem="5xv-hJ-MFi" secondAttribute="bottom" constant="50" id="ogg-9I-qwz"/>
-                            <constraint firstItem="nSn-l9-ofl" firstAttribute="height" secondItem="wql-aV-jaU" secondAttribute="height" multiplier="0.07" id="rLU-28-efe"/>
+                            <constraint firstItem="nSn-l9-ofl" firstAttribute="height" secondItem="wql-aV-jaU" secondAttribute="height" multiplier="0.12" id="rLU-28-efe"/>
                             <constraint firstItem="e6H-NJ-OvT" firstAttribute="top" secondItem="jKg-5q-j3b" secondAttribute="bottom" constant="5" id="tTn-43-qno"/>
-                            <constraint firstItem="5xv-hJ-MFi" firstAttribute="height" secondItem="wql-aV-jaU" secondAttribute="height" multiplier="0.07" id="utJ-QE-n5g"/>
+                            <constraint firstItem="5xv-hJ-MFi" firstAttribute="height" secondItem="wql-aV-jaU" secondAttribute="height" multiplier="0.12" id="utJ-QE-n5g"/>
                             <constraint firstItem="e6H-NJ-OvT" firstAttribute="leading" secondItem="IIs-ad-HJ9" secondAttribute="leading" id="ya9-OT-4Hz"/>
                         </constraints>
                     </view>
