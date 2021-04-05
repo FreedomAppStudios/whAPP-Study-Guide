@@ -69,6 +69,7 @@
 		BBCF233E25AF7F7A00AB622B /* BreakdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakdownViewController.swift; sourceTree = "<group>"; };
 		BBD2E567259C42D000B4D2BC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BBD2E56C259C431500B4D2BC /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		FE2AC770261BD43100B0923A /* whAPP Study Guide.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "whAPP Study Guide.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +123,7 @@
 		017043AF258473E1005F4D42 /* whAPP Study Guide */ = {
 			isa = PBXGroup;
 			children = (
+				FE2AC770261BD43100B0923A /* whAPP Study Guide.entitlements */,
 				017043B0258473E1005F4D42 /* AppDelegate.swift */,
 				017043B2258473E1005F4D42 /* SceneDelegate.swift */,
 				017043ED258718D7005F4D42 /* Models */,
@@ -563,6 +565,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "whAPP Study Guide/whAPP Study Guide.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UX88VNJ22A;
 				INFOPLIST_FILE = "whAPP Study Guide/Info.plist";
@@ -586,6 +589,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "whAPP Study Guide/whAPP Study Guide.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UX88VNJ22A;
 				INFOPLIST_FILE = "whAPP Study Guide/Info.plist";

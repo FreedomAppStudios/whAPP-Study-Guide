@@ -29,6 +29,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
                     self.errorLabel.text = e.localizedDescription
                 }
                 else {
+                    isLoggedin = true
                     self.saveName()
                     self.performSegue(withIdentifier: "RegisterToHome", sender: self)
                 }

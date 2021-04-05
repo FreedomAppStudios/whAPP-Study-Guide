@@ -34,6 +34,7 @@ class ViewController: UIViewController {
     @IBAction func guestButtonPressed(_ sender: Any) {
         navigationController!.isNavigationBarHidden = false
         isLoggedin = false
+        performSegue(withIdentifier: "loginAsGuest", sender: self)
     }
     
     override func viewDidLoad() {

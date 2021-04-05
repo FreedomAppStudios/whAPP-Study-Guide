@@ -23,6 +23,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     self!.errorLabel.isHidden = false
                     self!.errorLabel.text = e.localizedDescription
                 } else {
+                    isLoggedin = true
                     self!.performSegue(withIdentifier: "LoginToHome", sender: self)
                 }
             }

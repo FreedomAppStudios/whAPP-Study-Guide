@@ -13,7 +13,7 @@ class QuizViewController :UIViewController {
     var count = 60
     var score = 0
     var totalAnswered = 0
-    var quesCount = 7
+    var quesCount = 99
     var rightNum = 0
     var timerTest : Timer?
     var globalCount = 0
