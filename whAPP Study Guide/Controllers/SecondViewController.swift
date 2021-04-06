@@ -20,6 +20,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var wheelImage: UIImageView!
     @IBOutlet weak var buttonID: UIButton!
     
+    @IBOutlet weak var spinID: UIButton!
     @IBAction func spinButtonPressed(_ sender: Any) {
         intCat = runTimer()
         chosen = intCat + 1
@@ -34,6 +35,7 @@ class SecondViewController: UIViewController {
         intCat = runTimer()
         chosen = intCat + 1
         buttonID.layer.cornerRadius = 15
+        spinID.layer.cornerRadius = 15
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "performSegueToGame" {
