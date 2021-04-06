@@ -92,7 +92,7 @@ class HubViewController: UIViewController {
                             }
                         }
                     }
-                    self.welcomeLabel.text = "Hello \(displayName)"
+                    self.welcomeLabel.text = "Welcome Back \(displayName)"
                 }
             }
         }
