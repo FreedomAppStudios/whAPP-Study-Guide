@@ -18,6 +18,7 @@ class SecondViewController: UIViewController {
     var intCat = 0
     var classy : Any = cat1()
     @IBOutlet weak var wheelImage: UIImageView!
+    @IBOutlet weak var buttonID: UIButton!
     
     @IBAction func spinButtonPressed(_ sender: Any) {
         intCat = runTimer()
@@ -32,6 +33,7 @@ class SecondViewController: UIViewController {
         //picker.setValue(UIColor.white, forKey: "textColor")
         intCat = runTimer()
         chosen = intCat + 1
+        buttonID.layer.cornerRadius = 15
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "performSegueToGame" {
