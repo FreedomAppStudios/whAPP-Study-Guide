@@ -22,7 +22,8 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var spinID: UIButton!
     @IBAction func spinButtonPressed(_ sender: Any) {
-        intCat = runTimer()
+        wheelImage.rotate360Degrees()
+        //intCat = runTimer()
         chosen = intCat + 1
     }
     @IBAction func startButtonPressed(_ sender: Any) {
@@ -32,7 +33,7 @@ class SecondViewController: UIViewController {
         //picker.dataSource = self
         //picker.delegate = self
         //picker.setValue(UIColor.white, forKey: "textColor")
-        intCat = runTimer()
+        //intCat = runTimer()
         chosen = intCat + 1
         buttonID.layer.cornerRadius = 15
         spinID.layer.cornerRadius = 15
@@ -40,16 +41,16 @@ class SecondViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "performSegueToGame" {
             if chosen == 1 {
-            classy = cat1()
+                classy = cat1()
             }
             else if chosen == 2 {
-            classy = cat2()
+                classy = cat2()
             }
             else if chosen == 3 {
-            classy = cat3()
+                classy = cat3()
             }
             else {
-            classy = cat4()
+                classy = cat4()
             }
             let destinationVC = segue.destination as! QuizViewController
             destinationVC.cato = classy
@@ -73,6 +74,22 @@ class SecondViewController: UIViewController {
             count = count + 0.01
             holder-=1
         }
+    }
+}
+extension UIView {
+    func rotate360Degrees(duration: CFTimeInterval = 2.0, completionDelegate: AnyObject? = nil) {
+        let ranDegrees = [0.5,1.0,1.5,2.0]
+        let r = Int.random(in: 0...3)
+        let val = ranDegrees[r]
+        let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
+        rotateAnimation.fromValue = 0.0
+        rotateAnimation.toValue = CGFloat(.pi * val)
+        rotateAnimation.duration = duration
+        
+        if let delegate: AnyObject = completionDelegate {
+            rotateAnimation.delegate = delegate as? CAAnimationDelegate
+        }
+        self.layer.add(rotateAnimation, forKey: nil)
     }
 }
 //extension SecondViewController: UIPickerViewDataSource {
