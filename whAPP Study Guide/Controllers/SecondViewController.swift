@@ -16,25 +16,21 @@ class SecondViewController: UIViewController {
     let wheels = [104,30,50,40]
     var holder = 0
     var intCat = 0
+    var spiny : CGFloat = 0.0
     var classy : Any = cat1()
     @IBOutlet weak var wheelImage: UIImageView!
     @IBOutlet weak var buttonID: UIButton!
     
     @IBOutlet weak var spinID: UIButton!
     @IBAction func spinButtonPressed(_ sender: Any) {
-        wheelImage.rotate360Degrees()
-        //intCat = runTimer()
-        chosen = intCat + 1
+        
+        spin()
+        
     }
     @IBAction func startButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "performSegueToGame", sender: self)
     }
     override func viewDidLoad() {
-        //picker.dataSource = self
-        //picker.delegate = self
-        //picker.setValue(UIColor.white, forKey: "textColor")
-        //intCat = runTimer()
-        chosen = intCat + 1
         buttonID.layer.cornerRadius = 15
         spinID.layer.cornerRadius = 15
     }
@@ -75,15 +71,31 @@ class SecondViewController: UIViewController {
             holder-=1
         }
     }
-}
-extension UIView {
-    func rotate360Degrees(duration: CFTimeInterval = 2.0, completionDelegate: AnyObject? = nil) {
+    func spin() {
+        wheelImage.rotate360Degrees()
+        UIView.animate(withDuration: 2.0, animations: {
+            var h = self.genRan()
+            if CGFloat(h) == self.spiny {
+                h = self.genRan()
+            }
+            let p = h * .pi
+            self.spiny = CGFloat(h)
+            self.wheelImage.transform = CGAffineTransform(rotationAngle: CGFloat(p))
+        })
+    }
+    func genRan()->Double {
         let ranDegrees = [0.5,1.0,1.5,2.0]
         let r = Int.random(in: 0...3)
+        chosen = r+1
         let val = ranDegrees[r]
+        return val
+    }
+}
+extension UIView {
+    func rotate360Degrees(duration: CFTimeInterval = 1.0, completionDelegate: AnyObject? = nil) {
         let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
         rotateAnimation.fromValue = 0.0
-        rotateAnimation.toValue = CGFloat(.pi * val)
+        rotateAnimation.toValue = CGFloat(.pi * 2.0)
         rotateAnimation.duration = duration
         
         if let delegate: AnyObject = completionDelegate {
@@ -92,17 +104,4 @@ extension UIView {
         self.layer.add(rotateAnimation, forKey: nil)
     }
 }
-//extension SecondViewController: UIPickerViewDataSource {
-//    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-//        return 1
-//    }
-//    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-//        return catos.count
-//    }
-//}
-//extension SecondViewController: UIPickerViewDelegate {
-//    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-//        return catos[row]
-//    }
-//}
 
