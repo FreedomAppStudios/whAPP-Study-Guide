@@ -567,13 +567,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "whAPP Study Guide/whAPP Study Guide.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UX88VNJ22A;
+				DEVELOPMENT_TEAM = P6X6D3C93L;
 				INFOPLIST_FILE = "whAPP Study Guide/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nickmorris.whAPP-Study-Guide";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jessicamorris.whAPP-Study-Guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "whAPP Study Guide/Controllers/whAPP Study Guide-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -591,13 +591,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "whAPP Study Guide/whAPP Study Guide.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UX88VNJ22A;
+				DEVELOPMENT_TEAM = P6X6D3C93L;
 				INFOPLIST_FILE = "whAPP Study Guide/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nickmorris.whAPP-Study-Guide";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jessicamorris.whAPP-Study-Guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "whAPP Study Guide/Controllers/whAPP Study Guide-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
