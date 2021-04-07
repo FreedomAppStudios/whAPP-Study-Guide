@@ -33,6 +33,9 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         buttonID.layer.cornerRadius = 15
         spinID.layer.cornerRadius = 15
+        buttonID.isHidden = true
+        buttonID.isEnabled = false
+        spinID.titleLabel?.text = "SPIN"
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "performSegueToGame" {
@@ -72,6 +75,9 @@ class SecondViewController: UIViewController {
         }
     }
     func spin() {
+        buttonID.isHidden = false
+        buttonID.isEnabled = true
+        spinID.setTitle("SPIN AGAIN", for: UIControl.State.normal)
         wheelImage.rotate360Degrees()
         UIView.animate(withDuration: 2.0, animations: {
             var h = self.genRan()

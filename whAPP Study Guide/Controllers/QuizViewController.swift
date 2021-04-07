@@ -644,7 +644,7 @@ class QuizViewController :UIViewController {
         score = score + 1
         totRight = totRight + 1
         let strScore = String(score)
-        scoreCountLBL.text = "Score: " + strScore
+        scoreCountLBL.text = "SCORE: " + strScore
     }
     func findRight() {
         if catNum == 1 {
