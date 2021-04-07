@@ -39,6 +39,10 @@ class SecondViewController: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "performSegueToGame" {
+            if chosen == 0 {
+                chosen = 4
+            }
+            print(chosen)
             if chosen == 1 {
                 classy = cat1()
             }
@@ -92,7 +96,7 @@ class SecondViewController: UIViewController {
     func genRan()->Double {
         let ranDegrees = [0.5,1.0,1.5,2.0]
         let r = Int.random(in: 0...3)
-        chosen = r+1
+        chosen = r
         let val = ranDegrees[r]
         return val
     }
