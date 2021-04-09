@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7d-WF-kPp">
@@ -109,7 +109,7 @@
             <objects>
                 <viewController id="O0H-mS-Xe1" customClass="SignupViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aom-VD-ol7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1a9-Xv-SW5">
@@ -205,7 +205,7 @@
             <objects>
                 <viewController id="jYL-dh-X0S" customClass="LoginViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="65F-hu-X29">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B9S-SV-LUs">
@@ -289,7 +289,7 @@
             <objects>
                 <viewController id="IPu-M6-Io5" customClass="HubViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AFY-aJ-lWX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="butIcon" translatesAutoresizingMaskIntoConstraints="NO" id="xqc-ZB-c6W">
@@ -394,7 +394,7 @@
             <objects>
                 <viewController id="J8K-25-EHg" customClass="SecondViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mBv-R6-Uiv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgN-QC-fj0">
@@ -477,11 +477,11 @@
             <objects>
                 <viewController id="jFc-27-FTr" customClass="QuizViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wql-aV-jaU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6H-NJ-OvT">
-                                <rect key="frame" x="0.0" y="68" width="375" height="20.5"/>
+                                <rect key="frame" x="0.0" y="62" width="375" height="20.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <color key="textColor" name="backgroundColor"/>
                                 <nil key="highlightedColor"/>
@@ -530,15 +530,15 @@
                                     <action selector="answer4Pressed:" destination="jFc-27-FTr" eventType="touchUpInside" id="teN-vw-SYg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKg-5q-j3b">
-                                <rect key="frame" x="20" y="15" width="97" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIME 60" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKg-5q-j3b">
+                                <rect key="frame" x="10" y="15" width="135" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" name="brandColorWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGw-4Z-C3c">
-                                <rect key="frame" x="180" y="15" width="175" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE: 000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGw-4Z-C3c">
+                                <rect key="frame" x="160" y="15" width="205" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" name="brandColorWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -546,7 +546,7 @@
                         <viewLayoutGuide key="safeArea" id="IIs-ad-HJ9"/>
                         <color key="backgroundColor" name="backgroundColor1"/>
                         <constraints>
-                            <constraint firstItem="jKg-5q-j3b" firstAttribute="leading" secondItem="IIs-ad-HJ9" secondAttribute="leading" constant="20" id="6O9-Os-aN4"/>
+                            <constraint firstItem="jKg-5q-j3b" firstAttribute="leading" secondItem="IIs-ad-HJ9" secondAttribute="leading" constant="10" id="6O9-Os-aN4"/>
                             <constraint firstItem="XoV-us-7qu" firstAttribute="width" secondItem="wql-aV-jaU" secondAttribute="width" multiplier="0.9" id="BgG-dd-jMd"/>
                             <constraint firstItem="XoV-us-7qu" firstAttribute="height" secondItem="wql-aV-jaU" secondAttribute="height" multiplier="0.12" id="DRV-IV-CjF"/>
                             <constraint firstItem="nSn-l9-ofl" firstAttribute="centerX" secondItem="wql-aV-jaU" secondAttribute="centerX" id="HDg-22-VWT"/>
@@ -560,11 +560,11 @@
                             <constraint firstItem="lGw-4Z-C3c" firstAttribute="top" secondItem="IIs-ad-HJ9" secondAttribute="top" constant="15" id="Vc4-ef-8WI"/>
                             <constraint firstItem="nSn-l9-ofl" firstAttribute="top" secondItem="hWd-Fp-6Fy" secondAttribute="bottom" constant="50" id="WAj-2V-SSn"/>
                             <constraint firstItem="5xv-hJ-MFi" firstAttribute="centerX" secondItem="wql-aV-jaU" secondAttribute="centerX" id="YTk-lS-lIo"/>
-                            <constraint firstItem="IIs-ad-HJ9" firstAttribute="trailing" secondItem="lGw-4Z-C3c" secondAttribute="trailing" constant="20" id="hiy-2k-yEQ"/>
+                            <constraint firstItem="IIs-ad-HJ9" firstAttribute="trailing" secondItem="lGw-4Z-C3c" secondAttribute="trailing" constant="10" id="hiy-2k-yEQ"/>
                             <constraint firstItem="IIs-ad-HJ9" firstAttribute="trailing" secondItem="e6H-NJ-OvT" secondAttribute="trailing" id="k6l-cH-Nuf"/>
-                            <constraint firstItem="IIs-ad-HJ9" firstAttribute="trailing" secondItem="jKg-5q-j3b" secondAttribute="trailing" constant="258" id="knB-uE-1kN"/>
+                            <constraint firstItem="IIs-ad-HJ9" firstAttribute="trailing" secondItem="jKg-5q-j3b" secondAttribute="trailing" constant="230" id="knB-uE-1kN"/>
                             <constraint firstItem="jKg-5q-j3b" firstAttribute="top" secondItem="IIs-ad-HJ9" secondAttribute="top" constant="15" id="lu3-Y6-lWw"/>
-                            <constraint firstItem="lGw-4Z-C3c" firstAttribute="leading" secondItem="IIs-ad-HJ9" secondAttribute="leading" constant="180" id="mA0-9b-8S8"/>
+                            <constraint firstItem="lGw-4Z-C3c" firstAttribute="leading" secondItem="IIs-ad-HJ9" secondAttribute="leading" constant="160" id="mA0-9b-8S8"/>
                             <constraint firstItem="XoV-us-7qu" firstAttribute="centerX" secondItem="wql-aV-jaU" secondAttribute="centerX" id="oIo-CV-Xpy"/>
                             <constraint firstItem="XoV-us-7qu" firstAttribute="top" secondItem="5xv-hJ-MFi" secondAttribute="bottom" constant="50" id="ogg-9I-qwz"/>
                             <constraint firstItem="nSn-l9-ofl" firstAttribute="height" secondItem="wql-aV-jaU" secondAttribute="height" multiplier="0.12" id="rLU-28-efe"/>
@@ -601,7 +601,7 @@
             <objects>
                 <viewController id="dRF-e2-yNc" customClass="BreakdownViewController" customModule="whAPP_Study_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gs1-sa-bbI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="butIcon" translatesAutoresizingMaskIntoConstraints="NO" id="0O1-lY-2bt">
