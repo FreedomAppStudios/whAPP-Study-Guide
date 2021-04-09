@@ -283,6 +283,21 @@ class QuizViewController :UIViewController {
     //view did load
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var msg = ""
+        
+        if catNum == 1 {
+            msg = "Period: 1200-1450"
+        } else if catNum == 2 {
+            msg = "Period: 1450-1750"
+        } else if catNum == 3 {
+            msg = "Period: 1750-1900"
+        } else if catNum == 4 {
+            msg = "Period: 1900-2000"
+        }
+        
+        self.title = msg
+        
         //Var update
         //Button set up
         btn1Info.layer.cornerRadius = 25
