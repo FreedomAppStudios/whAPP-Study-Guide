@@ -8,5 +8,7 @@ target 'whAPP Study Guide' do
   pod 'CLTypingLabel'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Core'
+  pod 'Firebase/AdMob'
 
 end

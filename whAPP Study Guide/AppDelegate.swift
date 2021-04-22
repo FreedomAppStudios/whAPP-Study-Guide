@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         FirebaseApp.configure()
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-3032616980524090~1620106145")
         
         let db = Firestore.firestore()
         

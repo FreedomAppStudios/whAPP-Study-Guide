@@ -4,6 +4,7 @@
 
 import UIKit
 import Firebase
+import GoogleMobileAds
 
 class QuizViewController :UIViewController {
     
@@ -18,6 +19,11 @@ class QuizViewController :UIViewController {
     var timerTest : Timer?
     var globalCount = 0
     var totRight = 0
+    
+   //ad Setup
+    @IBOutlet weak var bannerView: GADBannerView!
+    
+    
     //Clock & Score set ups
     @IBOutlet weak var countDownLBL: UILabel!
     @IBOutlet weak var scoreCountLBL: UILabel!
@@ -285,7 +291,12 @@ class QuizViewController :UIViewController {
         super.viewDidLoad()
         
         var msg = ""
-        
+        //Ad set ups
+        bannerView.adUnitID = "ca-app-pub-3032616980524090/3001178995"
+        //Test ad = ca-app-pub-3940256099942544/2934735716
+        //real key = ca-app-pub-3032616980524090/3001178995
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
         if catNum == 1 {
             msg = "Period: 1200-1450"
         } else if catNum == 2 {
@@ -459,6 +470,7 @@ class QuizViewController :UIViewController {
     }
     //sets button text
     func setButtons(numOfQues : Int) -> Int {
+        bannerView.load(GADRequest())
         totalAnswered = totalAnswered + 1
         if Auth.auth().currentUser?.email != nil {
             globalCount+=1
