@@ -11,7 +11,7 @@ class QuizViewController :UIViewController {
     var cato : Any? = nil
     var catNum = 0
     //Variables
-    var count = 60
+    var count = 30
     var score = 0
     var totalAnswered = 0
     var quesCount = 99
@@ -19,6 +19,7 @@ class QuizViewController :UIViewController {
     var timerTest : Timer?
     var globalCount = 0
     var totRight = 0
+    let quesTime = 30
     
    //ad Setup
     @IBOutlet weak var bannerView: GADBannerView!
@@ -99,7 +100,7 @@ class QuizViewController :UIViewController {
             }
         }
         rightNum = setButtons(numOfQues: quesCount)
-        count = 60
+        count = quesTime
         timerRunner()
     }
     @IBAction func answer2Pressed(_ sender: Any) {
@@ -159,7 +160,7 @@ class QuizViewController :UIViewController {
             }
         }
         rightNum = setButtons(numOfQues: quesCount)
-        count = 60
+        count = quesTime
         timerRunner()
     }
     @IBAction func answer3Pressed(_ sender: Any) {
@@ -219,7 +220,7 @@ class QuizViewController :UIViewController {
             }
         }
         rightNum = setButtons(numOfQues: quesCount)
-        count = 60
+        count = quesTime
         timerRunner()
     }
     @IBAction func answer4Pressed(_ sender: Any) {
@@ -279,7 +280,7 @@ class QuizViewController :UIViewController {
             }
         }
         rightNum = setButtons(numOfQues: quesCount)
-        count = 60
+        count = quesTime
         timerRunner()
     }
     
@@ -634,7 +635,7 @@ class QuizViewController :UIViewController {
             }
             //self.timerRunner()
         }
-        count = 60
+        count = quesTime
         timerRunner()
         return random
     }
@@ -642,15 +643,13 @@ class QuizViewController :UIViewController {
         if(count >= 0) {
             countDownLBL.text = String(count)
             count-=1
-            if count < 20{
+            if count < 10{
                 countDownLBL.textColor = .red
             }
         }
         if count == -1 {
             findRight()
-            if let refresh = cato as? cat1 {
-                rightNum = setButtons(numOfQues: refresh.questions.count)
-            }
+            rightNum = setButtons(numOfQues: quesCount)
             countDownLBL.textColor = .white
         }
     }

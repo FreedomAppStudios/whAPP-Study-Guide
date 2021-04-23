@@ -26,6 +26,14 @@ class BreakdownViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if questionsAnswered == 0 {
+            scoreLabel.text = "0%"
+        }
+        else {
+            correctLabel.text = String(scoreToday)
+            totalLabel.text = String(questionsAnswered-1)
+        }
         correctLabel.text = String(scoreToday)
         totalLabel.text = String(questionsAnswered-1)
         let right = Double(scoreToday)
