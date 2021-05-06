@@ -1516,7 +1516,7 @@ struct cat3 { //Chemistry
                        "Often contaminated",
                        "Monotonous and miserable",
                        "Unions",
-                       "Karl Mark",
+                       "Karl Marx",
                        "The Labour Party",
                        "20%",
                        "Global Phenomenon",

@@ -471,7 +471,6 @@ class QuizViewController :UIViewController {
     }
     //sets button text
     func setButtons(numOfQues : Int) -> Int {
-        bannerView.load(GADRequest())
         totalAnswered = totalAnswered + 1
         if Auth.auth().currentUser?.email != nil {
             globalCount+=1

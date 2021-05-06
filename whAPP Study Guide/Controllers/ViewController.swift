@@ -57,6 +57,7 @@ class ViewController: UIViewController {
         
         navigationController!.isNavigationBarHidden = true
         
+        
         // Step 1: Ask for permission
         let center = UNUserNotificationCenter.current()
         

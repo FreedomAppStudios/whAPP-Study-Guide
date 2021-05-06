@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GYI-vx-m9b">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GYI-vx-m9b">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -187,6 +187,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="mxw-hJ-HAS"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="buttonData" destination="fdo-kW-ktg" id="9MC-sm-j5y"/>
                         <outlet property="emailTextField" destination="5O6-aw-okz" id="eeV-Sv-nvg"/>
                         <outlet property="errorLabel" destination="RrK-c2-Ik1" id="j2K-2j-DRg"/>
                         <outlet property="goButtonPressed" destination="fdo-kW-ktg" id="Zq3-5P-H6l"/>
@@ -273,6 +274,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="cVM-NQ-I4q"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="buttonData" destination="cFO-r0-tqM" id="rP6-QY-qSs"/>
                         <outlet property="emailTextField" destination="B9S-SV-LUs" id="XRu-XX-m3q"/>
                         <outlet property="errorLabel" destination="dE3-k4-fHs" id="xer-Tz-Jbb"/>
                         <outlet property="passwordTextField" destination="fpU-hf-hP2" id="wxJ-Pt-kPa"/>
@@ -295,12 +297,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="butIcon" translatesAutoresizingMaskIntoConstraints="NO" id="xqc-ZB-c6W">
                                 <rect key="frame" x="78" y="437.66666666666663" width="234" height="151"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back &lt;name&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiI-C1-K9N">
-                                <rect key="frame" x="33.666666666666657" y="20" width="323" height="39"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                <color key="textColor" name="brandColorWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="69%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Qa-Jq-42c">
                                 <rect key="frame" x="121.33333333333333" y="471" width="147.33333333333337" height="84"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="70"/>
@@ -340,24 +336,22 @@
                         <color key="backgroundColor" name="backgroundColor1"/>
                         <constraints>
                             <constraint firstItem="EWq-hX-whd" firstAttribute="height" secondItem="AFY-aJ-lWX" secondAttribute="height" multiplier="0.15" id="5Yc-hf-VtU"/>
-                            <constraint firstItem="FiI-C1-K9N" firstAttribute="top" secondItem="aAB-Q1-AQY" secondAttribute="top" constant="20" id="9Z8-iP-c4L"/>
                             <constraint firstItem="Oaw-D4-nU1" firstAttribute="centerY" secondItem="zfS-Qh-epH" secondAttribute="centerY" id="AJI-o3-eid"/>
                             <constraint firstItem="EWq-hX-whd" firstAttribute="centerX" secondItem="AFY-aJ-lWX" secondAttribute="centerX" id="AlF-XZ-kSz"/>
                             <constraint firstItem="ilJ-JG-pY4" firstAttribute="width" secondItem="AFY-aJ-lWX" secondAttribute="width" multiplier="0.516" id="C37-jb-gWe"/>
                             <constraint firstItem="0Ku-ag-gUq" firstAttribute="height" secondItem="AFY-aJ-lWX" secondAttribute="height" multiplier="0.0626003" id="DbM-AW-kz2"/>
+                            <constraint firstItem="kzE-Rk-7Oy" firstAttribute="top" secondItem="aAB-Q1-AQY" secondAttribute="top" constant="67" id="Dt8-Ee-kGL"/>
                             <constraint firstItem="kzE-Rk-7Oy" firstAttribute="centerX" secondItem="AFY-aJ-lWX" secondAttribute="centerX" id="Gyp-e1-SIb"/>
                             <constraint firstItem="Oaw-D4-nU1" firstAttribute="centerX" secondItem="AFY-aJ-lWX" secondAttribute="centerX" id="JMt-3F-tfk"/>
                             <constraint firstItem="kzE-Rk-7Oy" firstAttribute="height" secondItem="AFY-aJ-lWX" secondAttribute="height" multiplier="0.15" id="JQd-8V-X88"/>
                             <constraint firstItem="ilJ-JG-pY4" firstAttribute="height" secondItem="AFY-aJ-lWX" secondAttribute="height" multiplier="0.100321" id="MQ6-oP-6Fw"/>
                             <constraint firstItem="xqc-ZB-c6W" firstAttribute="top" secondItem="EWq-hX-whd" secondAttribute="bottom" constant="-11.5" id="ORi-Nh-BGb"/>
-                            <constraint firstItem="kzE-Rk-7Oy" firstAttribute="top" secondItem="FiI-C1-K9N" secondAttribute="bottom" constant="8" symbolic="YES" id="Qc1-1F-OUV"/>
                             <constraint firstItem="zfS-Qh-epH" firstAttribute="width" secondItem="AFY-aJ-lWX" secondAttribute="width" multiplier="0.6" id="SOK-zm-XMW"/>
                             <constraint firstItem="EWq-hX-whd" firstAttribute="width" secondItem="AFY-aJ-lWX" secondAttribute="width" multiplier="0.8" id="Tu4-kY-Vtf"/>
                             <constraint firstItem="zfS-Qh-epH" firstAttribute="height" secondItem="AFY-aJ-lWX" secondAttribute="height" multiplier="0.2" id="XMO-H2-Eyp"/>
                             <constraint firstItem="xqc-ZB-c6W" firstAttribute="width" secondItem="AFY-aJ-lWX" secondAttribute="width" multiplier="0.6" id="aUm-bN-l2x"/>
                             <constraint firstItem="0Ku-ag-gUq" firstAttribute="centerX" secondItem="aAB-Q1-AQY" secondAttribute="centerX" id="auz-8S-tJ9"/>
                             <constraint firstItem="0Ku-ag-gUq" firstAttribute="width" secondItem="AFY-aJ-lWX" secondAttribute="width" multiplier="0.6" id="gMI-JF-Un3"/>
-                            <constraint firstItem="FiI-C1-K9N" firstAttribute="centerX" secondItem="AFY-aJ-lWX" secondAttribute="centerX" id="gja-0N-lKu"/>
                             <constraint firstItem="xqc-ZB-c6W" firstAttribute="centerX" secondItem="aAB-Q1-AQY" secondAttribute="centerX" id="hsZ-cV-191"/>
                             <constraint firstItem="3Qa-Jq-42c" firstAttribute="centerY" secondItem="xqc-ZB-c6W" secondAttribute="centerY" id="inb-hM-aBJ"/>
                             <constraint firstItem="zfS-Qh-epH" firstAttribute="centerX" secondItem="AFY-aJ-lWX" secondAttribute="centerX" id="kv6-QD-ZeG"/>
@@ -382,7 +376,6 @@
                     <connections>
                         <outlet property="averageScoreLabel" destination="3Qa-Jq-42c" id="ysZ-8A-LQj"/>
                         <outlet property="totalScoreLabel" destination="Oaw-D4-nU1" id="LEx-cd-UAF"/>
-                        <outlet property="welcomeLabel" destination="FiI-C1-K9N" id="84O-iL-2SZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ct-iq-Ze6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -548,7 +541,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6H-NJ-OvT">
-                                <rect key="frame" x="0.0" y="62.000000000000007" width="390" height="20.333333333333336"/>
+                                <rect key="frame" x="0.0" y="62" width="390" height="17"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <color key="textColor" name="backgroundColor"/>
                                 <nil key="highlightedColor"/>
@@ -805,7 +798,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Rhd-JT-97O"/>
-        <segue reference="LaC-hz-1Z8"/>
+        <segue reference="oG3-Uq-eFy"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="brandColorGray"/>
     <resources>

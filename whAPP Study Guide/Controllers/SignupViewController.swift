@@ -19,6 +19,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    @IBOutlet weak var buttonData: UIButton!
     @IBOutlet weak var goButtonPressed: UIButton!
     
     @IBAction func goButtonAction(_ sender: Any) {
@@ -38,7 +39,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        buttonData.layer.cornerRadius = 15
         if view.traitCollection.userInterfaceStyle == UIUserInterfaceStyle.dark {
             //Dark Mode options
             emailTextField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])

@@ -14,6 +14,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var errorLabel: UILabel!
     
     @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var buttonData: UIButton!
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func loginButtonPressed(_ sender: Any) {
@@ -32,6 +33,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        buttonData.layer.cornerRadius = 15
         self.passwordTextField.delegate = self
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         if view.traitCollection.userInterfaceStyle == UIUserInterfaceStyle.dark {

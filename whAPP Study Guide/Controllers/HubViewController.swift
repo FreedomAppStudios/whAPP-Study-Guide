@@ -10,7 +10,6 @@ import Firebase
 
 class HubViewController: UIViewController {
     
-    @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var totalScoreLabel: UILabel!
     @IBOutlet weak var averageScoreLabel: UILabel!
     
@@ -92,7 +91,7 @@ class HubViewController: UIViewController {
                             }
                         }
                     }
-                    self.welcomeLabel.text = "Welcome Back \(displayName)"
+                    self.title = "Welcome Back \(displayName)"
                 }
             }
         }
