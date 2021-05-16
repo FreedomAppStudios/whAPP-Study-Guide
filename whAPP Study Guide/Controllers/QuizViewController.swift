@@ -20,6 +20,7 @@ class QuizViewController :UIViewController {
     var globalCount = 0
     var totRight = 0
     let quesTime = 30
+    var isPaused = false
     
    //ad Setup
     @IBOutlet weak var bannerView: GADBannerView!
@@ -287,6 +288,7 @@ class QuizViewController :UIViewController {
     
     
     
+    @IBOutlet weak var pausePlayData: UIBarButtonItem!
     //view did load
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -361,6 +363,9 @@ class QuizViewController :UIViewController {
             self.btn1Info.backgroundColor = color
             
         })
+    }
+    @IBAction func pausePressed(_ sender: Any) {
+        pausePlay()
     }
     //btn1 wrong
     func  checkWrong1() {
@@ -652,6 +657,20 @@ class QuizViewController :UIViewController {
             countDownLBL.textColor = .white
         }
     }
+    func pausePlay() {
+        if isPaused == false {
+            timerTest?.invalidate()
+            timerTest = nil
+            pausePlayData.image = UIImage(systemName: "play.fill")
+            isPaused = true
+            
+        } else {
+            timerRunner()
+            isPaused = false
+            pausePlayData.image = UIImage(systemName: "pause.fill")
+        }
+    }
+
     func timerRunner() {
         guard timerTest == nil else { return }
         timerTest = Timer.scheduledTimer(

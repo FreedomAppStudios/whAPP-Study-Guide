@@ -645,11 +645,18 @@
                     </view>
                     <navigationItem key="navigationItem" title="ACE AP: World History" id="JmU-EB-1mR">
                         <barButtonItem key="backBarButtonItem" title="Back" id="qGg-iT-oOa"/>
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="VFg-zW-eIJ">
-                            <connections>
-                                <action selector="donePressed:" destination="jFc-27-FTr" id="iVH-bl-RUb"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Done" id="VFg-zW-eIJ">
+                                <connections>
+                                    <action selector="donePressed:" destination="jFc-27-FTr" id="iVH-bl-RUb"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="pause.fill" catalog="system" id="8Ra-an-QtR">
+                                <connections>
+                                    <action selector="pausePressed:" destination="jFc-27-FTr" id="oBI-aL-yV5"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="bannerView" destination="f0q-oo-ddp" id="b8A-Xe-VEV"/>
@@ -658,6 +665,7 @@
                         <outlet property="btn3Info" destination="5xv-hJ-MFi" id="uOR-nx-rr4"/>
                         <outlet property="btn4Info" destination="XoV-us-7qu" id="2Zs-xi-gQl"/>
                         <outlet property="countDownLBL" destination="jKg-5q-j3b" id="Zyq-QL-ZZj"/>
+                        <outlet property="pausePlayData" destination="8Ra-an-QtR" id="8Me-yB-eVO"/>
                         <outlet property="questionTTL" destination="e6H-NJ-OvT" id="xxe-Io-u0O"/>
                         <outlet property="scoreCountLBL" destination="lGw-4Z-C3c" id="YUu-WA-hqK"/>
                         <segue destination="dRF-e2-yNc" kind="show" identifier="finishedQuiz" id="Myk-lf-wjY"/>
@@ -806,6 +814,7 @@
         <image name="arrowtriangle.up.fill" catalog="system" width="128" height="124"/>
         <image name="butIcon" width="193" height="72"/>
         <image name="logoPNG" width="250" height="250"/>
+        <image name="pause.fill" catalog="system" width="116" height="128"/>
         <image name="qaText" width="213.33332824707031" height="84"/>
         <image name="qrText" width="212" height="81.666664123535156"/>
         <image name="wheel" width="249.33332824707031" height="250"/>
