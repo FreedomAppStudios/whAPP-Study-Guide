@@ -482,7 +482,11 @@ class QuizViewController :UIViewController {
             updateGlobalQuestionCount()
             loadGlobalQuestionCount()
         }
-        stopTimer()
+        if isPaused == true {
+            pausePlay()
+        } else {
+            stopTimer()
+        }
         countDownLBL.textColor = .white
         let random = Int.random(in: 0...quesCount)
         let secondsToDelay = 1.5
