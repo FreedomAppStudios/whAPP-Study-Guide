@@ -1,4 +1,4 @@
-platform :ios, '14.0'
+platform :ios, '14.5'
 
 target 'whAPP Study Guide' do
   use_frameworks!
@@ -6,7 +6,7 @@ target 'whAPP Study Guide' do
   # Pods for whAPP Study Guide
 
   pod 'CLTypingLabel'
-  pod 'Firebase/Auth'
+  pod 'FirebaseAuth'
   pod 'Firebase/Firestore'
   pod 'Firebase/Core'
   pod 'Firebase/AdMob'
