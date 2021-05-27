@@ -18,11 +18,11 @@
 		017043E72584874B005F4D42 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017043E62584874B005F4D42 /* SecondViewController.swift */; };
 		017043F225871C49005F4D42 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017043F125871C49005F4D42 /* QuizViewController.swift */; };
 		01BEC60325886C8300DA9622 /* QuestionRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BEC60225886C8300DA9622 /* QuestionRunner.swift */; };
-		595FEF0D42D5E1A385538C78 /* Pods_whAPP_Study_Guide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AAA510F1FAE8E426F4AC2C /* Pods_whAPP_Study_Guide.framework */; };
 		BB4173D7259E80FB00951B38 /* HubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4173D6259E80FB00951B38 /* HubViewController.swift */; };
 		BBCF233F25AF7F7A00AB622B /* BreakdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCF233E25AF7F7A00AB622B /* BreakdownViewController.swift */; };
 		BBD2E568259C42D000B4D2BC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2E567259C42D000B4D2BC /* LoginViewController.swift */; };
 		BBD2E56D259C431500B4D2BC /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2E56C259C431500B4D2BC /* SignupViewController.swift */; };
+		FA0CAF2D509BC0675728F8FA /* Pods_whAPP_Study_Guide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72BF14AACCD40E15350D7DD /* Pods_whAPP_Study_Guide.framework */; };
 		FEEA635326312E1300AA1160 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEEA635226312E1300AA1160 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -61,14 +61,14 @@
 		017043E62584874B005F4D42 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		017043F125871C49005F4D42 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		01BEC60225886C8300DA9622 /* QuestionRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionRunner.swift; sourceTree = "<group>"; };
-		2C65BAE9822A91C923F40C6A /* Pods-whAPP Study Guide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whAPP Study Guide.release.xcconfig"; path = "Target Support Files/Pods-whAPP Study Guide/Pods-whAPP Study Guide.release.xcconfig"; sourceTree = "<group>"; };
-		52AAA510F1FAE8E426F4AC2C /* Pods_whAPP_Study_Guide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whAPP_Study_Guide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51ED44DA9E554DA736F01F9 /* Pods-whAPP Study Guide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whAPP Study Guide.release.xcconfig"; path = "Target Support Files/Pods-whAPP Study Guide/Pods-whAPP Study Guide.release.xcconfig"; sourceTree = "<group>"; };
+		A72BF14AACCD40E15350D7DD /* Pods_whAPP_Study_Guide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whAPP_Study_Guide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB4173D6259E80FB00951B38 /* HubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubViewController.swift; sourceTree = "<group>"; };
 		BBCF233E25AF7F7A00AB622B /* BreakdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakdownViewController.swift; sourceTree = "<group>"; };
 		BBD2E567259C42D000B4D2BC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BBD2E56C259C431500B4D2BC /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
-		C11E59AAC7D1AC85F814ACA5 /* Pods-whAPP Study Guide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whAPP Study Guide.debug.xcconfig"; path = "Target Support Files/Pods-whAPP Study Guide/Pods-whAPP Study Guide.debug.xcconfig"; sourceTree = "<group>"; };
 		FE2AC770261BD43100B0923A /* whAPP Study Guide.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "whAPP Study Guide.entitlements"; sourceTree = "<group>"; };
+		FEC5A9A58E586C8D0ECAB41E /* Pods-whAPP Study Guide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whAPP Study Guide.debug.xcconfig"; path = "Target Support Files/Pods-whAPP Study Guide/Pods-whAPP Study Guide.debug.xcconfig"; sourceTree = "<group>"; };
 		FEEA635226312E1300AA1160 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				595FEF0D42D5E1A385538C78 /* Pods_whAPP_Study_Guide.framework in Frameworks */,
+				FA0CAF2D509BC0675728F8FA /* Pods_whAPP_Study_Guide.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +106,7 @@
 				017043D1258473E7005F4D42 /* whAPP Study GuideUITests */,
 				017043AE258473E1005F4D42 /* Products */,
 				AAC85B2CE8B663C28F135417 /* Pods */,
-				FF692170DB7FCD8AF523858E /* Frameworks */,
+				CFE49D328EA379A3C687CD63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,16 +188,16 @@
 		AAC85B2CE8B663C28F135417 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C11E59AAC7D1AC85F814ACA5 /* Pods-whAPP Study Guide.debug.xcconfig */,
-				2C65BAE9822A91C923F40C6A /* Pods-whAPP Study Guide.release.xcconfig */,
+				FEC5A9A58E586C8D0ECAB41E /* Pods-whAPP Study Guide.debug.xcconfig */,
+				A51ED44DA9E554DA736F01F9 /* Pods-whAPP Study Guide.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		FF692170DB7FCD8AF523858E /* Frameworks */ = {
+		CFE49D328EA379A3C687CD63 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				52AAA510F1FAE8E426F4AC2C /* Pods_whAPP_Study_Guide.framework */,
+				A72BF14AACCD40E15350D7DD /* Pods_whAPP_Study_Guide.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -209,11 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 017043D7258473E7005F4D42 /* Build configuration list for PBXNativeTarget "whAPP Study Guide" */;
 			buildPhases = (
-				EFE750030811670A5DF66979 /* [CP] Check Pods Manifest.lock */,
+				91529DEC0343CB3AA368CC2F /* [CP] Check Pods Manifest.lock */,
 				017043A9258473E1005F4D42 /* Sources */,
 				017043AA258473E1005F4D42 /* Frameworks */,
 				017043AB258473E1005F4D42 /* Resources */,
-				FD46B2EA78ED316EE696D2F6 /* [CP] Embed Pods Frameworks */,
+				01AE936FED684DC597CCFEF1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -332,7 +332,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		EFE750030811670A5DF66979 /* [CP] Check Pods Manifest.lock */ = {
+		01AE936FED684DC597CCFEF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-whAPP Study Guide/Pods-whAPP Study Guide-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-whAPP Study Guide/Pods-whAPP Study Guide-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-whAPP Study Guide/Pods-whAPP Study Guide-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91529DEC0343CB3AA368CC2F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,23 +369,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FD46B2EA78ED316EE696D2F6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-whAPP Study Guide/Pods-whAPP Study Guide-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-whAPP Study Guide/Pods-whAPP Study Guide-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-whAPP Study Guide/Pods-whAPP Study Guide-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -560,21 +560,23 @@
 		};
 		017043D8258473E7005F4D42 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C11E59AAC7D1AC85F814ACA5 /* Pods-whAPP Study Guide.debug.xcconfig */;
+			baseConfigurationReference = FEC5A9A58E586C8D0ECAB41E /* Pods-whAPP Study Guide.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "whAPP Study Guide/whAPP Study Guide.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = P6X6D3C93L;
+				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = "whAPP Study Guide/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jessicamorris.ACE-AP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
@@ -587,21 +589,23 @@
 		};
 		017043D9258473E7005F4D42 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C65BAE9822A91C923F40C6A /* Pods-whAPP Study Guide.release.xcconfig */;
+			baseConfigurationReference = A51ED44DA9E554DA736F01F9 /* Pods-whAPP Study Guide.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "whAPP Study Guide/whAPP Study Guide.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = P6X6D3C93L;
+				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = "whAPP Study Guide/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jessicamorris.ACE-AP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;

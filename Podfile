@@ -5,7 +5,6 @@ target 'whAPP Study Guide' do
 
   # Pods for whAPP Study Guide
 
-  pod 'CLTypingLabel'
   pod 'FirebaseAuth'
   pod 'Firebase/Firestore'
   pod 'Firebase/Core'
