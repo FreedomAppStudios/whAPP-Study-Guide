@@ -22,8 +22,8 @@
 		BBCF233F25AF7F7A00AB622B /* BreakdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCF233E25AF7F7A00AB622B /* BreakdownViewController.swift */; };
 		BBD2E568259C42D000B4D2BC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2E567259C42D000B4D2BC /* LoginViewController.swift */; };
 		BBD2E56D259C431500B4D2BC /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2E56C259C431500B4D2BC /* SignupViewController.swift */; };
+		BBE1E38826602BD000A33C6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BBE1E38726602BD000A33C6C /* GoogleService-Info.plist */; };
 		FA0CAF2D509BC0675728F8FA /* Pods_whAPP_Study_Guide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72BF14AACCD40E15350D7DD /* Pods_whAPP_Study_Guide.framework */; };
-		FEEA635326312E1300AA1160 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEEA635226312E1300AA1160 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,9 +67,9 @@
 		BBCF233E25AF7F7A00AB622B /* BreakdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakdownViewController.swift; sourceTree = "<group>"; };
 		BBD2E567259C42D000B4D2BC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BBD2E56C259C431500B4D2BC /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		BBE1E38726602BD000A33C6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FE2AC770261BD43100B0923A /* whAPP Study Guide.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "whAPP Study Guide.entitlements"; sourceTree = "<group>"; };
 		FEC5A9A58E586C8D0ECAB41E /* Pods-whAPP Study Guide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whAPP Study Guide.debug.xcconfig"; path = "Target Support Files/Pods-whAPP Study Guide/Pods-whAPP Study Guide.debug.xcconfig"; sourceTree = "<group>"; };
-		FEEA635226312E1300AA1160 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				017043AF258473E1005F4D42 /* whAPP Study Guide */,
+				BBE1E38726602BD000A33C6C /* GoogleService-Info.plist */,
 				017043C6258473E7005F4D42 /* whAPP Study GuideTests */,
 				017043D1258473E7005F4D42 /* whAPP Study GuideUITests */,
 				017043AE258473E1005F4D42 /* Products */,
@@ -132,7 +133,6 @@
 				017043B9258473E6005F4D42 /* Assets.xcassets */,
 				017043BB258473E6005F4D42 /* LaunchScreen.storyboard */,
 				017043BE258473E6005F4D42 /* Info.plist */,
-				FEEA635226312E1300AA1160 /* GoogleService-Info.plist */,
 			);
 			path = "whAPP Study Guide";
 			sourceTree = "<group>";
@@ -309,7 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				017043BD258473E6005F4D42 /* LaunchScreen.storyboard in Resources */,
-				FEEA635326312E1300AA1160 /* GoogleService-Info.plist in Resources */,
+				BBE1E38826602BD000A33C6C /* GoogleService-Info.plist in Resources */,
 				017043BA258473E6005F4D42 /* Assets.xcassets in Resources */,
 				017043B8258473E1005F4D42 /* Main.storyboard in Resources */,
 			);
@@ -562,6 +562,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEC5A9A58E586C8D0ECAB41E /* Pods-whAPP Study Guide.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
@@ -591,6 +592,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A51ED44DA9E554DA736F01F9 /* Pods-whAPP Study Guide.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
