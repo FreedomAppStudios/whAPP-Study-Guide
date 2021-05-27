@@ -6,12 +6,11 @@
 //
 
 import UIKit
-import CLTypingLabel
 import UserNotifications
 class ViewController: UIViewController {
+
     
-    @IBOutlet weak var titleLabel: CLTypingLabel!
-    
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var loginButtonInfo: UIButton!
     @IBOutlet weak var setupButtonInfo: UIButton!
     @IBOutlet weak var guestButtonInfo: UIButton!

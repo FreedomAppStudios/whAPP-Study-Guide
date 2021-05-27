@@ -1,4 +1,4 @@
-platform :ios, '14.5'
+platform :ios, '9.0'
 
 target 'whAPP Study Guide' do
   use_frameworks!

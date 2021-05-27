@@ -96,7 +96,7 @@
                         <outlet property="guestButtonInfo" destination="rNa-O0-lrx" id="bmZ-Zl-d5R"/>
                         <outlet property="loginButtonInfo" destination="SAi-NY-jN4" id="cJv-aq-Cws"/>
                         <outlet property="setupButtonInfo" destination="i7d-WF-kPp" id="b17-1m-4uQ"/>
-                        <outlet property="titleLabel" destination="3EO-RO-OA4" id="laH-Ii-x4j"/>
+                        <outlet property="titleLabel" destination="3EO-RO-OA4" id="69m-4y-I5D"/>
                         <segue destination="J8K-25-EHg" kind="show" identifier="loginAsGuest" id="mUv-ed-krn"/>
                     </connections>
                 </viewController>
@@ -805,7 +805,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Rhd-JT-97O"/>
+        <segue reference="mUv-ed-krn"/>
         <segue reference="oG3-Uq-eFy"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="brandColorGray"/>
